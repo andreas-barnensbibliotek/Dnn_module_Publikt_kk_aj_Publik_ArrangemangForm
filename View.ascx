@@ -4,24 +4,24 @@
 
 <div class="row">
     <div class="steps small-12 ">
-        <ul class="tabs maintablist" data-tab role="tablist">
-            <li class="tab-title active first current" role="presentation">
+        <ul class="tabs maintablist" data-tab role="tablist" data-deep-link="true">
+            <li class="tab-title active first" role="presentation1" rel="1">
                 <a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" rel="1">     
                     <span class="number">1</span> Generell info
                 </a>
             </li>
-          <li class="tab-title active done" role="presentation">
-                <a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2" rel="2">
+          <li class="tab-title disabled second" role="presentation2" rel="2">
+                <a href="#panel2-2" role="tab" tabindex="1" aria-selected="false" aria-controls="panel2-2" rel="2" >
                     <span class="number">2</span> Arrangemang
                 </a>
           </li>
-          <li class="tab-title error" role="presentation" >
-              <a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3" rel="3">
+          <li class="tab-title disabled third" role="presentation3" rel="3" >
+              <a href="#panel2-3" role="tab" tabindex="2" aria-selected="false" aria-controls="panel2-3" rel="3" >
                   <span class="number">3</span> Granska
               </a>
           </li>
-          <li class="tab-title disabled" role="presentation">
-              <a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-4" rel="4">
+          <li class="tab-title disabled forth" role="presentation4" rel="4">
+              <a href="#panel2-4" role="tab" tabindex="3" aria-selected="false" aria-controls="panel2-4" rel="4" >
                   <span class="number">4</span> Skicka in
               </a>
           </li>
@@ -60,8 +60,8 @@
                             <fieldset>
                                 <legend>Jag skickar in för förstagången</legend>
                                 <ul class="button-group">
-                                  <li><a href="#" class="button">Ny arrangör</a></li>
-                                  <li><a href="#" class="button">Tidigare arrangör</a></li>  
+                                  <li><a href="#" class="kk_aj_btnnyutovare button">Ny arrangör</a></li>
+                                  <li><a href="#" class="kk_aj_btnbefintligutovare button secondary">Tidigare arrangör</a></li>  
                                 </ul>
                             </fieldset>
                         </div>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <a href="#" class="button secondary">Hämta kontaktuppgifter</a>
+                              <a href="#" class="button secondary kk_aj_btnHamtakontaktupg">Hämta kontaktuppgifter</a>
                             </div>                           
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                               <label>Organisation
                                 <input id="utovare_organisation" type="text" placeholder="Organisation" />
                               </label>
-
+                                <small class="error utovare_organisation_error">Du måste fylla i ett namn på organisationen eller utövaren.</small>
                             </div>                            
                         </div>
                         <div class="row" >
@@ -116,6 +116,7 @@
                               <label>Organisationens hemsida
                                 <input id="utovare_orghemsida" type="text" placeholder="Organisationens hemsida" />
                               </label>
+                                <small class="error utovare_orghemsida_error">Du måste fylla i organisationens hemsida.</small>                            
                             </div>                            
                         </div>
                         <div class="row" >
@@ -123,6 +124,7 @@
                               <label>
                                 <input id="utovare_adress" type="text" placeholder="Adress" />
                               </label>
+                                <small class="error utovare_adress_error">Du måste fylla i ett namn på organisationen eller utövaren.</small> 
                             </div>                            
                         </div>
                         <div class="row" >
@@ -130,6 +132,7 @@
                               <label>Postnummer
                                 <input id="utovare_postnummer" type="text" placeholder="Postnummer" />
                               </label>
+                                <small class="error utovare_postnummer_error">Du måste fylla i ett namn på organisationen eller utövaren.</small>                             
                             </div>                            
                         </div>
                         <div class="row" >
@@ -137,6 +140,7 @@
                               <label>Ort
                                 <input id="utovare_ort" type="text" placeholder="Ort" />
                               </label>
+                                <small class="error utovare_ort_error">Du måste fylla i ett ortsnamn.</small>                             
                             </div>                            
                         </div>
                         <div class="row" >
@@ -144,6 +148,7 @@
                               <label>Kommun
                                 <input id="utovare_kommun" type="text" placeholder="Kommun" />
                               </label>
+                                <small class="error utovare_kommun_error">Du måste fylla i Kommunens namn.</small>                             
                             </div>                            
                         </div>
                         <div class="row" >
@@ -153,14 +158,19 @@
                                     <label>Kontaktperson - Förnamn
                                         <input id="utovare_fornamn" type="text" placeholder="Förnamn" />
                                     </label>
+                                    <small class="error utovare_kommun_error">Du måste fylla i Kontaktperson - Förnamn.</small>    
+                                                                                         
                                     <label>Kontaktperson - Efternamn
                                         <input id="utovare_efternamn" type="text" placeholder="Efternamn" />
+                                        <small class="error utovare_kommun_error">Du måste fylla i Kontaktperson - Efternamn.</small>                            
                                     </label>
                                     <label>Telefonnummer
                                         <input id="utovare_telefonnr" type="text" placeholder="Telefonnummer" />
+                                        <small class="error utovare_kommun_error">Du måste fylla i Telefonnummer.</small>                            
                                     </label>
                                     <label>Epostadress
                                         <input id="utovare_epost" type="text" placeholder="Epostadress" />
+                                        <small class="error utovare_kommun_error">Du måste fylla i Epostadress.</small>                             
                                     </label>
                                 </fieldset> 
                             </div>                            
@@ -183,8 +193,8 @@
                   </div>
                   <div class="small-12 medium-9 columns">
                       <ul class="tabs bottomtabs" data-tab role="tablist">                    
-                          <li>
-                              <a href="#panel2-2" role="tab" class="button success right">Nästa steg - Arrangemang</a>                         
+                          <li class="tab-title kk_aj_verifystep2 ">
+                              <a href="#panel2-2" role="tab" class="button right kk_aj_btn_next_step" rel="2" >Nästa steg - Arrangemang</a>                         
                           </li>
                       </ul>
                       
@@ -214,7 +224,7 @@
                                   <li>
                                     <label>
                                         <input id="val_forestallningtune" type="radio" name="arr_radioValArrtyp" value="1" />
-                                        <img src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
                                     </label>
                                   </li>
                                   <li>
@@ -226,7 +236,7 @@
                                   <li>
                                     <label>
                                         <input id="val_forfattarbesok" type="radio" name="arr_radioValArrtyp" value="3" />
-                                        <img src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" /> 
                                     </label>
                                   </li>
                                   <li>
@@ -238,7 +248,7 @@
                                   <li>
                                     <label>
                                         <input id="val_Fortbildningar" type="radio" name="arr_radioValArrtyp" value="5" />
-                                        <img src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
                                     </label>
                                   </li>
                                   <li>
@@ -260,7 +270,7 @@
                                   <li>
                                     <label>
                                         <input id="val_arkitektur" type="radio" name="arr_radioValkontstform" value="1" />
-                                        <img src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
                                     </label>
                                   </li>
                                   <li>
@@ -272,7 +282,7 @@
                                   <li>
                                     <label>
                                         <input id="val_film" type="radio" name="arr_radioValkontstform" value="3" />
-                                        <img src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" /> 
                                     </label>
                                   </li>
                                   <li>
@@ -284,7 +294,7 @@
                                   <li>
                                     <label>
                                         <input id="val_litteratur" type="radio" name="arr_radioValkontstform" value="5" />
-                                        <img src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
                                     </label>
                                   </li>
                                   <li>
@@ -302,13 +312,13 @@
                                    <li>
                                     <label>
                                         <input id="val_nycirkus" type="radio" name="arr_radioValkontstform" value="8" />
-                                        <img src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" /> 
                                     </label>
                                   </li>                                  
                                   <li>
                                     <label>
                                         <input id="val_slojd" type="radio" name="arr_radioValkontstform" value="9" />
-                                        <img src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
                                     </label>
                                   </li>
                                   <li>
@@ -320,7 +330,7 @@
                                   <li>
                                     <label>
                                         <input id="val_teknik" type="radio" name="arr_radioValkontstform" value="11" />
-                                        <img src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
                                     </label>
                                   </li>
                                   <li>
@@ -343,6 +353,8 @@
                                     <label>Rubrik
                                         <input id="arr_rubrik" type="text" placeholder="Rubrik eller namn på arrangemanget" />
                                     </label>
+                                    <small class="error arr_rubrik_error">Du måste fylla i en rubrik.</small>                                            
+                                        
                                     <label>Underrubrik
                                         <input id="arr_underrubrik" type="text" placeholder="Underrubrik" />
                                     </label>
@@ -414,7 +426,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <img id="arr_MediapreviewSrc" src="../DesktopModules/kk_aj_Publik_ArrangemangForm/images/filmclip.jpg" />
+                                    <img id="arr_MediapreviewSrc" src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/filmclip.jpg" />
                                     <div class="row" >
                                         <div class="large-12 columns">
                                             <label>Presentationsfilm </label>
@@ -562,11 +574,11 @@
                   </div>
                   <div class="small-12 medium-9 columns"> 
                       <ul class="tabs bottomtabs" data-tab role="tablist">   
-                          <li>
-                              <a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" rel="1" class="button success ">Föregående steg - Gennerell info</a>                         
+                          <li class="tab-title  kk_aj_verifystep1">
+                              <a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" rel="1" class="button success kk_aj_btn_before_step1">Föregående steg - Gennerell info</a>                         
                           </li>                 
-                          <li>
-                              <a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3" rel="3" class="button success right">Nästa steg - Granska</a>                          
+                          <li class="tab-title disabled kk_aj_verifystep2">
+                              <a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3" rel="3" class="button right kk_aj_btn_next_step" rel="3" >Nästa steg - Granska</a>                          
                           </li>
                       </ul>
                   </div>
@@ -680,11 +692,11 @@
               </div>
               <div class="small-12 medium-9 columns"> 
                   <ul class="tabs bottomtabs" data-tab role="tablist">   
-                    <li>
-                        <a href="#panel2-2" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-2" rel="2" class="button success ">Föregående steg - Arrangemang</a>                         
+                    <li class="tab-title disabled  kk_aj_verifystep2">
+                        <a href="#panel2-2" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-2" rel="2" class="button success kk_aj_btn_before_step2">Föregående steg - Arrangemang</a>                         
                     </li>                 
-                    <li>
-                        <a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-4" rel="4" class="button success right">Nästa steg - Skicka in</a>                          
+                    <li class="tab-title disabled  kk_aj_verifystep3">
+                        <a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-4" rel="4" class="button right kk_aj_btn_next_step" rel="4" >Nästa steg - Skicka in</a>                          
                     </li>
                   </ul>
               </div>
@@ -699,11 +711,11 @@
               </div>
               <div class="small-12 medium-9 columns"> 
                   <ul class="tabs bottomtabs" data-tab role="tablist">   
-                    <li>
-                        <a href="#panel2-3" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-3" rel="4" class="button success ">Skicka in</a>                         
+                    <li class="tab-title disabled  kk_aj_verifystep4">
+                        <a href="#panel2-3" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-3" rel="4" class="button success  kk_aj_btn_before_step3">Skicka in</a>                         
                     </li>                 
-                    <li>
-                        <a href="#panel2-1" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-1" rel="1" class="button success right">Avbryt</a>                          
+                    <li class="tab-title disabled  kk_aj_AvbrytSteps">
+                        <a href="#panel2-1" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-1" rel="1" class="button success right kk_aj_btn_before_step1">Avbryt</a>                          
                     </li>
                   </ul>
               </div>
