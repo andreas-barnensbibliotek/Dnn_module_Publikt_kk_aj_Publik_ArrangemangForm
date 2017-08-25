@@ -5,3 +5,4 @@ D:\wwwroot\dnndev_v902.me\DesktopModules\kk_aj_Publik_ArrangemangForm\obj\Releas
 D:\wwwroot\dnndev_v902.me\DesktopModules\kk_aj_Publik_ArrangemangForm\obj\Release\kk_aj_Publik_ArrangemangForm.xml
 D:\wwwroot\dnndev_v902.me\DesktopModules\kk_aj_Publik_ArrangemangForm\obj\Release\kk_aj_Publik_ArrangemangForm.pdb
 D:\wwwroot\dnndev_v902.me\bin\kk_aj_Publik_ArrangemangForm.dll.config
+D:\wwwroot\dnndev_v902.me\DesktopModules\kk_aj_Publik_ArrangemangForm\obj\Release\kk_aj_Publik_ArrangemangForm.vbprojResolveAssemblyReference.cache

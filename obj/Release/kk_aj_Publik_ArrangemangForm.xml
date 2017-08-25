@@ -128,6 +128,15 @@ kk_aj_Publik_ArrangemangForm
  
  </summary>
 </member>
+<member name="F:kulturkatalogenpublik.aj.kk_aj_Publik_ArrangemangForm.View._kk_aj_CurrentUserid">
+<summary>
+kk_aj_CurrentUserid control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:kulturkatalogenpublik.aj.kk_aj_Publik_ArrangemangForm.View._kk_aj_CurrentRollid">
 <summary>
 kk_aj_CurrentRollid control.
