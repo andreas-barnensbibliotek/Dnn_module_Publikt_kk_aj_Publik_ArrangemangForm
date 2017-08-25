@@ -4,24 +4,24 @@
 
 <div class="row">
     <div class="steps small-12 ">
-        <ul class="tabs maintablist" data-tab role="tablist" data-deep-link="true">
+        <ul class="tabs maintablist"  role="tablist" data-deep-link="true">
             <li class="tab-title active first" role="presentation1" rel="1">
-                <a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" rel="1">     
+                <a href="#addarrtab-1" role="tab" tabindex="0" aria-selected="true" aria-controls="addarrtab-1" class="kk_aj_tab" rel="1">     
                     <span class="number">1</span> Generell info
                 </a>
             </li>
           <li class="tab-title disabled second" role="presentation2" rel="2">
-                <a href="#panel2-2" role="tab" tabindex="1" aria-selected="false" aria-controls="panel2-2" rel="2" >
+                <a href="#addarrtab-2" role="tab" tabindex="1" aria-selected="false" aria-controls="addarrtab-2" class="kk_aj_tab" rel="2" >
                     <span class="number">2</span> Arrangemang
                 </a>
           </li>
           <li class="tab-title disabled third" role="presentation3" rel="3" >
-              <a href="#panel2-3" role="tab" tabindex="2" aria-selected="false" aria-controls="panel2-3" rel="3" >
+              <a href="#addarrtab-3" role="tab" tabindex="2" aria-selected="false" aria-controls="addarrtab-3" class="kk_aj_tab" rel="3" >
                   <span class="number">3</span> Granska
               </a>
           </li>
           <li class="tab-title disabled forth" role="presentation4" rel="4">
-              <a href="#panel2-4" role="tab" tabindex="3" aria-selected="false" aria-controls="panel2-4" rel="4" >
+              <a href="#addarrtab-4" role="tab" tabindex="3" aria-selected="false" aria-controls="addarrtab-4" class="kk_aj_tab" rel="4" >
                   <span class="number">4</span> Skicka in
               </a>
           </li>
@@ -42,7 +42,7 @@
         <div class="tabs-content ">
           <!--tabs-content STARTAR -->
             <!-- Tab1 section STARTAR -->
-          <section role="tabpanel" aria-hidden="false" class="content active first current" id="panel2-1">
+          <section role="tabpanel" aria-hidden="false" class="content active first current" id="addarrtab-1">
               <div class="row formheader">
                   <div class="small-12 medium-3 columns">
                       <h2>Steg 1</h2>
@@ -121,7 +121,7 @@
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>
+                              <label>Adress
                                 <input id="utovare_adress" type="text" placeholder="Adress" />
                               </label>
                                 <small class="error utovare_adress_error">Du måste fylla i ett namn på organisationen eller utövaren.</small> 
@@ -192,9 +192,9 @@
                       
                   </div>
                   <div class="small-12 medium-9 columns">
-                      <ul class="tabs bottomtabs" data-tab role="tablist">                    
+                      <ul class="tabs bottomtabs"  role="tablist">                    
                           <li class="tab-title kk_aj_verifystep2 ">
-                              <a href="#panel2-2" role="tab" class="button right kk_aj_btn_next_step" rel="2" >Nästa steg - Arrangemang</a>                         
+                              <a href="#addarrtab-2" role="tab" class="button right kk_aj_btn_next_step" rel="2" >Nästa steg - Arrangemang</a>                         
                           </li>
                       </ul>
                       
@@ -202,7 +202,7 @@
               </div>
           </section>
             <!-- Tab2 section STARTAR -->
-          <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+          <section role="tabpanel" aria-hidden="true" class="content" id="addarrtab-2">
              <div class="row formheader">
                   <div class="small-12 medium-3 columns">
                       <h2>Steg 2</h2>
@@ -573,19 +573,19 @@
                       
                   </div>
                   <div class="small-12 medium-9 columns"> 
-                      <ul class="tabs bottomtabs" data-tab role="tablist">   
+                      <ul class="tabs bottomtabs"  role="tablist">   
                           <li class="tab-title  kk_aj_verifystep1">
-                              <a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" rel="1" class="button success kk_aj_btn_before_step1">Föregående steg - Gennerell info</a>                         
+                              <a href="#addarrtab-1" role="tab" tabindex="0" aria-selected="true" aria-controls="addarrtab-1" rel="1" class="button success kk_aj_btn_to_step1">Föregående steg - Gennerell info</a>                         
                           </li>                 
                           <li class="tab-title disabled kk_aj_verifystep2">
-                              <a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3" rel="3" class="button right kk_aj_btn_next_step" rel="3" >Nästa steg - Granska</a>                          
+                              <a href="#addarrtab-3" role="tab" tabindex="0" aria-selected="false" aria-controls="addarrtab-3" rel="3" class="button right kk_aj_btn_next_step" rel="3" >Nästa steg - Granska</a>                          
                           </li>
                       </ul>
                   </div>
               </div>
           </section>
             <!-- Tab3 section STARTAR -->
-          <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
+          <section role="tabpanel" aria-hidden="true" class="content" id="addarrtab-3">
              
                 <div class="row formheader">
                     <div class="small-12 medium-3 columns">
@@ -691,12 +691,12 @@
                       
               </div>
               <div class="small-12 medium-9 columns"> 
-                  <ul class="tabs bottomtabs" data-tab role="tablist">   
-                    <li class="tab-title disabled  kk_aj_verifystep2">
-                        <a href="#panel2-2" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-2" rel="2" class="button success kk_aj_btn_before_step2">Föregående steg - Arrangemang</a>                         
+                  <ul class="tabs bottomtabs"  role="tablist">   
+                    <li class="tab-title disabled kk_aj_verifystep2">
+                        <a href="#addarrtab-2" role="tab" tabindex="0" aria-selected="true" aria-controls="addarrtab-2" rel="2" class="button success kk_aj_btn_to_step2">Föregående steg - Arrangemang</a>                         
                     </li>                 
-                    <li class="tab-title disabled  kk_aj_verifystep3">
-                        <a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-4" rel="4" class="button right kk_aj_btn_next_step" rel="4" >Nästa steg - Skicka in</a>                          
+                    <li class="tab-title kk_aj_verifystep3">
+                        <a href="#addarrtab-4" role="tab" tabindex="0" aria-selected="false" aria-controls="addarrtab-4" rel="4" class="button right kk_aj_btn_next_step" rel="4" >Nästa steg - Skicka in</a>                          
                     </li>
                   </ul>
               </div>
@@ -704,18 +704,18 @@
 
           </section>
             <!-- Tab4 section STARTAR -->
-          <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4">
+          <section role="tabpanel" aria-hidden="true" class="content" id="addarrtab-4">
             <h2>Fourth panel content goes here...</h2>
               <div class="row formfooter">
               <div class="small-12 medium-3 columns">                      
               </div>
               <div class="small-12 medium-9 columns"> 
-                  <ul class="tabs bottomtabs" data-tab role="tablist">   
-                    <li class="tab-title disabled  kk_aj_verifystep4">
-                        <a href="#panel2-3" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-3" rel="4" class="button success  kk_aj_btn_before_step3">Skicka in</a>                         
+                  <ul class="tabs bottomtabs"  role="tablist">   
+                    <li class="tab-title disabled kk_aj_verifystep4">
+                        <a href="#addarrtab-3" role="tab" tabindex="0" aria-selected="true" aria-controls="addarrtab-3" rel="4" class="button success  kk_aj_btn_before_step3">Skicka in</a>                         
                     </li>                 
                     <li class="tab-title disabled  kk_aj_AvbrytSteps">
-                        <a href="#panel2-1" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-1" rel="1" class="button success right kk_aj_btn_before_step1">Avbryt</a>                          
+                        <a href="#addarrtab-1" role="tab" tabindex="0" aria-selected="false" aria-controls="addarrtab-1" rel="1" class="button success right kk_aj_btn_before_step1">Avbryt</a>                          
                     </li>
                   </ul>
               </div>
