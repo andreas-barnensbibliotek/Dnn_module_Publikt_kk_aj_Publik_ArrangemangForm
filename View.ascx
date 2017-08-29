@@ -451,7 +451,7 @@
                                 </fieldset>
                             </div>                            
                         </div>
-
+       
                         <!-- Lokal block START -->
                         <div class="row" >
                             <div class="large-8 columns">
@@ -562,8 +562,109 @@
                                         <textarea id="arr_resorovrigt" rel="36" placeholder="Övrigt om kostnad"></textarea>
                                     </label>
                                 </fieldset>
+
+
                             </div>                            
-                        </div>                     
+                        </div>      
+                        
+                        <!-- Exempel block START -->
+                         <div class="row">
+                            <div class="small-12 large-8 columns">
+                                <fieldset>
+                                    <legend>Lägg till Exempel</legend>
+                                    <ul class="button-group">
+                                      <li><a href="#" class="kk_aj_btnnyutovare button">Lägg till exempel</a></li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                          </div>   
+                         <div class="row arrExempel" >
+                            <div class="small-12  large-8 columns">                                
+                                 <fieldset>
+                                    <legend>Exempel</legend>
+                                      <div class="row" >  
+                                        <div class="medium-4 columns">
+                                            <img src="https://www2.visitumea.se/sv//Content/img/missingimage.jpg" />
+                                            <label>Bildurl 
+                                                <input  class="arr_Exempelbild" type="text" placeholder="Presentationsbild" />
+                                            </label>
+                                            <small class="error kk_aj_search_utovarePostnr_error">Du måste fylla i ett gilltigt postnummer.</small>                                            
+                                        </div>
+                                        <div class="medium-8 columns">
+                                            <label>Rubrik
+                                                <input class="arr_ExempelRubrik" type="text" placeholder="Rubrik"/>
+                                            </label>
+                                            <label>Beskrivning
+                                                <textarea class="arr_Exempelbeskrivning" placeholder="Beskrivning"></textarea>
+                                            </label>
+                                             <label>Url
+                                                <input class="arr_ExempelUrl" type="text" placeholder="Alttext"/>
+                                            </label>
+                                         </div>
+                                     </div>                                     
+                                </fieldset>
+                            </div>                            
+                        </div>
+                          <div class="row" >
+                            <div class="small-12 large-8 columns">
+                                <ul class="arrExempellist">
+                                    <li>
+                                        <div class="row">
+                                            <div class="medium-4 columns">
+                                                <img src="https://www2.visitumea.se/sv//Content/img/missingimage.jpg" />
+                                            </div>
+                                            <div class="medium-8 columns">
+                                                <h2>Brygg ditt eget vin</h2>
+                                                <p>
+                                                   En kurs i hur man på bästa sätt brygger vin. Anvmändning av gammla metoder, aktivt kol, och rostfria bunkar. 
+                                                </p>
+                                                <p>                                                    
+                                                    <a href="#">Länk till hemsidan för hembränning</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="medium-4 columns">
+                                                <img src="https://www2.visitumea.se/sv//Content/img/missingimage.jpg" />
+                                            </div>
+                                            <div class="medium-8 columns">
+                                                <h2>Brygg ditt eget vin</h2>
+                                                <p>
+                                                   En kurs i hur man på bästa sätt brygger vin. Anvmändning av gammla metoder, aktivt kol, och rostfria bunkar. 
+                                                </p>
+                                                <p>                                                    
+                                                    <a href="#">Länk till hemsidan för hembränning</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                            
+                           </div>                
+                           <div class="row" >
+                            <div class="small-12 large-8 columns">
+                                
+                                 <fieldset class="arrExempel">
+                                    <legend>Exempel</legend>
+                                      <div class="row" >  
+                                        <div class="medium-4 columns">
+                                            <img src="https://www2.visitumea.se/sv//Content/img/missingimage.jpg" />
+                                        </div>
+                                        <div class="medium-8 columns">
+                                           <h2>Brygg ditt eget vin</h2>        
+                                            <label>Beskrivning
+                                                En kurs i hur man på bästa sätt brygger vin. Anvmändning av gammla metoder, aktivt kol, och rostfria bunkar.  </label>
+                                             <label>Url
+                                                <a href="#">Länk till hemsidan för hembränning</a>
+                                            </label>
+                                            
+                                        </div>
+                                     </div>                                     
+                                </fieldset>
+                            </div>                            
+                        </div>                 
                     </div>                                    
                 </div>
             </div>
@@ -622,20 +723,46 @@
                                     lorem, molestie laoreet eros commodo nec. Suspendisse potenti. Curab
                                 </p>
                             </div>
-                            <div class="field field-name-field-read-more field-type-node-reference field-label-above field-wrapper">
-                                <div class="field-label">Läs också på Kultur i Väst:&nbsp;</div>
-                                <a href="/kalendarium/kurser-fortbildningar/bibliotekslagen-program-for-lasframjande-litteraturens-varde-och"> Bibliotekslagen, program för läsfrämjande, litteraturens värde och den förändrade bokmarknaden</a>
-                            </div>
-
-                            <ul>
-                                <div class="label-above">Bifoga filer:&nbsp;</div>
-                            <li>
-                                <span class="file">
-                                <img src="/modules/file/icons/application-pdf.png" title="application/pdf" alt="" class="file-icon"> 
-                                <a title="pub2015-04-24-korr2.pdf" type="application/pdf; length=62937" href="http://dev.kulturivast.se.www359.your-server.de/sites/default/files/pub2015-04-24-korr2.pdf">Beskrivning till fältet Välkommen till baren</a></span></li><li><span class="file"><img src="/modules/file/icons/application-pdf.png" title="application/pdf" alt="" class="file-icon"> <a type="application/pdf; length=62937" href="http://dev.kulturivast.se.www359.your-server.de/sites/default/files/pub2015-04-24-korr2_0.pdf">pub2015-04-24-korr2.pdf</a></span></li></ul>
-                            <ul><div class="label-above">Ljud:&nbsp;</div><li><span class="file"><img src="/modules/file/icons/audio-x-generic.png" title="audio/mpeg" alt="" class="file-icon"> <a title="kop_emma_byggnaden.mp3" type="audio/mpeg; length=1273943" href="http://dev.kulturivast.se.www359.your-server.de/sites/default/files/audio/kop_emma_byggnaden_0.mp3">Ljudfilen</a></span></li><li><span class="file"><img src="/modules/file/icons/audio-x-generic.png" title="audio/mpeg" alt="" class="file-icon"> <a title="kop_kajsa_ravin.mp3" type="audio/mpeg; length=250030" href="http://dev.kulturivast.se.www359.your-server.de/sites/default/files/audio/kop_kajsa_ravin_0.mp3">En annan ljudfil</a></span></li></ul>
-                            <ul><div class="label-above">Länk(ar):&nbsp;</div><li><a href="http://www.dn.se">http://www.dn.se</a></li><li><a href="http://monoclick.se">http://monoclick.se</a></li></ul>
-                            <ul><div class="label-above">Läs också på Kultur i Väst:&nbsp;</div><li class="odd"><a href="/kalendarium/kurser-fortbildningar/allt-du-behover-veta-om-konstarterna-0"> ALLT DU BEHÖVER VETA OM KONSTARTERNA</a></li><li class="even"><a href="/konst/2010-02-petra-gunnarsson-hjo-konsthall">2010-02: Petra Gunnarsson - Hjo konsthall</a></li></ul>
+                            
+                           <div class="arrexempelblock" >
+                               <h3 class="label-above">Exempel</h3>
+                               <hr class="style14">
+                               
+                                <ul class="arrExempellist">
+                                    <li>
+                                        <div class="row">
+                                            <div class="medium-4 columns">
+                                                <iframe src="https://www.youtube.com/embed/CyR87NV1Y20" frameborder="0" width="198" height="131" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="medium-8 columns">
+                                                <h2>Fallen Ängel -Octolab</h2>
+                                                <p>
+                                                   En kurs i hur man på bästa sätt brygger vin. Anvmändning av gammla metoder, aktivt kol, och rostfria bunkar. 
+                                                </p>
+                                                <p>                                                    
+                                                    <a href="#">Länk till hemsidan för hembränning</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="medium-4 columns">
+                                                <img src="https://www2.visitumea.se/sv//Content/img/missingimage.jpg" />
+                                            </div>
+                                            <div class="medium-8 columns">
+                                                <h2>Brygg ditt eget vin</h2>
+                                                <p>
+                                                   En kurs i hur man på bästa sätt brygger vin. Anvmändning av gammla metoder, aktivt kol, och rostfria bunkar. 
+                                                </p>
+                                                <p>                                                    
+                                                    <a href="#">Länk till hemsidan för hembränning</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                           </div>  
 
                         </div>
                         <div class="medium-4 columns">
