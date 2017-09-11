@@ -58,10 +58,11 @@
                       <div class="row">
                         <div class="large-8 columns">
                             <fieldset>
-                                <legend>Jag skickar in för förstagången</legend>
+                                <legend>Fyll i info om utövare/aktör/grupp</legend>
+                                <label>Har du varit med i katalogen tidigare använd Tidigare aktör/utövare</label>
                                 <ul class="button-group">
-                                  <li><a href="#" class="kk_aj_btnnyutovare button">Ny arrangör</a></li>
-                                  <li><a href="#" class="kk_aj_btnbefintligutovare button secondary">Tidigare arrangör</a></li>  
+                                  <li><a href="#" class="kk_aj_btnnyutovare button">Ny aktör/utövare</a></li>
+                                  <li><a href="#" class="kk_aj_btnbefintligutovare button secondary">Tidigare aktör/utövare</a></li>  
                                 </ul>
                             </fieldset>
                         </div>
@@ -71,18 +72,18 @@
                       <div class="kk_aj_form_befintligutovare">
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>Ange epostadress
-                                <input class="kk_aj_search_utovareEpost" type="text" placeholder="Epostadress" required pattern="[a-zA-Z]+" />
+                              <label>E-postadress
+                                <input class="kk_aj_search_utovareEpost" type="text" placeholder="Om du/ni varit med tidigare - ange e-postadress som aktör/utövare/grupp" required pattern="[a-zA-Z]+" />
                               </label>
-                                <small class="error kk_aj_search_utovareEpost_error">Det måste vara en epostadress.</small>
+                                <small class="error kk_aj_search_utovareEpost_error">Vänligen fyll i en giltig e-postadress för aktör/utövare/grupp</small>
                             </div>
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Ange postnummer
-                                <input class="kk_aj_search_utovarePostnr" type="text" placeholder="Postnummer" />
+                                <input class="kk_aj_search_utovarePostnr" type="text" placeholder="Ange postnummer för aktör/utövare/grupp enligt exempel 142 42" />
                               </label>
-                                <small class="error kk_aj_search_utovarePostnr_error">Du måste fylla i ett gilltigt postnummer.</small>
+                                <small class="error kk_aj_search_utovarePostnr_error">Vänligen fyll i ett giltigt postnummer för aktör/utövare/grupp</small>
                             
                             </div>                            
                         </div>
@@ -98,57 +99,56 @@
                         <%--<div class="row" >
                             <div class="large-8 columns">
                               <label>Namn på utövare
-                                <input id="utovare_namn" type="text" placeholder="Namn på utövare"/>
+                                <input id="utovare_namn" type="text" placeholder="Namn på utövare/aktör/grupp"/>
                               </label>
                                 <small class="error utovare_namn_error">Du måste fylla i ett namn på utövaren.</small>
                             </div>
                         </div>--%>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>Organisation
-                                <input id="utovare_organisation" type="text" placeholder="Organisation" />
+                              <label>Namn på utövare/aktör/grupp
+                                <input id="utovare_aktor_grupp" type="text" placeholder="Namn på utövare/aktör/grupp som utför arrangemanget" />
                               </label>
-                                <small class="error utovare_organisation_error">Du måste fylla i ett namn på organisationen eller utövaren.</small>
+                                <small class="error utovare_aktor_grupp_error">Vänligen fyll i ett namn på utövare/aktör/grupp som utför arrangemanget</small>
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>Organisationens hemsida
-                                <input id="utovare_orghemsida" type="text" placeholder="Organisationens hemsida" />
+                              <label>Utövare/aktör/grupp hemsida
+                                <input id="utovare_orghemsida" type="text" placeholder="Ange ev URL till arrangemangets el utövaren-/aktören-/gruppens hemsida" />
                               </label>
-                                <small class="error utovare_orghemsida_error">Du måste fylla i organisationens hemsida.</small>                            
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Adress
-                                <input id="utovare_adress" type="text" placeholder="Adress" />
+                                <input id="utovare_adress" type="text" placeholder="Adress för utövare/aktör/grupp" />
                               </label>
-                                <small class="error utovare_adress_error">Du måste fylla i ett namn på organisationen eller utövaren.</small> 
+                                <small class="error utovare_adress_error">Vänligen fyll i en adress för utövare/aktör/grupp</small> 
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Postnummer
-                                <input id="utovare_postnummer" type="text" placeholder="Postnummer" />
+                                <input id="utovare_postnummer" type="text" placeholder="Postnummer för utövare/aktör/grupp" />
                               </label>
-                                <small class="error utovare_postnummer_error">Du måste fylla i ett namn på organisationen eller utövaren.</small>                             
+                                <small class="error utovare_postnummer_error">Vänligen fyll i ett postnummer för utövare/aktör/grupp</small>                             
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Ort
-                                <input id="utovare_ort" type="text" placeholder="Ort" />
+                                <input id="utovare_ort" type="text" placeholder="Ort för utövare/aktör/grupp" />
                               </label>
-                                <small class="error utovare_ort_error">Du måste fylla i ett ortsnamn.</small>                             
+                                <small class="error utovare_ort_error">Vänligen fyll i ett ortsnamn för utövare/aktör/grupp</small>                             
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Kommun
-                                <input id="utovare_kommun" type="text" placeholder="Kommun" />
+                                <input id="utovare_kommun" type="text" placeholder="Ange kommunens namn" />
                               </label>
-                                <small class="error utovare_kommun_error">Du måste fylla i Kommunens namn.</small>                             
+                                <small class="error utovare_kommun_error">Vänligen fyll i kommunens namn</small>                             
                             </div>                            
                         </div>
                         <div class="row" >
@@ -156,21 +156,21 @@
                                 <fieldset class="utovareadressblock">
                                     <legend>Kontaktperson</legend>
                                     <label>Kontaktperson - Förnamn
-                                        <input id="utovare_fornamn" type="text" placeholder="Förnamn" />
+                                        <input id="utovare_fornamn" type="text" placeholder="Ange kontaktpersonens förnamn" />
                                     </label>
-                                    <small class="error utovare_kommun_error">Du måste fylla i Kontaktperson - Förnamn.</small>    
+                                    <small class="error utovare_fornamn_error">Vänligen fyll i Kontaktpersonens förnamn</small>    
                                                                                          
                                     <label>Kontaktperson - Efternamn
-                                        <input id="utovare_efternamn" type="text" placeholder="Efternamn" />
-                                        <small class="error utovare_kommun_error">Du måste fylla i Kontaktperson - Efternamn.</small>                            
+                                        <input id="utovare_efternamn" type="text" placeholder="Ange kontaktpersonens efternamn" />
+                                        <small class="error utovare_efternamn_error">Vänligen fyll i kontaktpersonens efternamn</small>                            
                                     </label>
                                     <label>Telefonnummer
-                                        <input id="utovare_telefonnr" type="text" placeholder="Telefonnummer" />
-                                        <small class="error utovare_kommun_error">Du måste fylla i Telefonnummer.</small>                            
+                                        <input id="utovare_telefonnr" type="text" placeholder="Ange kontaktpersonens telnr - INGA streck mellan siffror & telefonnummer" />
+                                        <small class="error utovare_telefonnr_error">Vänligen fyll i kontaktpersonens telefonnummer</small>                            
                                     </label>
-                                    <label>Epostadress
-                                        <input id="utovare_epost" type="text" placeholder="Epostadress" />
-                                        <small class="error utovare_kommun_error">Du måste fylla i Epostadress.</small>                             
+                                    <label>E-postadress
+                                        <input id="utovare_epost" type="text" placeholder="Ange kontaktpersonens e-postadress" />
+                                        <small class="error utovare_epost_error">Vänligen fyll i kontaktpersonens e-postadress</small>                             
                                     </label>
                                 </fieldset> 
                             </div>                            
@@ -346,26 +346,34 @@
                       <!-- Befintligutövare sök kontaktuppgifter block START -->
                       <div class="kk_aj_form_Arrangemang">
                         <div class="row" >
-                            <div class="large-8 columns">
-                                <fieldset class="arrBeskrivning">
+                            <div class="large-8 columns"> <fieldset class="arrBeskrivning">
                                     <legend>Beskrivning</legend>
 
                                     <label>Rubrik
-                                        <input id="arr_rubrik" type="text" placeholder="Rubrik eller namn på arrangemanget" />
+                                        <input id="arr_rubrik" type="text" rel="41" placeholder="Fyll i rubrik eller namn på arrangemanget" />
                                     </label>
-                                    <small class="error arr_rubrik_error">Du måste fylla i en rubrik.</small>                                            
-                                        
+                                        <small class="error arr_rubrik_error">Vänligen fyll i en rubrik på arrangemanget</small>                                   
+         
                                     <label>Underrubrik
-                                        <input id="arr_underrubrik" type="text" placeholder="Underrubrik" />
+                                        <input id="arr_underrubrik" type="text" rel="42" placeholder="Fyll i underrubrik på arrangemanget" />
                                     </label>
+                                        <small class="error arr_underrubrik_error">Vänligen fyll i en underrubrik</small>  
+
                                     <label>Presentation
-                                        <textarea id="arr_presentation" placeholder="Beskriv ditt arrangemang"></textarea>
+                                        <textarea id="arr_presentation" rel="43" placeholder="Beskrivande text om arrangemanget. Försök att inte använda mer än 700 tecken."></textarea>
                                     </label>
+                                        <small class="error arr_presentation_error">Vänligen fyll i en beskrivning av ditt arrangemang</small>  
+
+                                    <label>Antal medverkande
+                                        <input id="arr_antalmedverkande" rel="2" type="text" placeholder="Fyll i antal medverkande på arrangemanget i siffror" />
+                                    </label>
+                                        <small class="error arr_underrubrik_error">Vänligen fyll i antal medverkande i siffror</small>
+
                                     <label>Lärarmaterial ingår</label>
-                                      <input type="radio" name="arr_laromedel" value="ja" id="arr_laromedelingarja"><label for="arr_laromedelingarja">Ja, Lärarmaterial ingår</label>
-                                      <input type="radio" name="arr_laromedel" value="nej" id="arr_laromedelingarnej"><label for="arr_laromedelingarnej">Nej, Lärarmaterial ingår inte</label>
+                                      <input type="radio" name="arr_laromedel" rel="25" value="ja" id="arr_laromedelingarja"><label for="arr_laromedelingarja">Ja, Lärarmaterial ingår</label>
+                                      <input type="radio" name="arr_laromedel" rel="25" value="nej" checked="checked" id="arr_laromedelingarnej"><label for="arr_laromedelingarnej">Nej, Lärarmaterial ingår inte</label>
     
-                                </fieldset>      
+                                </fieldset>     
                             </div>
                         </div>
                        <!-- PressentationsBILD block START -->
@@ -380,74 +388,33 @@
                                         </div>
                                         <div class="small-8 columns">
                                             <label>Presentationsbild 
-                                                <input id="arr_presentationsbild" class="arr_presentationsbild" type="file" placeholder="Presentationsbild" />
+                                                <input id="arr_presentationsbild" class="arr_presentationsbild" type="file" rel="44" placeholder="Presentationsbild bör laddas upp i högupplöst format (max 5 MB) eftersom bilden skall användas i tryck. Tillåtna format är JPG (JPEG), GIF och PNG. Lämpligt format är 4/3 eller 3/4
+OBS! Bildfilerna får BARA innehålla följande tecken "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_." i namnen." />
                                             </label>
-                                            <small class="error kk_aj_search_utovarePostnr_error">Du måste fylla i ett gilltigt postnummer.</small>                                            
+                                            <small class="error arr_presentationsbild_error">Vänligen välj en presentationsbild</small>                                            
                                         </div>
                                      </div>
                                      <div class="row" >
                                         <div class="large-6 columns">
                                             <label>Alternativtext
-                                                <input id="arr_altfoto" type="text" placeholder="Alttext"/>
+                                                <input id="arr_altfoto" type="text" rel="45" placeholder="Alttext - kort beskrivning av bilden"/>
                                             </label>
+                                                <small class="error arr_altfoto_error">Vänligen fyll i alternativtext</small>
                                         </div>
                                         <div class="large-6 columns">
                                             <label>Filstorlek
-                                                <input id="arr_sizefoto" type="text" placeholder="Filstorlek"/>
+                                                <input id="arr_sizefoto" type="text" rel="46" placeholder="Filstorlek"/>
                                             </label>
                                         </div>
                                     </div>
                                      <div class="row" >
                                         <div class="large-12 columns">
                                             <label>Fotograf
-                                                <input id="arr_fotograf" type="text" placeholder="Fotograf"/>
+                                                <input id="arr_fotograf" type="text" aria-relevant="47" placeholder="Ange fotograf till bilden ovan"/>
+                                                    <small class="error arr_fotograf_error">Vänligen fyll i fotograf</small>
                                             </label>
                                         </div>
                                     </div>
-                                </fieldset>
-                            </div>                            
-                        </div>
-
-                         <!-- PressentationsFILM block START -->
-                        <div class="row" >
-                            <div class="large-8 columns">
-                                <fieldset class="arrpressentationsfilm">
-                                    <legend>Presentationsfilm</legend>                                                                            
-                                     
-                                     <div class="row" >
-                                        <div class="large-6 columns">
-                                            <label>Filmnamn
-                                                <input id="arr_mediaalt" type="text" placeholder="Filmens namn"/>
-                                            </label>
-                                        </div>
-                                        <div class="large-6 columns">
-                                            <label>Längd
-                                                <input id="arr_MediaSize" type="text" placeholder="Filmens längd"/>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <img id="arr_MediapreviewSrc" src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/filmclip.jpg" />
-                                    <div class="row" >
-                                        <div class="large-12 columns">
-                                            <label>Presentationsfilm </label>
-                                                 <div class="row collapse">
-                                                    <div class="small-3 large-2 columns">
-                                                      <span class="prefix">url:</span>
-                                                    </div>
-                                                    <div class="small-9 large-10 columns">
-                                                      <input class="arr_MediaUrl" type="text" placeholder="Presentationsfilm, url till youtube">
-                                                   </div>
-                                                </div>  
-                                            <small style="display:none;" class="error kk_aj_search_utovarePostnr_error">Du måste fylla i ett gilltigt postnummer.</small>
-                                        </div>
-                                    </div>
-                                    <div class="row" >
-                                        <div class="large-12 columns">
-                                            <label>Filmare
-                                                <input id="arr_MediaFoto" type="text" placeholder="Filmare"/>
-                                            </label>
-                                        </div>
-                                     </div>
                                 </fieldset>
                             </div>                            
                         </div>
@@ -458,43 +425,48 @@
                                 <fieldset class="arr_lokal">
                                     <legend>Lokal</legend>                                       
                                     <label for="formBuildTimeId">Byggtid (min)</label>				                    
-                                    <input type="text" id="formBuildTimeId" name="formBuildTime" rel="10" value="" class="textField">
-                                    <small class="error utovare_namn_error">Du måste fylla i ett namn på utövaren.</small>
+                                    <input type="text" id="formBuildTimeId" name="formBuildTime" rel="10" value="" class="textField" placeholder="Ange uppskattad byggtid i minuter, dvs föreställningens förberedelsetid">
+                                    <small class="error arr_buildtime_error">Vänligen fyll i byggtid i minuter. Använd enbart siffror!</small>
                             
                                     <label for="formDemolishTimeId">Rivtid (min)</label>
-				                    <input type="text" id="formDemolishTimeId" name="formDemolishTime" rel="11" value="" class="textField">
-				                    <small class="error utovare_namn_error">Du måste fylla i ett namn på utövaren.</small>
-                            
-                                    <label for="formVenueWidthId">Bredd på scen</label>
-				                    <input type="text" id="formVenueWidthId" name="formVenueWidth" rel="12" value="" class="textField">
-				                    <small class="error utovare_namn_error">Du måste fylla i ett namn på utövaren.</small>
-                            
-                                    <label for="formVenueDepthId">Djup på scen</label>
-				                    <input type="text" id="formVenueDepthId" name="formVenueDepth" rel="13" value="" class="textField">
-				                    <label for="formVenueHeightId">Takhöjd över scen</label>				                    
-                                    <input type="text" id="formVenueHeightId" name="formVenueHeight" rel="14" value="" class="textField">
-                                    <label for="formVenueSoundId">Ljud</label>
-				                    <select id="formVenueSoundId" name="formSound" rel="34" class="selectField">
-				                        <option value=""></option>
-					                    <option value="Befintligt">Befintligt</option>
-                                        <option value="Tar med eget/Ingår">Tar med eget/Ingår</option>
-                                        <option value="Behövs ej">Behövs ej</option>
-				                    </select>
+				                    <input type="text" id="formDemolishTimeId" name="formDemolishTime" rel="11" value="" class="textField" placeholder="Enbart siffror! Ange uppskattad rivtid i minuter"> 
+                                    <small class="error arr_demolishtime_error">Vänligen fyll i rivtid i minuter. Använd enbart siffror!</small>              
+ 
+                                    <label for="formVenueWidthId">Bredd på scen (meter)</label>
+				                    <input type="text" id="formVenueWidthId" name="formVenueWidth" rel="12" value="" class="textField" placeholder="Enbart siffror! Ange uppskattad bredd på scen i meter">
+				                    <small class="error VenueWidth_error">Vänligen ange bredd på scen i meter. Använd enbart siffror!</small>
 
-                                    <label for="formVenueLightId">Ljus</label>
-				                    <select id="formVenueLightId" name="formVenueLight" rel="15" class="selectField">
-				                        <option value=""></option>
-					                    <option value="Befintligt">Befintligt</option>
-                                        <option value="Tar med eget/Ingår">Tar med eget/Ingår</option>
-                                        <option value="Behövs ej">Behövs ej</option>
-				                    </select>	
-                                    <label for="formBlackoutId">Mörkläggning krävs</label>
-				                    <select id="formBlackoutId" name="formBlackout" rel="33" class="selectField">
-				                        <option value=""></option>
-					                    <option value="Nej">Nej</option>
-                                        <option value="Ja helst">Ja helst</option>
-                                        <option value="Ja nödvändigt">Ja nödvändigt</option>
-				                    </select>	
+                                    <label for="formVenueDepthId">Djup på scen (meter)</label>
+				                    <input type="text" id="formVenueDepthId" name="formVenueDepth" rel="13" value="" class="textField" placeholder="Enbart siffror! Ange vilket scendjup arrangemanget kräver i meter">
+                                    <small class="error arr_venuedepth_error">Vänligen ange djup på scen i meter. Använd enbart siffror!</small>
+
+				                    <label for="formVenueHeightId">Takhöjd över scen (meter)</label>				                    
+                                    <input type="text" id="formVenueHeightId" name="formVenueHeight" rel="14" value="" class="textField" placeholder="Enbart siffror! Ange vilken takhöjd arrangemanget kräver i meter">
+                             
+                                    <label>Ljud</label>
+                                      <input type="radio" name="arr_ljud" rel="34" value="Befintligt" id="arr_ljudbefintligt
+                                          
+                                        "><label for="arr_ljudbefintligt">Befintligt</label>
+
+                                      <input type="radio" name="arr_ljud" rel="34" value="Tar med eget/Ingår" id="arr_ljudingår"><label for="arr_ljudingår">Tar med eget/Ingår</label>
+                                      
+                                      <input type="radio" name="arr_ljud" rel="34" value="Behövs ej" id="arr_ljudbehövsej"><label for="arr_ljudbehövsej">Behövs ej</label>
+                                        <small class="error kk_aj_search_arr_ljud_error">Vänligen fyll i information om ljud</small>
+
+                       
+                                    <label>Ljus</label>
+                                      <input type="radio" name="arr_ljus" rel="15" value="Befintligt" id="arr_ljusbefintligt"><label for="arr_ljusbefintligt">Befintligt</label>
+                                      <input type="radio" name="arr_ljus" rel="15" value="Tar med eget/Ingår" id="arr_ljusingar"><label for="arr_ljusingar">Tar med eget/Ingår</label>
+                                      <input type="radio" name="arr_ljus" rel="15" value="Behövs ej" id="arr_ljusbehovsej"><label for="arr_ljusbehovsej">Behövs ej</label>
+                                        <small class="error kk_aj_search_arr_ljus_error">Vänligen fyll i information om ljus</small>
+
+                                    <label>Mörkläggning krävs</label>
+                                      <input type="radio" name="arr_morklaggning" rel="33" value="Nej" id="arr_morklaggningnej"><label for="arr_morklaggningnej">Nej</label>
+                                      <input type="radio" name="arr_morklaggning" rel="33" value="Ja helst" id="arr_morklaggningja"><label for="arr_morklaggningja">Ja helst</label>
+                                      <input type="radio" name="arr_morklaggning" rel="33" value="Ja nödvändigt" id="arr_morklaggningnodvandigt"><label for="arr_morklaggningnej">Ja nödvändigt</label>
+                                        <small class="error kk_aj_search_arr_morklaggning_error">Vänligen fyll i information om mörkläggning</small>
+
+
                                     <label for="formCarriersId">Bärhjälp behövs</label>
 				                    <select id="formCarriersId" name="formCarriers" rel="16" class="selectField">
 				                        <option value=""></option>
@@ -503,6 +475,8 @@
                                         <option value="Ja (minst 2 personer)">Ja (minst 2 personer)</option>
                                         <option value="Ja (fler än 2 personer)">Ja (fler än 2 personer)</option>
 				                    </select>
+                                    <small class="error kk_aj_search_arr_carriers_error">Vänligen gör val av Bärhjälp</small>
+           
                                     <label for="formElectricityId">El</label>
 				                    <select id="formElectricityId" name="formElectricity" rel="17" class="selectField">
 				                        <option value=""></option>
@@ -511,8 +485,11 @@
                                         <option value="32 A">32 A</option>
                                         <option value="Behövs ej">Behövs ej</option>
 				                    </select>
+                                    <small class="error kk_aj_search_arr_electricity_error">Vänligen gör val av El</small>
+                                    
                                     <label for="formVenueRequiermentsId" >Övriga lokalkrav</label>
-				                    <textarea id="formVenueRequiermentsId" rel="18" name="formVenueRequierments"></textarea>
+				                    <textarea id="formVenueRequiermentsId" rel="18" name="formVenueRequierments" placeholder="Skriv kortfattat! ex rumstemperatur, golvmaterial, scen m.m."></textarea>
+                                       
                                 </fieldset>
                             </div>
                         </div>   
@@ -524,16 +501,22 @@
                                     <legend>Publik</legend>                                                                            
                                     
                                     <label id="labelMaxAudienceId" for="formMaxAudienceId">Max publik</label>
-				                    <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" value="" class="textField">
+				                    <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" value="" class="textField" placeholder="Enbart siffror! Ange max antal personer i publiken">
+                                     
+                                    <label id="labelMaxParticipantsId" for="formMaxParticipantsId">Max antal deltagare</label>
+				                    <input type="text" id="formMaxParticipantsId" name="formMaxParticipants" rel="" value="" class="textField" placeholder="Enbart siffror! Ange max antal deltagare">
                                      
                                     <label for="kk_aj_yearspan">Ålder:</label>
+                                    <label for="kk_aj_yearspan">- ange vilken lägsta och högsta åldern på målgruppen för arrangemanget är. </label>
                                     <div id="kk_aj_slider-range"></div> 
                                     <div id="kk_aj_yearspan"></div>
+                                    <small class="error kk_aj_search_arr_electricity_error">Vänligen gör val av ålder som arrangemanget riktar sig mot</small>
 
                                     <label for="formMaxShowsId" id="labelMaxShowsId">Föreställningar per dag</label>
-				                    <input type="text" id="formMaxShowsId" name="formMaxShows" rel="9" value="" class="textField">
+				                    <input type="text" id="formMaxShowsId" name="formMaxShows" rel="9" value="" class="textField" placeholder="Ange hur många föreställningar som kan ges per dag.">
                                     
-                                    <label for="kk_aj_speltid">speltid (min):</label>
+                                    <label for="kk_aj_speltid">Speltid (min):</label>
+                                    <label for="kk_aj_speltid">- ange hur många minuter en föreställning av arrangemanget pågår</label>
                                     <div id="kk_aj_speltid_range" rel="32"></div> 
                                     <div id="kk_aj_speltid"></div>
                                 </fieldset>
@@ -546,20 +529,23 @@
                                 <fieldset class="arrpublik">
                                     <legend>Ekonomi</legend>                                                                            
                                      <label>Kostnad
-                                        <input id="arr_ekonomikostnad" type="text" rel="10" placeholder="Kostnad" />
+                                        <input id="arr_ekonomikostnad" type="text" rel="10" placeholder="Pris för föreställningen i SEK (enbart siffror). För andra arrangemang använd fältet "Övrigt" nedan" />
                                     </label>                                    
                                     <label>Resor</label>
                                       <input type="radio" name="arr_resor" rel="37" value="Ingår" id="arr_resorja"><label for="arr_resorja">Ingår</label>
+
                                       <input type="radio" name="arr_resor" rel="37" value="Tillkommer" id="arr_resornej"><label for="arr_resornej">Tillkommer</label>
+                                        <small class="error kk_aj_search_arr_resor_error">Vänligen fyll i om resor ingår eller tillkommer</small>
                                     <label>Logi</label>
                                       <input type="radio" name="arr_logi" rel="23" value="Ingår" id="arr_logija"><label for="arr_logija">Ingår</label>
                                       <input type="radio" name="arr_logi" rel="23" value="Tillkommer" id="arr_loginej"><label for="arr_loginej">Tillkommer</label>
+                                        <small class="error kk_aj_search_arr_logi_error">Vänligen fyll i om logi ingår eller tillkommer</small>
                                     <label>Traktamente </label>
                                       <input type="radio" name="arr_Traktamente" rel="24" value="Ingår" id="arr_Traktamenteja"><label for="arr_Traktamenteja">Ingår</label>
                                       <input type="radio" name="arr_Traktamente" rel="24" value="Tillkommer" id="arr_Traktamentenej"><label for="arr_Traktamentenej">Tillkommer</label>
-                                    
+                                    <small class="error kk_aj_search_arr_traktamente_error">Vänligen fyll i om traktamente ingår eller tillkommer</small>
                                     <label>Övrigt
-                                        <textarea id="arr_resorovrigt" rel="36" placeholder="Övrigt om kostnad"></textarea>
+                                        <textarea id="arr_resorovrigt" rel="36" placeholder="Ange övrigt om förutsättningar för resor kring arrangemanget. Resor - ex. Milersättning, anges i kr/mil, Logi - ex. 2 enkelrum eller 1 dubbelrum eller ex. allergiker eller rökare,  Traktamente - ex. - kr/dygn/person"></textarea>
                                     </label>
                                 </fieldset>
 
@@ -588,7 +574,7 @@
                                             <label>Bildurl 
                                                 <input  class="arr_Exempelbild" type="text" placeholder="Presentationsbild" />
                                             </label>
-                                            <small class="error kk_aj_search_utovarePostnr_error">Du måste fylla i ett gilltigt postnummer.</small>                                            
+                                            <small class="error kk_aj_search_utovarePostnr_error">Vänligen fyll i url</small>                                            
                                         </div>
                                         <div class="medium-8 columns">
                                             <label>Rubrik
@@ -696,11 +682,16 @@
                         <h2>Granska</h2>
                     </div>
                 </div>
+                     <p>
+                        Arrangemanget som du nu håller på att skapa kommer att se ut på följande sätt när det publiceras på Kulturkatalogen Västs hemsida.
+                         Om du vill ändra på något kan du gå tillbaka till tidigare steg. 
+                     </p>
               <!-- Artikel START -->
                 <div class="artikelwrapper level1">
                     <div class="row">
 
                         <div class="medium-8 columns artmaincontent">
+
                             <h1>Rubrik</h1>
                             <h2>Underrubrik</h2>
                             <img src="http://www.kulturivast.se/sites/default/files/karlsson_h_0.jpg" />
