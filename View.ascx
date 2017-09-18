@@ -385,14 +385,15 @@
                                     <legend>Presentationsbild</legend>
                                       <div class="row" >  
                                         <div class="small-4 columns">
-                                            <img src="https://www2.visitumea.se/sv//Content/img/missingimage.jpg" />
+                                            <img id="kk_aj_tmpimg" src="https://www2.visitumea.se/sv//Content/img/missingimage.jpg" />
                                         </div>
                                         <div class="small-8 columns">
                                             <label>Presentationsbild</label> 
                                                 <input id="arr_presentationsbild" class="arr_presentationsbild" type="file" rel="44" placeholder="Presentationsbild bör laddas upp i högupplöst format (max 5 MB) eftersom bilden skall användas i tryck. Tillåtna format är JPG (JPEG), GIF och PNG. Lämpligt format är 4/3 eller 3/4
 OBS! Bildfilerna får BARA innehålla följande tecken 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_.' i namnen." />
                                             
-                                            <small class="error arr_presentationsbild_error">Vänligen välj en presentationsbild</small>                                            
+                                            <small class="error arr_presentationsbild_error">Vänligen välj en presentationsbild</small>    
+                                                                              
                                         </div>
                                      </div>
                                      <div class="row" >
@@ -416,6 +417,11 @@ OBS! Bildfilerna får BARA innehålla följande tecken 'abcdefghijklmnopqrstuvwx
                                             
                                         </div>
                                     </div>
+                                      <div class="row" >
+                                        <div class="large-12 columns">
+                                           <button id="kk_aj_laddatmpimg" class="button tiny right">Ladda upp</button>  
+                                        </div>
+                                    </div>   
                                 </fieldset>
                             </div>                            
                         </div>
