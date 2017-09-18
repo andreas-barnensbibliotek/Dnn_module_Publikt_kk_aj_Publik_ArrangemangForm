@@ -350,7 +350,9 @@
                                 <fieldset class="arrBeskrivning">
                                     <legend>Beskrivning</legend>
 
-                                    <label>Rubrik</label>
+                                    <label>Rubrik<a href="#" class="arr_rubrik_info"><i class="fa fa-glass" aria-hidden="true"></i></a></label>
+                                        
+                                        <div class="arr_rubrik_infotext">Vänligen fyll i en rubrik på arrangemanget</div>
                                         <input id="arr_rubrik" type="text" rel="41" placeholder="Fyll i rubrik eller namn på arrangemanget" />
                                     
                                         <small class="error arr_rubrik_error">Vänligen fyll i en rubrik på arrangemanget</small>                                   
@@ -389,8 +391,7 @@
                                         </div>
                                         <div class="small-8 columns">
                                             <label>Presentationsbild</label> 
-                                                <input id="arr_presentationsbild" class="arr_presentationsbild" type="file" rel="44" placeholder="Presentationsbild bör laddas upp i högupplöst format (max 5 MB) eftersom bilden skall användas i tryck. Tillåtna format är JPG (JPEG), GIF och PNG. Lämpligt format är 4/3 eller 3/4
-OBS! Bildfilerna får BARA innehålla följande tecken 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_.' i namnen." />
+                                                <input id="arr_presentationsbild" class="arr_presentationsbild" type="file" rel="44" />
                                             
                                             <small class="error arr_presentationsbild_error">Vänligen välj en presentationsbild</small>    
                                                                               
