@@ -69,7 +69,7 @@
                       </div>
 
                       <!-- Befintligutövare sök kontaktuppgifter block START -->
-                      <div class="kk_aj_form_befintligutovare">
+                      <div class="kk_aj_form_befintligutovare" rel="0">
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>E-postadress</label>
@@ -81,9 +81,15 @@
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Ange postnummer</label>
-                                <input class="kk_aj_search_utovarePostnr" type="text" placeholder="Ange postnummer för aktör/utövare/grupp enligt exempel 142 42" />
+                                <input class="kk_aj_search_utovarePostnr" type="text" class="kk_aj_requireValidation" placeholder="Ange postnummer för aktör/utövare/grupp enligt exempel 142 42" />
                               
                                 <small class="error kk_aj_search_utovarePostnr_error">Vänligen fyll i ett giltigt postnummer för aktör/utövare/grupp</small>
+                            
+                            </div>                            
+                        </div>
+                          <div class="row error kk_aj_search_Nothingtoshow" >
+                            <div class="large-8 columns">                              
+                                <small class="error kk_aj_search_Nothingtoshow_error">Utövaren du söker finns inte registrerad!</small>
                             
                             </div>                            
                         </div>
@@ -107,7 +113,7 @@
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Namn på utövare/aktör/grupp</label>
-                                <input id="utovare_aktor_grupp" type="text" placeholder="Namn på utövare/aktör/grupp som utför arrangemanget" />
+                                <input id="utovare_aktor_grupp" type="text" class="kk_aj_requireValidation_step1" placeholder="Namn på utövare/aktör/grupp som utför arrangemanget" />
                               
                                 <small class="error utovare_aktor_grupp_error">Vänligen fyll i ett namn på utövare/aktör/grupp som utför arrangemanget</small>
                             </div>                            
@@ -122,7 +128,7 @@
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Adress</label>
-                                <input id="utovare_adress" type="text" placeholder="Adress för utövare/aktör/grupp" />
+                                <input id="utovare_adress" type="text" class="kk_aj_requireValidation_step1" placeholder="Adress för utövare/aktör/grupp" />
                               
                                 <small class="error utovare_adress_error">Vänligen fyll i en adress för utövare/aktör/grupp</small> 
                             </div>                            
@@ -130,7 +136,7 @@
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Postnummer</label>
-                                <input id="utovare_postnummer" type="text" placeholder="Postnummer för utövare/aktör/grupp" />
+                                <input id="utovare_postnummer" type="text" class="kk_aj_requireValidation_step1" placeholder="Postnummer för utövare/aktör/grupp" />
                               
                                 <small class="error utovare_postnummer_error">Vänligen fyll i ett postnummer för utövare/aktör/grupp</small>                             
                             </div>                            
@@ -138,7 +144,7 @@
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Ort</label>
-                                <input id="utovare_ort" type="text" placeholder="Ort för utövare/aktör/grupp" />
+                                <input id="utovare_ort" type="text" class="kk_aj_requireValidation_step1" placeholder="Ort för utövare/aktör/grupp" />
                               
                                 <small class="error utovare_ort_error">Vänligen fyll i ett ortsnamn för utövare/aktör/grupp</small>                             
                             </div>                            
@@ -146,7 +152,7 @@
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Kommun</label>
-                                <input id="utovare_kommun" type="text" placeholder="Ange kommunens namn" />
+                                <input id="utovare_kommun" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kommunens namn" />
                               
                                 <small class="error utovare_kommun_error">Vänligen fyll i kommunens namn</small>                             
                             </div>                            
@@ -156,20 +162,20 @@
                                 <fieldset class="utovareadressblock">
                                     <legend>Kontaktperson</legend>
                                     <label>Kontaktperson - Förnamn</label>
-                                        <input id="utovare_fornamn" type="text" placeholder="Ange kontaktpersonens förnamn" />
+                                        <input id="utovare_fornamn" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kontaktpersonens förnamn" />
                                    
                                     <small class="error utovare_fornamn_error">Vänligen fyll i Kontaktpersonens förnamn</small>    
                                                                                          
                                     <label>Kontaktperson - Efternamn </label>
-                                        <input id="utovare_efternamn" type="text" placeholder="Ange kontaktpersonens efternamn" />
+                                        <input id="utovare_efternamn" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kontaktpersonens efternamn" />
                                         <small class="error utovare_efternamn_error">Vänligen fyll i kontaktpersonens efternamn</small>                            
                                     
                                     <label>Telefonnummer</label>
-                                        <input id="utovare_telefonnr" type="text" placeholder="Ange kontaktpersonens telnr - INGA streck mellan siffror & telefonnummer" />
+                                        <input id="utovare_telefonnr" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kontaktpersonens telnr - INGA streck mellan siffror & telefonnummer" />
                                         <small class="error utovare_telefonnr_error">Vänligen fyll i kontaktpersonens telefonnummer</small>                            
                                     
                                     <label>E-postadress</label>
-                                        <input id="utovare_epost" type="text" placeholder="Ange kontaktpersonens e-postadress" />
+                                        <input id="utovare_epost" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kontaktpersonens e-postadress" />
                                         <small class="error utovare_epost_error">Vänligen fyll i kontaktpersonens e-postadress</small>                             
                                     
                                 </fieldset> 
@@ -219,7 +225,7 @@
                       <div class="row">
                         <div class="large-8 columns">
                             <fieldset>
-                                <legend>Välj typ av arrangemang</legend>
+                                <legend>Välj typ av arrangemang</legend>                               
                                 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 ArrangemangtypBlock">
                                   <li>
                                     <label>
@@ -259,6 +265,7 @@
                                   </li>
                                 </ul>
                             </fieldset>
+                             <small class="error arr_radioValArrtyp_error">Du måste välja konstform</small>   
                         </div>
                       </div>
                       <!-- Välj KONSTFORM Radio block START -->
@@ -266,6 +273,7 @@
                         <div class="large-8 columns">
                             <fieldset>
                                 <legend>Välj konstform</legend>
+                                                                        
                                 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 kontformBlock">
                                   <li>
                                     <label>
@@ -341,6 +349,7 @@
                                   </li>
                                 </ul>
                             </fieldset>
+                             <small class="error arr_radioValkontstform_error">Du måste välja konstform</small>   
                         </div>
                       </div>
                       <!-- Befintligutövare sök kontaktuppgifter block START -->
@@ -351,25 +360,21 @@
                                     <legend>Beskrivning</legend>
 
                                     <label>Rubrik<a href="#" class="arr_rubrik_info"><i class="fa fa-glass" aria-hidden="true"></i></a></label>
-                                        
+                                       
                                         <div class="arr_rubrik_infotext">Vänligen fyll i en rubrik på arrangemanget</div>
-                                        <input id="arr_rubrik" type="text" rel="41" placeholder="Fyll i rubrik eller namn på arrangemanget" />
-                                    
+                                        <input id="arr_rubrik" type="text" class="kk_aj_requireValidation_step2" rel="41" placeholder="Fyll i rubrik eller namn på arrangemanget" />
                                         <small class="error arr_rubrik_error">Vänligen fyll i en rubrik på arrangemanget</small>                                   
          
                                     <label>Underrubrik</label>
-                                        <input id="arr_underrubrik" type="text" rel="42" placeholder="Fyll i underrubrik på arrangemanget" />
-                                    
+                                        <input id="arr_underrubrik" type="text" class="kk_aj_requireValidation_step2" rel="42" placeholder="Fyll i underrubrik på arrangemanget" />
                                         <small class="error arr_underrubrik_error">Vänligen fyll i en underrubrik</small>  
 
                                     <label>Presentation</label>
                                         <textarea id="arr_presentation" rel="43" placeholder="Beskrivande text om arrangemanget. Försök att inte använda mer än 700 tecken."></textarea>
-                                    
                                         <small class="error arr_presentation_error">Vänligen fyll i en beskrivning av ditt arrangemang</small>  
 
                                     <label>Antal medverkande</label>
-                                        <input id="arr_antalmedverkande" rel="2" type="text" class="kk_aj_Fakta"  placeholder="Fyll i antal medverkande på arrangemanget i siffror" />
-                                    
+                                        <input id="arr_antalmedverkande" rel="2" type="text" class="kk_aj_requireValidation_step2" class="kk_aj_Fakta"  placeholder="Fyll i antal medverkande på arrangemanget i siffror" />
                                         <small class="error arr_underrubrik_error">Vänligen fyll i antal medverkande i siffror</small>
 
                                     <label>Lärarmaterial ingår</label>
@@ -424,6 +429,8 @@
                                         </div>
                                     </div>   
                                 </fieldset>
+                                <small class="error arrpressentationbild_error">Vänligen fyll i uppgifterna för presentationsbilden</small>
+
                             </div>                            
                         </div>
        
@@ -657,81 +664,216 @@
 
                         <div class="medium-8 columns artmaincontent">
 
-                            <h1>Rubrik</h1>
-                            <h2>Underrubrik</h2>
-                            <img src="http://www.kulturivast.se/sites/default/files/karlsson_h_0.jpg" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis interdum nunc non ornare. Curabitur nec felis at nulla rutrum sollicitudin eget nec leo.
-                                Aenean enim lectus, luctus id ultricies eget, blandit non tellus. Vestibulum ultrices, mi in interdum eleifend,
-                                enim felis auctor ligula, eget malesuada dolor dolor sed purus.
-                            </p>
+                            <h1 class="granska_rubrik">Rubrik</h1>
+                            
+                            
                             <div class="field field-name-field-artikelbild field-type-image field-label-hidden field-wrapper">
-                                <img src="public/images/terrie_odabi_0.jpg" alt="" height="237" width="698">
+                                <img class="granska_pressentationsbild" src="http://www.kulturivast.se/sites/default/files/karlsson_h_0.jpg" />                           
+                                <div class="row">
+                                    <div class="medium-12 columns arrmainfoto"><span>Foto: </span> Nisse Hult</div>                                    
+                                </div>
                             </div>
-                            <p>Vivamus lacus ligula, auctor quis eros vitae, convallis blandit erat. Morbi varius malesuada lorem, molestie laoreet eros commodo nec. Suspendisse potenti. Curabitur malesuada ullamcorper cursus.</p>
-
+                            <h2 class="granska_underrubrik">Underrubrik</h2>
                             <div class="body field">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis interdum nunc non ornare.
-                                    Curabitur nec felis at nulla rutrum sollicitudin eget nec leo. Aenean enim lectus, luctus id ultricies
-                                    eget, blandit non tellus. Vestibulum ultrices, mi in interdum eleifend, enim felis auctor ligula, eget malesuada
-                                    dolor dolor sed purus. Vivamus lacus ligula, auctor quis eros vitae, convallis blandit erat. Morbi varius malesuada
-                                    lorem, molestie laoreet eros commodo nec. Suspendisse potenti. Curab
-                                </p>
+                                <div class="granska_innehall">                            
+                                </div>
                             </div>
                             
-                           <div class="arrexempelblock" >
+                           <div class="arrexempelblock granska_exempel" >
                                <h3 class="label-above">Exempel</h3>
-                               <hr class="style14">
-                              
-                                <ul class="arrExempellist">
-                                    
+                               <hr class="linje">                              
+                                <ul class="arrExempellist">                                    
                                 </ul>
                            </div>  
 
                         </div>
                         <div class="medium-4 columns">
-                            <div class="artikelFakta artsidecontainer">
-                                <h3>Fakta</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla ligula nec tortor semper, quis commodo risus maximus. Maecenas viverra ante non elit scelerisque, eu ultricies felis elementum. </p>
-                                <p>Aliquam erat volutpat. Donec ut erat in elit laoreet fringilla ut eget nisl. Sed vulputate volutpat condimentum.</p>
+                            <div class="granskaFaktaMainblock">
+                                <div class="artsidecontainer granska_Fakta_mainblock">
+                                    <h3>Fakta</h3>                                
+                                    <div class="row">
+                                        <div class="small-12 medium-6 columns faktalabel">     
+                                            Arrangörsstöd
+                                        </div>
+                                        <div class="small-12 medium-6 columns">     
+                                            Arrangören betalar 50%
+                                        </div>
+                                    </div>     
+                                </div>
+                                <div class="artsidecontainer granska_lokal_mainblock">
+                                    <h3>Lokal</h3>
+                                    <div class="row">
+                                        <div class="small-12 medium-6 columns faktalabel">     
+                                            Arrangörsstöd
+                                        </div>
+                                        <div class="small-12 medium-6 columns">     
+                                            Arrangören betalar 50%
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="artsidecontainer granska_Publik_mainblock">
+                                    <h3>Publik</h3>
+                                    <div class="row">
+                                        <div class="small-12 medium-6 columns faktalabel">     
+                                            Arrangörsstöd
+                                        </div>
+                                        <div class="small-12 medium-7 columns">     
+                                            Arrangören betalar 50%
+                                        </div>
+                                    </div>        
+                                    
+                                </div>
+                                <div class="artsidecontainer granska_Ekonomi_mainblock">
+                                    <h3>Ekonomi</h3>
+                                    <div class="row">
+                                        <div class="small-12 medium-5 columns faktalabel">     
+                                            Arrangörsstöd
+                                        </div>
+                                        <div class="small-12 medium-7 columns">     
+                                            Arrangören betalar 50%
+                                        </div>
+                                    </div>       
+                                    
+                                </div>
                             </div>
-                            <div class="artikelanmallan artsidecontainer">
-                                <a href="#" class="button success">Anmäl dej här</a>
+                            <div class="artsidecontainer granska_Kontakt_mainblock">
+                                <h3>Kontakt</h3>                                             
+                                <div class="row granska_Utovare_Organisation_block">
+                                    <div class="small-12 medium-5 columns faktalabel">     
+                                        Organisation
+                                    </div>
+                                    <div class="small-12 medium-7 columns">     
+                                        <span class="granska_Utovare_Organisation">testorg</span>
+                                    </div>
+                                </div>
+                                <div class="row granska_Utovare_namn_block">
+                                    <div class="small-12 medium-5 columns faktalabel">     
+                                        Kontaktperson
+                                    </div>
+                                    <div class="small-12 medium-7 columns">     
+                                        <span class="granska_Utovare_namn">Andreas Josefsson</span>
+                                    </div>
+                                </div>
+                                <div class="row granska_Utovare_Adress_block">
+                                    <div class="small-12 medium-5 columns faktalabel">     
+                                        Adress
+                                    </div>
+                                    <div class="small-12 medium-7 columns">     
+                                        <span class="granska_Utovare_Adress">Sturegatan 12</span>
+                                    </div>
+                                </div>
+                                    <div class="row granska_Utovare_postort_block">
+                                    <div class="small-12 medium-5 columns faktalabel">     
+                                        Postort
+                                    </div>
+                                    <div class="small-12 medium-7 columns">     
+                                        <span class="granska_Utovare_postort">534 90 Ulricehamn</span>
+                                    </div>
+                                </div>                                          
+                                <div class="row granska_Utovare_tfn_block">
+                                    <div class="small-12 medium-5 columns faktalabel">     
+                                        Telefon
+                                    </div>
+                                    <div class="small-12 medium-7 columns">     
+                                        <span class="granska_Utovare_tfn">070- 18 32 15</span>
+                                    </div>
+                                </div>
+                                <div class="row granska_Utovare_epost_block">
+                                    <div class="small-12 medium-12 columns faktalabel">     
+                                        E-post
+                                    </div>
+                                    <div class="small-12 medium-12 columns">     
+                                        <span class="granska_Utovare_epost">
+                                            <a href="mailto:andreas.josefsson@kulturivast.se">andreas.josefsson@kulturivast.se</a>
+                                        </span>
+                                    </div>
+                                </div>         
+                                <div class="row granska_Utovare_hemsida_block">
+                                    <div class="small-12 medium-12 columns faktalabel">     
+                                        Hemsida
+                                    </div>
+                                    <div class="small-12 medium-12 columns">     
+                                        <span class="granska_Utovare_hemsida">
+                                            <a href="www.minegenhemsida.se">www.minegenhemsida.se</a>
+                                        </span>
+                                    </div>
+                                </div>                                                              
                             </div>
+                            <div class="artsidecontainer granska_Dela">
+                                <h3>Dela</h3>                                
+                                    <div id="share-buttons">
+    
+                                        <!-- Buffer -->
+                                        <a href="https://bufferapp.com/add?url=https://simplesharebuttons.com&amp;text=Simple Share Buttons" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
+                                        </a>
+    
+                                        <!-- Digg -->
+                                        <a href="http://www.digg.com/submit?url=https://simplesharebuttons.com" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" />
+                                        </a>
+    
+                                        <!-- Email -->
+                                        <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+                                            <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                                        </a>
+ 
+                                        <!-- Facebook -->
+                                        <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                                        </a>
+    
+                                        <!-- Google+ -->
+                                        <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                                        </a>
+    
+                                        <!-- LinkedIn -->
+                                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                                        </a>
+    
+                                        <!-- Pinterest -->
+                                        <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+                                            <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+                                        </a>
+    
+                                        <!-- Print -->
+                                        <a href="javascript:;" onclick="window.print()">
+                                            <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+                                        </a>
+    
+                                        <!-- Reddit -->
+                                        <a href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+                                        </a>
+    
+                                        <!-- StumbleUpon-->
+                                        <a href="http://www.stumbleupon.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" />
+                                        </a>
+    
+                                        <!-- Tumblr-->
+                                        <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+                                        </a>
+     
+                                        <!-- Twitter -->
+                                        <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                                        </a>
+    
+                                        <!-- VK -->
+                                        <a href="http://vkontakte.ru/share.php?url=https://simplesharebuttons.com" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/vk.png" alt="VK" />
+                                        </a>
+    
+                                        <!-- Yummly -->
+                                        <a href="http://www.yummly.com/urb/verify?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+                                            <img src="https://simplesharebuttons.com/images/somacro/yummly.png" alt="Yummly" />
+                                        </a>
 
-                            <div class="artikelkontatkort artsidecontainer">
-                                <h2>Kontakt</h2>
-                                <ul>
-                                    <li>
-                                        <div class="kontaktkort">
-                                            <div class="kontaktkort namn">Andreas Josefsson</div>
-                                            <div class="kontaktkort avd">IT- Webutvecklare</div>
-                                            <div class="kontaktkort tfn">070- 18 32 15</div>
-                                            <div class="kontaktkort epost">andreas.josefsson@kulturivast.se</div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="kontaktkort">
-                                            <div class="kontaktkort namn">Andreas Josefsson</div>
-                                            <div class="kontaktkort avd">IT- Webutvecklare</div>
-                                            <div class="kontaktkort tfn">070- 18 32 15</div>
-                                            <div class="kontaktkort epost">andreas.josefsson@kulturivast.se</div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="kontaktkort">
-                                            <div class="kontaktkort namn">Andreas Josefsson</div>
-                                            <div class="kontaktkort avd">IT- Webutvecklare</div>
-                                            <div class="kontaktkort tfn">070- 18 32 15</div>
-                                            <div class="kontaktkort epost">andreas.josefsson@kulturivast.se</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="artikelPressbild artsidecontainer">
-                                <h3>Pressbild</h3>
-                                <img src="public/images/carmen_souza2_1.jpg" />
+                                    </div>
                             </div>
                         </div>
                     </div>
