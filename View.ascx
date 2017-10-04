@@ -359,7 +359,7 @@
                                 <fieldset class="arrBeskrivning">
                                     <legend>Beskrivning</legend>
 
-                                    <label>Rubrik<a href="#" class="arr_rubrik_info"><i class="fa fa-glass" aria-hidden="true"></i></a></label>
+                                    <label>Rubrik<a href="#" class="arr_rubrik_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                        
                                         <div class="arr_rubrik_infotext">Vänligen fyll i en rubrik på arrangemanget</div>
                                         <input id="arr_rubrik" type="text" class="kk_aj_requireValidation_step2" rel="41" placeholder="Fyll i rubrik eller namn på arrangemanget" />
