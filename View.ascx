@@ -81,7 +81,7 @@
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>Ange postnummer</label>
-                                <input class="kk_aj_search_utovarePostnr" type="text" class="kk_aj_requireValidation" placeholder="Ange postnummer för aktör/utövare/grupp enligt exempel 142 42" />
+                                <input id="kk_aj_search_utovarePostnr" type="text" class="kk_aj_search_utovarePostnr kk_aj_requireValidation" placeholder="Ange postnummer för aktör/utövare/grupp enligt exempel 142 42" />
                               
                                 <small class="error kk_aj_search_utovarePostnr_error">Vänligen fyll i ett giltigt postnummer för aktör/utövare/grupp</small>
                             
@@ -176,10 +176,15 @@
                                     
                                     <label>E-postadress</label>
                                         <input id="utovare_epost" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kontaktpersonens e-postadress" />
-                                        <small class="error utovare_epost_error">Vänligen fyll i kontaktpersonens e-postadress</small>                             
+                                        <small class="error utovare_epost_error">Vänligen fyll i kontaktpersonens e-postadress</small>
+                                    <small class="error utovare_epost_errorNotYou">Är adressen inte din måste ange en annan e-postadress.<br /> Vid frågor kontakta oss på kulturkatalogen väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>                             
+                                    <small class="error  utovare_epost_errorutovareexeists">Är adressen finns redan registrerad! <br />Välj en annan e-postadress eller välj tidigare aktör!<br /> Vid frågor kontakta oss på kulturkatalogen väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>                             
                                     
+                                   
                                 </fieldset> 
-                            </div>                            
+                                
+                            </div> 
+                                                       
                         </div>
                         <%--<div class="row" >
                             <div class="large-8 columns">                               
@@ -187,7 +192,7 @@
                                 <input id="utovare_hemsida" type="text" placeholder="Hemsida" />
                               </label>
                             </div>                            
-                        </div>    --%>                    
+                        </div>    --%>   <a class="right alert kk_aj_befintlignotme" style="display:none; margin-bottom:1rem; color:#f77136; text-decoration:underline;">Är adressen inte du! <i class="fa fa-question-circle" aria-hidden="true"></i></a>                 
                     </div>                      
                                            
                 </div>
@@ -230,37 +235,37 @@
                                   <li>
                                     <label>
                                         <input id="val_forestallningtune" type="radio" name="arr_radioValArrtyp" value="1" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" alt="1" title="val_forestallningtune"/>    
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_foresallningfastscen" type="radio" name="arr_radioValArrtyp" value="2"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" alt="2" title="val_foresallningfastscen"/>
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_forfattarbesok" type="radio" name="arr_radioValArrtyp" value="3" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" alt="3" title="val_forfattarbesok" /> 
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_Kulturpedagogiskaprojekt" type="radio" name="arr_radioValArrtyp" value="4" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok_vald.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok_vald.png" alt="4" title="val_Kulturpedagogiskaprojekt"/>    
                                     </label>
                                   </li> 
                                   <li>
                                     <label>
                                         <input id="val_Fortbildningar" type="radio" name="arr_radioValArrtyp" value="5" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" alt="5" title="val_Fortbildningar"/>    
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_museielador" type="radio" name="arr_radioValArrtyp" value="6"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" alt="6" title="val_museielador"/>
                                     </label>
                                   </li>
                                 </ul>
@@ -278,73 +283,73 @@
                                   <li>
                                     <label>
                                         <input id="val_arkitektur" type="radio" name="arr_radioValkontstform" value="1" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="1 val_arkitektur"/>    
                                     </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_dans" type="radio" name="arr_radioValkontstform" value="2"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" title="2 val_dans" />
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_film" type="radio" name="arr_radioValkontstform" value="3" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="3 val_film"  /> 
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_konst" type="radio" name="arr_radioValkontstform" value="4" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok_vald.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok_vald.png" title="4 val_konst"  />    
                                     </label>
                                   </li> 
                                   <li>
                                     <label> 
                                         <input id="val_litteratur" type="radio" name="arr_radioValkontstform" value="5" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="5 val_litteratur" />    
                                    </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_musik" type="radio" name="arr_radioValkontstform" value="6" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" title="6 val_musik" />
                                    </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_naturochkultruarv" type="radio" name="arr_radioValkontstform" value="7" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok_vald.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok_vald.png" title="7 val_naturochkultruarv" />    
                                     </label>
                                   </li> 
                                    <li>
                                     <label>
                                         <input id="val_nycirkus" type="radio" name="arr_radioValkontstform" value="8" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="8 val_nycirkus" /> 
                                     </label>
                                   </li>                                  
                                   <li>
                                     <label>
                                         <input id="val_slojd" type="radio" name="arr_radioValkontstform" value="9" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png"title="9 val_slojd"  />    
                                     </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_teater" type="radio" name="arr_radioValkontstform" value="10"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" title="10 val_teater" />
                                    </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_teknik" type="radio" name="arr_radioValkontstform" value="11" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="11 val_teknik" />    
                                     </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_annascenkonst" type="radio" name="arr_radioValkontstform" value="12"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" title="12 val_annascenkonst" />
                                    </label>
                                   </li>
                                 </ul>
@@ -459,11 +464,11 @@
                                     <input type="text" id="formVenueHeightId" name="formVenueHeight" rel="14" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange vilken takhöjd arrangemanget kräver i meter">
                              
                                     <label>Ljud</label>
-                                      <input type="radio" name="arr_ljud" rel="34" value="Befintligt" id="arr_ljudbefintligt"><label for="arr_ljudbefintligt">Befintligt</label>
+                                      <input type="radio" name="arr_ljud" rel="15" value="Befintligt" id="arr_ljudbefintligt"><label for="arr_ljudbefintligt">Befintligt</label>
 
-                                      <input type="radio" name="arr_ljud" rel="34" value="Tar med eget/Ingår" id="arr_ljudingår"><label for="arr_ljudingår">Tar med eget/Ingår</label>
+                                      <input type="radio" name="arr_ljud" rel="15" value="Tar med eget/Ingår" id="arr_ljudingår"><label for="arr_ljudingår">Tar med eget/Ingår</label>
                                       
-                                      <input type="radio" name="arr_ljud" rel="34" value="Behövs ej" id="arr_ljudbehövsej"><label for="arr_ljudbehövsej">Behövs ej</label>
+                                      <input type="radio" name="arr_ljud" rel="15" value="Behövs ej" id="arr_ljudbehövsej"><label for="arr_ljudbehövsej">Behövs ej</label>
                                       <small class="error kk_aj_search_arr_ljud_error">Vänligen fyll i information om ljud</small>
 
                        
@@ -474,9 +479,9 @@
                                         <small class="error kk_aj_search_arr_ljus_error">Vänligen fyll i information om ljus</small>
 
                                     <label>Mörkläggning krävs</label>
-                                      <input type="radio" name="arr_morklaggning" rel="33" value="Nej" id="arr_morklaggningnej"><label for="arr_morklaggningnej">Nej</label>
-                                      <input type="radio" name="arr_morklaggning" rel="33" value="Ja helst" id="arr_morklaggningja"><label for="arr_morklaggningja">Ja helst</label>
-                                      <input type="radio" name="arr_morklaggning" rel="33" value="Ja nödvändigt" id="arr_morklaggningnodvandigt"><label for="arr_morklaggningnej">Ja nödvändigt</label>
+                                      <input type="radio" name="arr_morklaggning" rel="27" value="Nej" id="arr_morklaggningnej"><label for="arr_morklaggningnej">Nej</label>
+                                      <input type="radio" name="arr_morklaggning" rel="27" value="Ja helst" id="arr_morklaggningja"><label for="arr_morklaggningja">Ja helst</label>
+                                      <input type="radio" name="arr_morklaggning" rel="27" value="Ja nödvändigt" id="arr_morklaggningnodvandigt"><label for="arr_morklaggningnej">Ja nödvändigt</label>
                                         <small class="error kk_aj_search_arr_morklaggning_error">Vänligen fyll i information om mörkläggning</small>
 
 
@@ -517,7 +522,7 @@
 				                    <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange max antal personer i publiken">
                                      
                                     <label id="labelMaxParticipantsId" for="formMaxParticipantsId">Max antal deltagare</label>
-				                    <input type="text" id="formMaxParticipantsId" name="formMaxParticipants" rel="" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange max antal deltagare">
+				                    <input type="text" id="formMaxParticipantsId" name="formMaxParticipants" rel="2" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange max antal deltagare">
                                      
                                     <label for="kk_aj_yearspan">Ålder:</label>
                                     <span>- ange vilken lägsta och högsta åldern på målgruppen för arrangemanget är. </span>
@@ -531,7 +536,7 @@
                                     <label for="kk_aj_speltid">Speltid (min):</label>
                                     <span>- ange hur många minuter en föreställning av arrangemanget pågår</span>
                                     <div id="kk_aj_speltid_range" ></div> 
-                                    <div id="kk_aj_speltid" rel="32"></div>
+                                    <div id="kk_aj_speltid" rel="26"></div>
                                 </fieldset>
                             </div>                            
                         </div>   
@@ -542,12 +547,12 @@
                                 <fieldset class="arrpublik">
                                     <legend>Ekonomi</legend>                                                                            
                                      <label>Kostnad</label> 
-                                        <input id="arr_ekonomikostnad" type="text" class="kk_aj_Fakta"  rel="10" placeholder="Pris för föreställningen i SEK (enbart siffror). För andra arrangemang använd fältet Övrigt nedan" />
+                                        <input id="arr_ekonomikostnad" type="text" class="kk_aj_Fakta"  rel="19" placeholder="Pris för föreställningen i SEK (enbart siffror). För andra arrangemang använd fältet Övrigt nedan" />
                                                                        
                                     <label>Resor</label>
-                                      <input type="radio" name="arr_resor" rel="37" value="Ingår" id="arr_resorja"><label for="arr_resorja">Ingår</label>
+                                      <input type="radio" name="arr_resor" rel="31" value="Ingår" id="arr_resorja"><label for="arr_resorja">Ingår</label>
 
-                                      <input type="radio" name="arr_resor" rel="37" value="Tillkommer" id="arr_resornej"><label for="arr_resornej">Tillkommer</label>
+                                      <input type="radio" name="arr_resor" rel="31" value="Tillkommer" id="arr_resornej"><label for="arr_resornej">Tillkommer</label>
                                         <small class="error kk_aj_search_arr_resor_error">Vänligen fyll i om resor ingår eller tillkommer</small>
                                     <label>Logi</label>
                                       <input type="radio" name="arr_logi" rel="23" value="Ingår" id="arr_logija"><label for="arr_logija">Ingår</label>
@@ -558,7 +563,7 @@
                                       <input type="radio" name="arr_Traktamente" rel="24" value="Tillkommer" id="arr_Traktamentenej"><label for="arr_Traktamentenej">Tillkommer</label>
                                     <small class="error kk_aj_search_arr_traktamente_error">Vänligen fyll i om traktamente ingår eller tillkommer</small>
                                     <label>Övrigt</label>
-                                        <textarea id="arr_resorovrigt" rel="36" placeholder="Ange övrigt om förutsättningar för resor kring arrangemanget. Resor - ex. Milersättning, anges i kr/mil, Logi - ex. 2 enkelrum eller 1 dubbelrum eller ex. allergiker eller rökare,  Traktamente - ex. - kr/dygn/person"></textarea>
+                                        <textarea id="arr_resorovrigt" rel="33" placeholder="Ange övrigt om resor kring arrangemanget."></textarea>
                                     
                                 </fieldset>
 
@@ -693,10 +698,10 @@
                                     <h3>Fakta</h3>                                
                                     <div class="row">
                                         <div class="small-12 medium-6 columns faktalabel">     
-                                            Arrangörsstöd
+                                            Finns inget att visa
                                         </div>
                                         <div class="small-12 medium-6 columns">     
-                                            Arrangören betalar 50%
+                                            Finns inget att visa
                                         </div>
                                     </div>     
                                 </div>
@@ -704,10 +709,10 @@
                                     <h3>Lokal</h3>
                                     <div class="row">
                                         <div class="small-12 medium-6 columns faktalabel">     
-                                            Arrangörsstöd
+                                            Finns inget att visa
                                         </div>
                                         <div class="small-12 medium-6 columns">     
-                                            Arrangören betalar 50%
+                                            Finns inget att visa
                                         </div>
                                     </div>    
                                 </div>
@@ -715,10 +720,10 @@
                                     <h3>Publik</h3>
                                     <div class="row">
                                         <div class="small-12 medium-6 columns faktalabel">     
-                                            Arrangörsstöd
+                                            Finns inget att visa
                                         </div>
                                         <div class="small-12 medium-7 columns">     
-                                            Arrangören betalar 50%
+                                            Finns inget att visa
                                         </div>
                                     </div>        
                                     
@@ -727,10 +732,10 @@
                                     <h3>Ekonomi</h3>
                                     <div class="row">
                                         <div class="small-12 medium-5 columns faktalabel">     
-                                            Arrangörsstöd
+                                           Finns inget att visa
                                         </div>
                                         <div class="small-12 medium-7 columns">     
-                                            Arrangören betalar 50%
+                                           Finns inget att visa
                                         </div>
                                     </div>       
                                     
@@ -743,7 +748,7 @@
                                         Organisation
                                     </div>
                                     <div class="small-12 medium-7 columns">     
-                                        <span class="granska_Utovare_Organisation">testorg</span>
+                                        <span class="granska_Utovare_Organisation">Finns inget att visa</span>
                                     </div>
                                 </div>
                                 <div class="row granska_Utovare_namn_block">
@@ -751,7 +756,7 @@
                                         Kontaktperson
                                     </div>
                                     <div class="small-12 medium-7 columns">     
-                                        <span class="granska_Utovare_namn">Andreas Josefsson</span>
+                                        <span class="granska_Utovare_namn"></span>
                                     </div>
                                 </div>
                                 <div class="row granska_Utovare_Adress_block">
@@ -759,7 +764,7 @@
                                         Adress
                                     </div>
                                     <div class="small-12 medium-7 columns">     
-                                        <span class="granska_Utovare_Adress">Sturegatan 12</span>
+                                        <span class="granska_Utovare_Adress"></span>
                                     </div>
                                 </div>
                                     <div class="row granska_Utovare_postort_block">
@@ -767,7 +772,7 @@
                                         Postort
                                     </div>
                                     <div class="small-12 medium-7 columns">     
-                                        <span class="granska_Utovare_postort">534 90 Ulricehamn</span>
+                                        <span class="granska_Utovare_postort"></span>
                                     </div>
                                 </div>                                          
                                 <div class="row granska_Utovare_tfn_block">
@@ -775,7 +780,7 @@
                                         Telefon
                                     </div>
                                     <div class="small-12 medium-7 columns">     
-                                        <span class="granska_Utovare_tfn">070- 18 32 15</span>
+                                        <span class="granska_Utovare_tfn"></span>
                                     </div>
                                 </div>
                                 <div class="row granska_Utovare_epost_block">
@@ -784,7 +789,7 @@
                                     </div>
                                     <div class="small-12 medium-12 columns">     
                                         <span class="granska_Utovare_epost">
-                                            <a href="mailto:andreas.josefsson@kulturivast.se">andreas.josefsson@kulturivast.se</a>
+                                            <a href="mailto:"></a>
                                         </span>
                                     </div>
                                 </div>         
@@ -794,7 +799,7 @@
                                     </div>
                                     <div class="small-12 medium-12 columns">     
                                         <span class="granska_Utovare_hemsida">
-                                            <a href="www.minegenhemsida.se">www.minegenhemsida.se</a>
+                                            <a href=""></a>
                                         </span>
                                     </div>
                                 </div>                                                              
