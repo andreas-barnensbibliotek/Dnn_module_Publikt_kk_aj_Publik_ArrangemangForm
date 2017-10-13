@@ -112,48 +112,42 @@
                         </div>--%>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>Namn på utövare/aktör/grupp</label>
-                                <input id="utovare_aktor_grupp" type="text" class="kk_aj_requireValidation_step1" placeholder="Namn på utövare/aktör/grupp som utför arrangemanget" />
-                              
+                                <label>Namn på utövare/aktör/grupp</label>
+                                <input id="utovare_aktor_grupp" type="text" class="kk_aj_requireValidation_step1" placeholder="Namn på utövare/aktör/grupp som utför arrangemanget" />                              
                                 <small class="error utovare_aktor_grupp_error">Vänligen fyll i ett namn på utövare/aktör/grupp som utför arrangemanget</small>
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>Utövare/aktör/grupp hemsida </label>
-                                <input id="utovare_orghemsida" type="text" placeholder="Ange ev URL till arrangemangets el utövaren-/aktören-/gruppens hemsida" />
-                             
+                                <label>Utövare/aktör/grupp hemsida </label>
+                                <input id="utovare_orghemsida" type="text" placeholder="Ange ev URL till arrangemangets el utövaren-/aktören-/gruppens hemsida" />                             
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>Adress</label>
-                                <input id="utovare_adress" type="text" class="kk_aj_requireValidation_step1" placeholder="Adress för utövare/aktör/grupp" />
-                              
+                                <label>Adress</label>
+                                <input id="utovare_adress" type="text" class="kk_aj_requireValidation_step1" placeholder="Adress för utövare/aktör/grupp" />                              
                                 <small class="error utovare_adress_error">Vänligen fyll i en adress för utövare/aktör/grupp</small> 
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>Postnummer</label>
-                                <input id="utovare_postnummer" type="text" class="kk_aj_requireValidation_step1" placeholder="Postnummer för utövare/aktör/grupp" />
-                              
+                                <label>Postnummer</label>
+                                <input id="utovare_postnummer" type="text" class="kk_aj_requireValidation_step1" placeholder="Postnummer för utövare/aktör/grupp" />                              
                                 <small class="error utovare_postnummer_error">Vänligen fyll i ett postnummer för utövare/aktör/grupp</small>                             
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>Ort</label>
-                                <input id="utovare_ort" type="text" class="kk_aj_requireValidation_step1" placeholder="Ort för utövare/aktör/grupp" />
-                              
+                                <label>Ort</label>
+                                <input id="utovare_ort" type="text" class="kk_aj_requireValidation_step1" placeholder="Ort för utövare/aktör/grupp" />                              
                                 <small class="error utovare_ort_error">Vänligen fyll i ett ortsnamn för utövare/aktör/grupp</small>                             
                             </div>                            
                         </div>
                         <div class="row" >
                             <div class="large-8 columns">
-                              <label>Kommun</label>
-                                <input id="utovare_kommun" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kommunens namn" />
-                              
+                                <label>Kommun</label>
+                                <input id="utovare_kommun" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kommunens namn" />                              
                                 <small class="error utovare_kommun_error">Vänligen fyll i kommunens namn</small>                             
                             </div>                            
                         </div>
@@ -162,9 +156,8 @@
                                 <fieldset class="utovareadressblock">
                                     <legend>Kontaktperson</legend>
                                     <label>Kontaktperson - Förnamn</label>
-                                        <input id="utovare_fornamn" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kontaktpersonens förnamn" />
-                                   
-                                    <small class="error utovare_fornamn_error">Vänligen fyll i Kontaktpersonens förnamn</small>    
+                                        <input id="utovare_fornamn" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kontaktpersonens förnamn" />                                   
+                                        <small class="error utovare_fornamn_error">Vänligen fyll i Kontaktpersonens förnamn</small>    
                                                                                          
                                     <label>Kontaktperson - Efternamn </label>
                                         <input id="utovare_efternamn" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kontaktpersonens efternamn" />
@@ -177,10 +170,8 @@
                                     <label>E-postadress</label>
                                         <input id="utovare_epost" type="text" class="kk_aj_requireValidation_step1" placeholder="Ange kontaktpersonens e-postadress" />
                                         <small class="error utovare_epost_error">Vänligen fyll i kontaktpersonens e-postadress</small>
-                                    <small class="error utovare_epost_errorNotYou">Är adressen inte din måste ange en annan e-postadress.<br /> Vid frågor kontakta oss på kulturkatalogen väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>                             
-                                    <small class="error  utovare_epost_errorutovareexeists">Är adressen finns redan registrerad! <br />Välj en annan e-postadress eller välj tidigare aktör!<br /> Vid frågor kontakta oss på kulturkatalogen väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>                             
-                                    
-                                   
+                                        <small class="error utovare_epost_errorNotYou">Är adressen inte din kan du ändra uppgifterna ovan.<br /> OBS Du måste även ange en annan e-postadress än den tidigare.<br /> Vid frågor kontakta oss på kulturkatalogen väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>                             
+                                        <small class="error  utovare_epost_errorutovareexeists">Är adressen finns redan registrerad! <br />Välj en annan e-postadress eller välj tidigare aktör!<br /> Vid frågor kontakta oss på kulturkatalogen väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>                                    
                                 </fieldset> 
                                 
                             </div> 
@@ -192,7 +183,7 @@
                                 <input id="utovare_hemsida" type="text" placeholder="Hemsida" />
                               </label>
                             </div>                            
-                        </div>    --%>   <a class="right alert kk_aj_befintlignotme" style="display:none; margin-bottom:1rem; color:#f77136; text-decoration:underline;">Är adressen inte du! <i class="fa fa-question-circle" aria-hidden="true"></i></a>                 
+                        </div>    --%>   <a class="right alert kk_aj_befintlignotme" style="display:none; margin-bottom:1rem; color:#f77136; text-decoration:underline;"><i class="fa fa-question-circle" aria-hidden="true"></i> Är adressen inte du!</a>                 
                     </div>                      
                                            
                 </div>
@@ -235,37 +226,37 @@
                                   <li>
                                     <label>
                                         <input id="val_forestallningtune" type="radio" name="arr_radioValArrtyp" value="1" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" alt="1" title="val_forestallningtune"/>    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningpatune.png" alt="1" class="img_forestallningtune" title="val_forestallningtune"/>    
                                     </label>
                                   </li>
                                   <li>
                                     <label>
-                                        <input id="val_foresallningfastscen" type="radio" name="arr_radioValArrtyp" value="2"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" alt="2" title="val_foresallningfastscen"/>
+                                        <input id="val_foresallningfastscen" type="radio" name="arr_radioValArrtyp" value="8"/>
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Skolbio.png" alt="2" class="img_foresallningfastscen" title="val_Skolbio"/>
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_forfattarbesok" type="radio" name="arr_radioValArrtyp" value="3" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" alt="3" title="val_forfattarbesok" /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" class="img_forfattarbesok" alt="3" title="val_forfattarbesok" /> 
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_Kulturpedagogiskaprojekt" type="radio" name="arr_radioValArrtyp" value="4" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok_vald.png" alt="4" title="val_Kulturpedagogiskaprojekt"/>    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/kulturpedagogiskaprojekt.png" class="img_Kulturpedagogiskaprojekt" alt="4" title="val_Kulturpedagogiskaprojekt"/>    
                                     </label>
                                   </li> 
                                   <li>
                                     <label>
                                         <input id="val_Fortbildningar" type="radio" name="arr_radioValArrtyp" value="5" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" alt="5" title="val_Fortbildningar"/>    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Fortbildningar.png" class="img_Fortbildningar" alt="5" title="val_Fortbildningar"/>    
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_museielador" type="radio" name="arr_radioValArrtyp" value="6"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" alt="6" title="val_museielador"/>
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/resmalsbesok.png" class="img_museielador" alt="6" title="val_museielador"/>
                                     </label>
                                   </li>
                                 </ul>
@@ -283,73 +274,73 @@
                                   <li>
                                     <label>
                                         <input id="val_arkitektur" type="radio" name="arr_radioValkontstform" value="1" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="1 val_arkitektur"/>    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Arkitekturochdesign.png" class="img_arkitektur" title="1 val_arkitektur"/>    
                                     </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_dans" type="radio" name="arr_radioValkontstform" value="2"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" title="2 val_dans" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/dans.png" class="img_dans" title="2 val_dans" />
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_film" type="radio" name="arr_radioValkontstform" value="3" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="3 val_film"  /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Filmochmedia.png" class="img_film" title="3 val_film"  /> 
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_konst" type="radio" name="arr_radioValkontstform" value="4" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok_vald.png" title="4 val_konst"  />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Konstformochdesign.png" class="img_konst" title="4 val_konst"  />    
                                     </label>
                                   </li> 
                                   <li>
                                     <label> 
                                         <input id="val_litteratur" type="radio" name="arr_radioValkontstform" value="5" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="5 val_litteratur" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Litteraturberattandeskrivande.png" class="img_litteratur" title="5 val_litteratur" />    
                                    </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_musik" type="radio" name="arr_radioValkontstform" value="6" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" title="6 val_musik" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/musik.png" class="img_musik"  title="6 val_musik" />
                                    </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_naturochkultruarv" type="radio" name="arr_radioValkontstform" value="7" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok_vald.png" title="7 val_naturochkultruarv" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Naturochkulturarv.png" class="img_naturochkultruarv"  title="7 val_naturochkultruarv" />    
                                     </label>
                                   </li> 
                                    <li>
                                     <label>
                                         <input id="val_nycirkus" type="radio" name="arr_radioValkontstform" value="8" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="8 val_nycirkus" /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Nycirkus_cirkus.png" class="img_nycirkus"  title="8 val_nycirkus" /> 
                                     </label>
                                   </li>                                  
                                   <li>
                                     <label>
                                         <input id="val_slojd" type="radio" name="arr_radioValkontstform" value="9" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png"title="9 val_slojd"  />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Slojd.png" class="img_slojd" title="9 val_slojd"  />    
                                     </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_teater" type="radio" name="arr_radioValkontstform" value="10"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" title="10 val_teater" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/teater.png" class="img_teater"  title="10 val_teater" />
                                    </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_teknik" type="radio" name="arr_radioValkontstform" value="11" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningfastscen.png" title="11 val_teknik" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Teknikochmultimedia.png" class="img_teknik"  title="11 val_teknik" />    
                                     </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_annascenkonst" type="radio" name="arr_radioValkontstform" value="12"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forfattarbesok.png" title="12 val_annascenkonst" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Annanscenkonst.png" class="img_annascenkonst"  title="12 val_annascenkonst" />
                                    </label>
                                   </li>
                                 </ul>
@@ -364,8 +355,7 @@
                                 <fieldset class="arrBeskrivning">
                                     <legend>Beskrivning</legend>
 
-                                    <label>Rubrik<a href="#" class="arr_rubrik_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                       
+                                    <label>Rubrik<a href="#" class="arr_rubrik_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>                                       
                                         <div class="arr_rubrik_infotext">Vänligen fyll i en rubrik på arrangemanget</div>
                                         <input id="arr_rubrik" type="text" class="kk_aj_requireValidation_step2" rel="41" placeholder="Fyll i rubrik eller namn på arrangemanget" />
                                         <small class="error arr_rubrik_error">Vänligen fyll i en rubrik på arrangemanget</small>                                   
@@ -378,14 +368,15 @@
                                         <textarea id="arr_presentation" rel="43" placeholder="Beskrivande text om arrangemanget. Försök att inte använda mer än 700 tecken."></textarea>
                                         <small class="error arr_presentation_error">Vänligen fyll i en beskrivning av ditt arrangemang</small>  
 
-                                    <label>Antal medverkande</label>
-                                        <input id="arr_antalmedverkande" rel="2" type="text" class="kk_aj_requireValidation_step2" class="kk_aj_Fakta"  placeholder="Fyll i antal medverkande på arrangemanget i siffror" />
-                                        <small class="error arr_underrubrik_error">Vänligen fyll i antal medverkande i siffror</small>
+                                    <label class="lbl_antalmedverkande kk_aj_ft kk_aj_kp">Antal medverkande</label>
+                                        <input id="arr_antalmedverkande" rel="2" type="text" class="kk_aj_requireValidation_step2 kk_aj_Fakta kk_aj_ft kk_aj_kp"   placeholder="Fyll i antal medverkande på arrangemanget i siffror" />
+                                        <small class="error arr_antalmedverkande_error">Vänligen fyll i antal medverkande i siffror</small>
 
-                                    <label>Lärarmaterial ingår</label>
-                                      <input type="radio" name="arr_laromedel" rel="25" value="ja" id="arr_laromedelingarja"><label for="arr_laromedelingarja">Ja, Lärarmaterial ingår</label>
-                                      <input type="radio" name="arr_laromedel" rel="25" value="nej" checked="checked" id="arr_laromedelingarnej"><label for="arr_laromedelingarnej">Nej, Lärarmaterial ingår inte</label>
-    
+                                    <span class="kk_aj_ft kk_aj_fb">
+                                        <label >Lärarmaterial ingår</label>
+                                        <input type="radio" name="arr_laromedel" rel="25" value="ja" id="arr_laromedelingarja" ><label for="arr_laromedelingarja">Ja, Lärarmaterial ingår</label>
+                                        <input type="radio" name="arr_laromedel" rel="25" value="nej" checked="checked" id="arr_laromedelingarnej" ><label for="arr_laromedelingarnej">Nej, Lärarmaterial ingår inte</label>
+                                    </span>
                                 </fieldset>     
                             </div>
                         </div>
@@ -401,7 +392,7 @@
                                         </div>
                                         <div class="small-8 columns">
                                             <label>Presentationsbild</label> 
-                                                <input id="arr_presentationsbild" class="arr_presentationsbild" type="file" rel="44" />
+                                                <input id="arr_presentationsbild" class="arr_presentationsbild kk_aj_requireValidation_step2" type="file" rel="44" />
                                             
                                             <small class="error arr_presentationsbild_error">Vänligen välj en presentationsbild</small>    
                                                                               
@@ -440,71 +431,74 @@
                         </div>
        
                         <!-- Lokal block START -->
-                        <div class="row" >
+                        <div class="row arr_lokal_block kk_aj_ft kk_aj_fob" >
                             <div class="large-8 columns">
-                                <fieldset class="arr_lokal">
-                                    <legend>Lokal</legend>                                       
-                                    <label for="formBuildTimeId">Byggtid (min)</label>				                    
-                                    <input type="text" id="formBuildTimeId" name="formBuildTime" rel="10" value="" class="kk_aj_Fakta" placeholder="Ange uppskattad byggtid i minuter, dvs föreställningens förberedelsetid">
-                                    <small class="error arr_buildtime_error">Vänligen fyll i byggtid i minuter. Använd enbart siffror!</small>
+                                <fieldset class="arr_lokal kk_aj_ft kk_aj_fob">
+                                    <legend>Lokal</legend>                                    
+
+                                    <!-- Föreställning på tune fält START -->
+                                    <div class="kk_aj_ft">                                       
+                                        <label for="formBuildTimeId">Byggtid (min)</label>				                    
+                                        <input type="text" id="formBuildTimeId" name="formBuildTime" rel="10" value="" class="kk_aj_Fakta kk_aj_ft" placeholder="Ange uppskattad byggtid i minuter, dvs föreställningens förberedelsetid">
+                                        <small class="error formBuildTimeId_error">Vänligen fyll i byggtid i minuter. Använd enbart siffror!</small>
                             
-                                    <label for="formDemolishTimeId">Rivtid (min)</label>
-				                    <input type="text" id="formDemolishTimeId" name="formDemolishTime" rel="11" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange uppskattad rivtid i minuter"> 
-                                    <small class="error arr_demolishtime_error">Vänligen fyll i rivtid i minuter. Använd enbart siffror!</small>              
+                                        <label for="formDemolishTimeId">Rivtid (min)</label>
+				                        <input type="text" id="formDemolishTimeId" name="formDemolishTime" rel="11" value="" class="kk_aj_Fakta kk_aj_ft" placeholder="Enbart siffror! Ange uppskattad rivtid i minuter"> 
+                                        <small class="error formDemolishTimeId_error">Vänligen fyll i rivtid i minuter. Använd enbart siffror!</small>              
  
-                                    <label for="formVenueWidthId">Bredd på scen (meter)</label>
-				                    <input type="text" id="formVenueWidthId" name="formVenueWidth" rel="12" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange uppskattad bredd på scen i meter">
-				                    <small class="error VenueWidth_error">Vänligen ange bredd på scen i meter. Använd enbart siffror!</small>
+                                        <label for="formVenueWidthId">Bredd på scen (meter)</label>
+				                        <input type="text" id="formVenueWidthId" name="formVenueWidth" rel="12" value="" class="kk_aj_Fakta kk_aj_ft" placeholder="Enbart siffror! Ange uppskattad bredd på scen i meter">
+				                        <small class="error formVenueWidthId_error">Vänligen ange bredd på scen i meter. Använd enbart siffror!</small>
 
-                                    <label for="formVenueDepthId">Djup på scen (meter)</label>
-				                    <input type="text" id="formVenueDepthId" name="formVenueDepth" rel="13" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange vilket scendjup arrangemanget kräver i meter">
-                                    <small class="error arr_venuedepth_error">Vänligen ange djup på scen i meter. Använd enbart siffror!</small>
+                                        <label for="formVenueDepthId">Djup på scen (meter)</label>
+				                        <input type="text" id="formVenueDepthId" name="formVenueDepth" rel="13" value="" class="kk_aj_Fakta kk_aj_ft" placeholder="Enbart siffror! Ange vilket scendjup arrangemanget kräver i meter">
+                                        <small class="error formVenueDepthId_error">Vänligen ange djup på scen i meter. Använd enbart siffror!</small>
 
-				                    <label for="formVenueHeightId">Takhöjd över scen (meter)</label>				                    
-                                    <input type="text" id="formVenueHeightId" name="formVenueHeight" rel="14" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange vilken takhöjd arrangemanget kräver i meter">
-                             
-                                    <label>Ljud</label>
-                                      <input type="radio" name="arr_ljud" rel="15" value="Befintligt" id="arr_ljudbefintligt"><label for="arr_ljudbefintligt">Befintligt</label>
+				                        <label for="formVenueHeightId">Takhöjd över scen (meter)</label>				                    
+                                        <input type="text" id="formVenueHeightId" name="formVenueHeight" rel="14" value="" class="kk_aj_Fakta kk_aj_ft" placeholder="Enbart siffror! Ange vilken takhöjd arrangemanget kräver i meter">
+                                        <small class="error formVenueHeightId_error">Vänligen ange djup på scen i meter. Använd enbart siffror!</small>
 
-                                      <input type="radio" name="arr_ljud" rel="15" value="Tar med eget/Ingår" id="arr_ljudingår"><label for="arr_ljudingår">Tar med eget/Ingår</label>
-                                      
-                                      <input type="radio" name="arr_ljud" rel="15" value="Behövs ej" id="arr_ljudbehövsej"><label for="arr_ljudbehövsej">Behövs ej</label>
-                                      <small class="error kk_aj_search_arr_ljud_error">Vänligen fyll i information om ljud</small>
+                                        <label>Ljud</label>
+                                          <input type="radio" name="arr_ljud" rel="15" value="Befintligt" id="arr_ljudbefintligt" class="kk_aj_ft"><label for="arr_ljudbefintligt">Befintligt</label>
+                                          <input type="radio" name="arr_ljud" rel="15" value="Tar med eget/Ingår" id="arr_ljudingår" class="kk_aj_ft"><label for="arr_ljudingår">Tar med eget/Ingår</label>                                      
+                                          <input type="radio" name="arr_ljud" rel="15" value="Behövs ej" id="arr_ljudbehövsej" class="kk_aj_ft"><label for="arr_ljudbehövsej">Behövs ej</label>
+                                          <small class="error kk_aj_search_arr_ljud_error">Vänligen fyll i information om ljud</small>
+                                   
+                                        <label>Ljus</label>
+                                          <input type="radio" name="arr_ljus" rel="15" value="Befintligt" id="arr_ljusbefintligt" class="kk_aj_ft"><label for="arr_ljusbefintligt">Befintligt</label>
+                                          <input type="radio" name="arr_ljus" rel="15" value="Tar med eget/Ingår" id="arr_ljusingar" class="kk_aj_ft"><label for="arr_ljusingar">Tar med eget/Ingår</label>
+                                          <input type="radio" name="arr_ljus" rel="15" value="Behövs ej" id="arr_ljusbehovsej" class="kk_aj_ft"><label for="arr_ljusbehovsej">Behövs ej</label>
+                                          <small class="error kk_aj_search_arr_ljus_error">Vänligen fyll i information om ljus</small>
 
-                       
-                                    <label>Ljus</label>
-                                      <input type="radio" name="arr_ljus" rel="15" value="Befintligt" id="arr_ljusbefintligt"><label for="arr_ljusbefintligt">Befintligt</label>
-                                      <input type="radio" name="arr_ljus" rel="15" value="Tar med eget/Ingår" id="arr_ljusingar"><label for="arr_ljusingar">Tar med eget/Ingår</label>
-                                      <input type="radio" name="arr_ljus" rel="15" value="Behövs ej" id="arr_ljusbehovsej"><label for="arr_ljusbehovsej">Behövs ej</label>
-                                        <small class="error kk_aj_search_arr_ljus_error">Vänligen fyll i information om ljus</small>
+                                        <label>Mörkläggning krävs</label>
+                                          <input type="radio" name="arr_morklaggning" rel="27" value="Nej" id="arr_morklaggningnej"><label for="arr_morklaggningnej">Nej</label>
+                                          <input type="radio" name="arr_morklaggning" rel="27" value="Ja helst" id="arr_morklaggningja"><label for="arr_morklaggningja">Ja helst</label>
+                                          <input type="radio" name="arr_morklaggning" rel="27" value="Ja nödvändigt" id="arr_morklaggningnodvandigt"><label for="arr_morklaggningnej">Ja nödvändigt</label>
+                                          <small class="error kk_aj_search_arr_morklaggning_error">Vänligen fyll i information om mörkläggning</small>
 
-                                    <label>Mörkläggning krävs</label>
-                                      <input type="radio" name="arr_morklaggning" rel="27" value="Nej" id="arr_morklaggningnej"><label for="arr_morklaggningnej">Nej</label>
-                                      <input type="radio" name="arr_morklaggning" rel="27" value="Ja helst" id="arr_morklaggningja"><label for="arr_morklaggningja">Ja helst</label>
-                                      <input type="radio" name="arr_morklaggning" rel="27" value="Ja nödvändigt" id="arr_morklaggningnodvandigt"><label for="arr_morklaggningnej">Ja nödvändigt</label>
-                                        <small class="error kk_aj_search_arr_morklaggning_error">Vänligen fyll i information om mörkläggning</small>
-
-
-                                    <label for="formCarriersId">Bärhjälp behövs</label>
-				                    <select id="formCarriersId" name="formCarriers" rel="16" class="selectField">
-				                        <option value=""></option>
-					                    <option value="Nej">Nej</option>
-                                        <option value="Ja (minst 1 person)">Ja (minst 1 person)</option>
-                                        <option value="Ja (minst 2 personer)">Ja (minst 2 personer)</option>
-                                        <option value="Ja (fler än 2 personer)">Ja (fler än 2 personer)</option>
-				                    </select>
-                                    <small class="error kk_aj_search_arr_carriers_error">Vänligen gör val av Bärhjälp</small>
+                                        <label for="formCarriersId">Bärhjälp behövs</label>
+				                        <select id="formCarriersId" name="formCarriers" rel="16" class="selectField">
+				                            <option value=""></option>
+					                        <option value="Nej">Nej</option>
+                                            <option value="Ja (minst 1 person)">Ja (minst 1 person)</option>
+                                            <option value="Ja (minst 2 personer)">Ja (minst 2 personer)</option>
+                                            <option value="Ja (fler än 2 personer)">Ja (fler än 2 personer)</option>
+				                        </select>
+                                        <small class="error kk_aj_search_arr_carriers_error">Vänligen gör val av Bärhjälp</small>
            
-                                    <label for="formElectricityId">El</label>
-				                    <select id="formElectricityId" name="formElectricity" rel="17" class="selectField">
-				                        <option value=""></option>
-					                    <option value="10 A">10 A</option>
-                                        <option value="16 A">16 A</option>
-                                        <option value="32 A">32 A</option>
-                                        <option value="Behövs ej">Behövs ej</option>
-				                    </select>
-                                    <small class="error kk_aj_search_arr_electricity_error">Vänligen gör val av El</small>
+                                        <label for="formElectricityId">El</label>
+				                        <select id="formElectricityId" name="formElectricity" rel="17" class="selectField">
+				                            <option value=""></option>
+					                        <option value="10 A">10 A</option>
+                                            <option value="16 A">16 A</option>
+                                            <option value="32 A">32 A</option>
+                                            <option value="Behövs ej">Behövs ej</option>
+				                        </select>
+                                        <small class="error kk_aj_search_arr_electricity_error">Vänligen gör val av El</small>
                                     
+                                    </div>
+                                    <!-- Föreställning på tune fält STOPP -->
+
                                     <label for="formVenueRequiermentsId" >Övriga lokalkrav</label>
 				                    <textarea id="formVenueRequiermentsId" rel="18" name="formVenueRequierments" placeholder="Skriv kortfattat! ex rumstemperatur, golvmaterial, scen m.m."></textarea>
                                        
@@ -513,38 +507,38 @@
                         </div>   
                            
                         <!-- Publik block START -->
-                        <div class="row" >
+                        <div class="row arrpublik_block kk_aj_ft kk_aj_fb" >
                             <div class="large-8 columns">
-                                <fieldset class="arrpublik">
+                                <fieldset class="arrpublik kk_aj_ft kk_aj_fb">
                                     <legend>Publik</legend>                                                                            
                                     
-                                    <label id="labelMaxAudienceId" for="formMaxAudienceId">Max publik</label>
-				                    <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange max antal personer i publiken">
+                                    <label id="labelMaxAudienceId" for="formMaxAudienceId" class="kk_aj_ft">Max publik</label>
+				                    <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" value="" class="kk_aj_Fakta kk_aj_ft" placeholder="Enbart siffror! Ange max antal personer i publiken">
                                      
-                                    <label id="labelMaxParticipantsId" for="formMaxParticipantsId">Max antal deltagare</label>
-				                    <input type="text" id="formMaxParticipantsId" name="formMaxParticipants" rel="2" value="" class="kk_aj_Fakta" placeholder="Enbart siffror! Ange max antal deltagare">
+                                    <label id="labelMaxParticipantsId" for="formMaxParticipantsId" class="kk_aj_ft">Max antal deltagare</label>
+				                    <input type="text" id="formMaxParticipantsId" name="formMaxParticipants" rel="2" value="" class="kk_aj_Fakta kk_aj_ft" placeholder="Enbart siffror! Ange max antal deltagare">
                                      
-                                    <label for="kk_aj_yearspan">Ålder:</label>
-                                    <span>- ange vilken lägsta och högsta åldern på målgruppen för arrangemanget är. </span>
-                                    <div id="kk_aj_slider-range"></div> 
-                                    <div id="kk_aj_yearspan" rel="7" rev="8"></div>
+                                    <label for="kk_aj_yearspan" class="kk_aj_ft kk_aj_fb">Ålder:</label>
+                                    <span class="kk_aj_ft kk_aj_fb">- ange vilken lägsta och högsta åldern på målgruppen för arrangemanget är. </span>
+                                    <div id="kk_aj_slider-range" class="kk_aj_ft kk_aj_fb"></div> 
+                                    <div id="kk_aj_yearspan" rel="7" rev="8" class="kk_aj_ft kk_aj_fb"></div>
                                     <small class="error kk_aj_search_arr_electricity_error">Vänligen gör val av ålder som arrangemanget riktar sig mot</small>
 
-                                    <label for="formMaxShowsId" id="labelMaxShowsId">Föreställningar per dag</label>
-				                    <input type="text" id="formMaxShowsId" name="formMaxShows" rel="9" value="" class="kk_aj_Fakta" placeholder="Ange hur många föreställningar som kan ges per dag.">
+                                    <label for="formMaxShowsId" id="labelMaxShowsId" class="kk_aj_ft">Föreställningar per dag</label>
+				                    <input type="text" id="formMaxShowsId" name="formMaxShows" rel="9" value="" class="kk_aj_Fakta kk_aj_ft" placeholder="Ange hur många föreställningar som kan ges per dag.">
                                     
-                                    <label for="kk_aj_speltid">Speltid (min):</label>
-                                    <span>- ange hur många minuter en föreställning av arrangemanget pågår</span>
-                                    <div id="kk_aj_speltid_range" ></div> 
-                                    <div id="kk_aj_speltid" rel="26"></div>
+                                    <label for="kk_aj_speltid" class="kk_aj_ft">Speltid (min):</label>
+                                    <span class="kk_aj_ft">- ange hur många minuter en föreställning av arrangemanget pågår</span>
+                                    <div id="kk_aj_speltid_range" class="kk_aj_ft" ></div> 
+                                    <div id="kk_aj_speltid" rel="26" class="kk_aj_ft"></div>
                                 </fieldset>
                             </div>                            
                         </div>   
                                        
                         <!-- Ekonomi block START -->
-                        <div class="row" >
+                        <div class="row arrekonomi_block" >
                             <div class="large-8 columns">
-                                <fieldset class="arrpublik">
+                                <fieldset class="arrekonomi">
                                     <legend>Ekonomi</legend>                                                                            
                                      <label>Kostnad</label> 
                                         <input id="arr_ekonomikostnad" type="text" class="kk_aj_Fakta"  rel="19" placeholder="Pris för föreställningen i SEK (enbart siffror). För andra arrangemang använd fältet Övrigt nedan" />
@@ -563,7 +557,7 @@
                                       <input type="radio" name="arr_Traktamente" rel="24" value="Tillkommer" id="arr_Traktamentenej"><label for="arr_Traktamentenej">Tillkommer</label>
                                     <small class="error kk_aj_search_arr_traktamente_error">Vänligen fyll i om traktamente ingår eller tillkommer</small>
                                     <label>Övrigt</label>
-                                        <textarea id="arr_resorovrigt" rel="33" placeholder="Ange övrigt om resor kring arrangemanget."></textarea>
+                                        <textarea id="arr_resorovrigt" rel="33" placeholder="Ange övrigt om resor kring arrangemanget." ></textarea>
                                     
                                 </fieldset>
 
