@@ -353,11 +353,7 @@
                                 <label for="arr_getTidigareArrangemang">Hämta tidigare arrangemang<a href="#" class="info" rel="arr_getTidigareArrangemang_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                 <div class="arr_getTidigareArrangemang_infotext infotext">Här har du möjlighet att hämta uppgifter om tidigare arrangemang. Klicka i rutan för att välja alternativ.</div>                                                              
 				                    <select id="arr_getTidigareArrangemang" name="form_getTidigareArrangemang" class="selectField">
-				                        <option value=""></option>
-					                    <option value="1">rubrik1</option>
-                                        <option value="2">rubrik2</option>
-                                        <option value="3">rubrik3</option>
-                                        <option value="4">rubrik4</option>
+				                        <option value=""></option>					                    
 				                    </select>
                                     <button id="arr_getTidigareArrangemang_Get" class="button tiny right">Hämta arrangemang</button>  
                                                                      
@@ -374,32 +370,32 @@
                                   <li>
                                     <label>
                                         <input id="val_Fortbildningar" type="radio" name="arr_radioValArrtyp" value="5" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Fortbildningar.png" class="img_Fortbildningar" alt="5" title="val_Fortbildningar"/>    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Fortbildningar.png" class="img_Fortbildningar" alt="5" title="Fortbildningar"/>    
                                     </label>
                                   </li>
                                     <li>
                                     <label>
                                         <input id="val_forestallningtune" type="radio" name="arr_radioValArrtyp" value="1" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningpatune.png" alt="1" class="img_forestallningtune" title="val_forestallningtune"/>    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/forestallningpatune.png" alt="1" class="img_forestallningtune" title="föreställningtune"/>    
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_Kulturpedagogiskaprojekt" type="radio" name="arr_radioValArrtyp" value="4" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/kulturpedagogiskaprojekt.png" class="img_Kulturpedagogiskaprojekt" alt="4" title="val_Kulturpedagogiskaprojekt"/>    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/workshops_projekt.png" class="img_Kulturpedagogiskaprojekt" alt="4" title="Workshops/Projekt"/>    
                                     </label>
                                   </li> 
                                   
                                   <li>
                                     <label>
                                         <input id="val_resmalsbesok" type="radio" name="arr_radioValArrtyp" value="7"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/resmalsbesok.png" class="img_resmalsbesok" alt="7" title="val_resmalsbesok"/>
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/resmalsbesok.png" class="img_resmalsbesok" alt="7" title="Resmålsbesök"/>
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_Skolbio" type="radio" name="arr_radioValArrtyp" value="8"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Skolbio.png" alt="8" class="img_Skolbio" title="val_Skolbio"/>
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Skolbio.png" alt="8" class="img_Skolbio" title="Skolbio"/>
                                     </label>
                                   </li>
                                 </ul>
@@ -416,73 +412,73 @@
                                   <li>
                                     <label>
                                         <input id="val_arkitektur" type="radio" name="arr_radioValkontstform" value="1" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Arkitekturochdesign.png" class="img_arkitektur" title="1 val_arkitektur"/>    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Arkitekturochdesign.png" class="img_arkitektur" title="Arkitektur"/>    
                                     </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_dans" type="radio" name="arr_radioValkontstform" value="2"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/dans.png" class="img_dans" title="2 val_dans" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/dans.png" class="img_dans" title="Dans" />
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_film" type="radio" name="arr_radioValkontstform" value="3" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Filmochmedia.png" class="img_film" title="3 val_film"  /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Filmochmedia.png" class="img_film" title="Film"  /> 
                                     </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_konst" type="radio" name="arr_radioValkontstform" value="4" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Konstformochdesign.png" class="img_konst" title="4 val_konst"  />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Konstformochdesign.png" class="img_konst" title="Konst"  />    
                                     </label>
                                   </li> 
                                   <li>
                                     <label> 
                                         <input id="val_litteratur" type="radio" name="arr_radioValkontstform" value="5" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Litteraturberattandeskrivande.png" class="img_litteratur" title="5 val_litteratur" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Litteraturberattandeskrivande.png" class="img_litteratur" title="Litteratur" />    
                                    </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_musik" type="radio" name="arr_radioValkontstform" value="6" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/musik.png" class="img_musik"  title="6 val_musik" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/musik.png" class="img_musik"  title="Musik" />
                                    </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_naturochkultruarv" type="radio" name="arr_radioValkontstform" value="7" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Naturochkulturarv.png" class="img_naturochkultruarv"  title="7 val_naturochkultruarv" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Naturochkulturarv.png" class="img_naturochkultruarv"  title="Natur och kultruarv" />    
                                     </label>
                                   </li> 
                                    <li>
                                     <label>
                                         <input id="val_nycirkus" type="radio" name="arr_radioValkontstform" value="8" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Nycirkus_cirkus.png" class="img_nycirkus"  title="8 val_nycirkus" /> 
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Nycirkus_cirkus.png" class="img_nycirkus"  title="Nycirkus" /> 
                                     </label>
                                   </li>                                  
                                   <li>
                                     <label>
                                         <input id="val_slojd" type="radio" name="arr_radioValkontstform" value="9" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Slojd.png" class="img_slojd" title="9 val_slojd"  />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Slojd.png" class="img_slojd" title="Slöjd"  />    
                                     </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_teater" type="radio" name="arr_radioValkontstform" value="10"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/teater.png" class="img_teater"  title="10 val_teater" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/teater.png" class="img_teater"  title="Teater" />
                                    </label>
                                   </li>
                                   <li>
                                     <label>
                                         <input id="val_teknik" type="radio" name="arr_radioValkontstform" value="11" />
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Teknikochmultimedia.png" class="img_teknik"  title="11 val_teknik" />    
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Teknikochmultimedia.png" class="img_teknik"  title="Teknik" />    
                                     </label>
                                   </li>
                                   <li>
                                     <label> 
                                         <input id="val_annascenkonst" type="radio" name="arr_radioValkontstform" value="12"/>
-                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Annanscenkonst.png" class="img_annascenkonst"  title="12 val_annascenkonst" />
+                                        <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/Annanscenkonst.png" class="img_annascenkonst"  title="Annan scenkonst" />
                                    </label>
                                   </li>
                                 </ul>
@@ -500,32 +496,32 @@
                                   <label for="formFler1KonstformId">Konstform<a href="#" class="info" rel="arr_kk_aj_search_arr_Fler1Konstform_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                   <div class="arr_formFler1KonstformId_infotext infotext">Här har du möjlighet att lägga till ytterligare en konstform som du blir bedömd inom. Klicka i rutan för att välja alternativ.</div>
                                    <select id="formFler1KonstformId" name="formFler1KonstformId" rel="32" class="selectField ">
-                                      <option value=""></option>
-                                      <option value="Arkitektur och design">Arkitektur och design</option>
-                                      <option value="Dans">Dans</option>
-                                      <option value="Film och media">Film och media</option>
-                                      <option value="Natur- och kulturarv">Natur- och kulturarv</option>
-                                      <option value="Nycirkus/cirkus">Nycirkus/cirkus</option>
-                                      <option value="Slöjd">Slöjd</option>
-                                      <option value="Teater">Teater</option>
-                                      <option value="Teknik och multimedia">Teknik och multimedia</option>
-                                      <option value="Annan scenkonst">Annan scenkonst</option>
+                                      <option value="0"></option>
+                                      <option value="1">Arkitektur och design</option>
+                                      <option value="2">Dans</option>
+                                      <option value="3">Film och media</option>
+                                      <option value="7">Natur- och kulturarv</option>
+                                      <option value="8">Nycirkus/cirkus</option>
+                                      <option value="9">Slöjd</option>
+                                      <option value="10">Teater</option>
+                                      <option value="11">Teknik och multimedia</option>
+                                      <option value="12">Annan scenkonst</option>
                                   </select>
       
 
                                   <%--<label for="formFler1KonstformId">Ytterligare konstform 3<a href="#" class="info" rel="arr_kk_aj_search_arr_Fler2Konstform_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                   <div class="arr_kk_aj_search_arr_Fler2Konstform_infotext infotext">Här har du möjlighet att lägga till ytterligare en konstform som du blir bedömd inom. Klicka i rutan för att välja alternativ.</div>
                                   <select id="formFler2KonstformId" name="formFler2Konstform" rel="33" class="selectField kk_aj_fob kk_aj_ft kk_aj_kp kk_aj_ft kk_aj_rm kk_aj_sb">
-                                      <option value=""></option>
-                                      <option value="Arkitektur och design">Arkitektur och design</option>
-                                      <option value="Dans">Dans</option>
-                                      <option value="Film och media">Film och media</option>
-                                      <option value="Natur- och kulturarv">Natur- och kulturarv</option>
-                                      <option value="Nycirkus/cirkus">Nycirkus/cirkus</option>
-                                      <option value="Slöjd">Slöjd</option>
-                                      <option value="Teater">Teater</option>
-                                      <option value="Teknik och multimedia">Teknik och multimedia</option>
-                                      <option value="Annan scenkonst">Annan scenkonst</option>
+                                      <option value="0"></option>
+                                      <option value="1">Arkitektur och design</option>
+                                      <option value="2">Dans</option>
+                                      <option value="3">Film och media</option>
+                                      <option value="7">Natur- och kulturarv</option>
+                                      <option value="8">Nycirkus/cirkus</option>
+                                      <option value="9">Slöjd</option>
+                                      <option value="10">Teater</option>
+                                      <option value="11">Teknik och multimedia</option>
+                                      <option value="12">Annan scenkonst</option>
                                   </select>--%>
 
 
@@ -800,12 +796,17 @@
                          <div class="row arrexempel_block">
                             <div class="small-12 large-8 columns">
                                 <fieldset >
-                                    <legend>Exempel</legend>
-                                    <label class="kk_aj_kp">Kulturpedagogiska projekt: Här kan du lägga till exempel på färdiga projektidéer men också exempel på genomförda projekt. </label>
-                                    <label class="kk_aj_ft">Föreställning på turné: Här kan du ladda upp bild, film eller ljudklipp från föreställningen. </label>
-                                    <label class="kk_aj_fob kk_aj_rm kk_aj_sb"> Här vissas alla som inte är kp och ft: Här kan du ladda upp bild, film eller ljudklipp från föreställningen. </label>
-                                    <ul class="arrExempellist">                                    
-                                    </ul>
+                                    <legend class="kk_aj_ft">Lägg till ett smakprov från ditt arrangemang</legend>
+                                      <label class="kk_aj_kp kk_aj_fob kk_aj_rm">Lägg till exempel</label>
+                                      <label class="kk_aj_sb">Lägg till trailer från filmen</label>
+                                     
+                                      <label class="kk_aj_kp">Här kan du beskriva tidigare genomförda projekt och eventuellt fler färdiga projektidéer kortfattat i ord (max 1000 tecken inkl blanksteg), länkar, bild (annan än presentationsbilden), ljud- eller filmklipp.</label>
+                                      <label class="kk_aj_ft">Här kan du ladda upp bild (annan än presentationsbilden), film- eller ljudklipp från föreställningen. </label>
+                                      <label class="kk_aj_sb">Här kan du lägga till en trailer från filmen</label>
+                                      <label class="kk_aj_fob">Här kan du beskriva andra kompetensutvecklingsinsatser du har gjort inom området, eller som du har färdiga planer på att genomföra. Det kan du göra kortfattat i ord (max 1000 tecken inkl blanksteg), länkar, ljud- eller filmklipp.</label>
+                                      <label class="kk_aj_rm">Här kan du lägga till länkar, ljud- och filmklipp från ex utställningar.</label>
+                                      <ul class="arrExempellist">
+                                      </ul>
                                 </fieldset>
                             </div>                            
                          </div>             
@@ -823,6 +824,9 @@
                                                 <a href="#exempelBildarr" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2" class="">Bild</a>
                                             </li>
                                         </ul>
+                                        <small class="error arr_ExempelTyp_error">Vänligen fyll i om exempel media är bild eller film</small>
+
+
                                             <div class="tabs-content">
                                               <section role="tabpanel" aria-hidden="false" class="content active" id="exempelFilmarr">
                                                   <div class="medium-4 columns kk_aj_exempelfilmblock">
@@ -840,8 +844,8 @@
                                                       <label>Beskrivning</label>
                                                       <textarea id="arr_Exempelfilmbeskrivning"></textarea>
 
-                                                      <label class="lbl_ExempelfilmUrl">Länk till youtube<a href="#" class="info" rel="lbl_ExempelfilmUrl_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                      <div class="lbl_ExempelfilmUrl_infotext infotext">Här kan du ange en länken till youtube</div>
+                                                      <label class="lbl_ExempelfilmUrl">Länk till exempelsida på youtube<a href="#" class="info" rel="lbl_ExempelfilmUrl_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                                      <div class="lbl_ExempelfilmUrl_infotext infotext">Här kan du ange en länk till en sida där mer information finns.</div>
                                                       <div class="row collapse">
                                                           <div class="small-3 large-2 columns">
                                                               <span class="prefix">http://</span>
@@ -861,8 +865,8 @@
                                                   <div class="medium-4 columns kk_aj_exempelblock">
                                                       <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingimage.jpg" />
 
-                                                      <label>Bildurl <a href="#" class="info" rel="arr_Exempelbild_info"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                      <div class="arr_Exempelbild_infotext infotext">Länk/Url till bildfilen.</div>
+                                                      <label>Länk till bild <a href="#" class="info" rel="arr_Exempelbild_info"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                                      <div class="arr_Exempelbild_infotext infotext">1. Högerklicka på din bild på nätet. 2. Kopiera bildadressen (url). 3. Klistra in den här.</div>
                                                       <input id="arr_Exempelbild" type="text" />
 
                                                   </div>
@@ -874,7 +878,7 @@
                                                       <textarea id="arr_Exempelbeskrivning"></textarea>
 
                                                       <label class="lbl_ExempelUrl">Länk till exempelsida<a href="#" class="info" rel="lbl_ExempelUrl_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                      <div class="lbl_ExempelUrl_infotext infotext">Här anger du </div>
+                                                      <div class="lbl_ExempelUrl_infotext infotext">Här kan du ange en länk till en sida där mer information finns.</div>
                                                       <div class="row collapse">
                                                           <div class="small-3 large-2 columns">
                                                               <span class="prefix">http://</span>
@@ -1196,7 +1200,7 @@
               <p>Har du frågor kontakta oss på kulturkatalogen väst:<br />
                    tel: <a href="tel:0331122334">033-1122334</a>  eller <a href="mailto:info@kulturkatalogenvast.se">info@kulturkatalogenvast.se</a>
               </p>
-              <textarea disabled="disabled" rows="10" id="ApproveText" co>Datalagringsavtal
+              <textarea disabled="disabled" rows="10" id="ApproveText" >Datalagringsavtal
                   Genom att skicka in din ansökan godkänner du att Kulturkatalogen behandlar och lagrar användardata. och... Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.
               </textarea>
               

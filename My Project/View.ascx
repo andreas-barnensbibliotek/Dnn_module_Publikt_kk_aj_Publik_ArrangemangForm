@@ -34,7 +34,7 @@
           <!--tabs-content STARTAR -->
             <!-- Tab1 section STARTAR -->
           <section role="tabpanel" aria-hidden="false" class="content active first current" id="addarrtab-1">
-              <div class="row formheader">
+            <div class="row formheader">
                   <div class="small-12 medium-3 columns">
                       <h2>Steg 1</h2>
                   </div>
@@ -42,18 +42,19 @@
                       <h2>Generell information</h2>
                   </div>
               </div>
-              <div class="row">
+            <div class="row">
                   <div class="small-12 medium-3 columns">                      
                   </div>
                   <div class="small-12 medium-9 columns">
                       <div class="row">
                         <div class="large-8 columns">
-                            <fieldset>
+                             <fieldset>
                                 <legend>Välkommen att söka till Kulturkatalogen Väst!</legend>
                                 <p>Kulturkatalogen Väst är en digital katalog över professionell konst och kultur i Västra Götalandsregionen. Här kan du läsa mer om vilka typer av arrangemang som kommer med i katalogen (länken öppnas i nytt fönster).
                                  Tänk på att ha en lista över din/er konstnärlig bakgrund och utbildning tillgänglig när du börjar. De uppgifterna ska fyllas i och formuläret går inte att spara.
                                 </p>
-
+							</fieldset>
+                            <fieldset>
                                 <legend>Fyll i info om utövare/aktör/grupp</legend>
                                 <label>Har du varit med i katalogen tidigare använd Tidigare aktör/utövare</label>
                                 <ul class="button-group">
@@ -65,7 +66,7 @@
                       </div>
 
                       <!-- Befintligutövare sök kontaktuppgifter block START -->
-                      <div class="kk_aj_form_befintligutovare" rel="0">
+                    <div class="kk_aj_form_befintligutovare" rel="0">
                         <div class="row" >
                             <div class="large-8 columns">
                               <label>E-postadress<a href="#" class="info" rel="arr_kk_aj_search_utovareEpost_info" > <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
@@ -93,10 +94,106 @@
                               <a href="#" class="button secondary kk_aj_btnHamtakontaktupg" tabindex="8">Hämta kontaktuppgifter</a>
                             </div>                           
                         </div>
-                    </div>
-                    
+                    </div>                    
+
+                    <!-- Utövareuppgifter Autocomplete block START -->
+                    <div class="kk_aj_form_visa_utovarinfo" rel="0" style="display:none;">
+                          <label>Kontaktuppgifter utövare/aktör/grupp</label>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovareNamn1">Namn på utövare/aktör/grupp:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovareNamn2">namn2</span>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovareHemsida1">Utövare/aktör/grupp hemsida:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovareHemsida2">namn2</span>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovareAdress1">Adress:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovareAdress2">namn2</span>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovarePostnr1">Postnummer:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovarePostnr2">namn2</span>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovareOrt1">Ort:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovareOrt2">namn2</span>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovareKommun1">Kommun:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovareKommun2">namn2</span>
+                              </div>
+                          </div>
+
+                          <label>Kontaktperson</label>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovareFornamn1">Förnamn:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovareForamn2">namn2</span>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovareEfternamn1">Efternamn:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovareEfternamn2">namn2</span>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovareTelenr1">Telefonnummer:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovareTelenr2">namn2</span>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="small-4 columns">
+                                  <span class="visa_utovareEpost1">E-postadress:</span>
+                              </div>
+                              <div class="small-8 columns">
+                                  <span id="visa_utovareEpost2">namn2</span>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="large-8 columns">
+                                <button id="ChangeUppgifterKontakt" class="button small secondary right changeuppgifter">Ändra uppgifter</button>
+                            </div>
+                            <div class="large-4 columns">
+                        </div>
+                    </div>                                
+                      </div>
+
                     <!-- Utövareuppgifter block START -->
-                    <div class="kk_aj_form_utovareuppgifter">                       
+                    <div class="kk_aj_form_utovareuppgifter">    
+                       <!-- Utövareuppgifter block START -->
+                    <div class="kk_aj_form_utovareuppgifterEDIT">                       
                         <div class="row" >
                             <div class="large-8 columns">
                                 <label>Namn på utövare/aktör/grupp<a href="#" class="info" rel="arr_utovare_aktor_grupp_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
@@ -150,16 +247,15 @@
                                 <small class="error utovare_kommun_error">Vänligen fyll i kommunens namn</small>                             
                             </div>                            
                         </div>
-
                         <div class="row" >
                             <div class="large-8 columns">   
                                 <fieldset class="utovareadressblock">
-                                    <legend>Kontaktperson utövare/aktör/grupp</legend>
-                                    <label>Förnamn</label>
+                                    <legend>Kontaktperson</legend>
+                                    <label>Kontaktperson - Förnamn</label>
                                         <input id="utovare_fornamn" type="text" class="kk_aj_requireValidation_step1" />                                   
                                         <small class="error utovare_fornamn_error">Vänligen fyll i Kontaktpersonens förnamn</small> 
                                     
-                                    <label>Efternamn </label>
+                                    <label>Kontaktperson - Efternamn </label>
                                         <input id="utovare_efternamn" type="text" class="kk_aj_requireValidation_step1" />
                                         <small class="error utovare_efternamn_error">Vänligen fyll i kontaktpersonens efternamn</small>                            
                                     
@@ -168,136 +264,58 @@
                                         <input id="utovare_telefonnr" type="text" class="kk_aj_requireValidation_step1" />
                                         <small class="error utovare_telefonnr_error">Vänligen fyll i kontaktpersonens telefonnummer</small>
                                     
-                                    <label>E-postadress - ange gärna infoadress</label>
+                                    <label>E-postadress</label>
                                         <input id="utovare_epost" type="text" class="kk_aj_requireValidation_step1"/>
                                         <small class="error utovare_epost_error">Vänligen fyll i kontaktpersonens e-postadress</small>
-                                        <small class="error  utovare_epost_errorutovareexeists">Är adressen finns redan registrerad! <br />Välj en annan e-postadress eller välj tidigare aktör!<br /> Vid frågor kontakta oss på kulturkatalogen väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>
-
+                                        <small class="error utovare_epost_errorNotYou">Är adressen inte din kan du ändra uppgifterna ovan.<br /> OBS Du måste även ange en annan e-postadress än den tidigare.<br /> Vid frågor kontakta oss på kulturkatalogen väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>                             
+                                        <small class="error  utovare_epost_errorutovareexeists">Är adressen finns redan registrerad! <br />Välj en annan e-postadress eller välj tidigare aktör!<br /> Vid frågor kontakta oss på kulturkatalogen väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>                                    
                                 </fieldset>                                 
                             </div>                                                        
+                        </div>                                  
+                    </div>                      
+                    <div class="row SparaUppgifterKontaktBlock" style="display:none;">
+                        <div class="large-8 columns">
+                            <button id="SparaUppgifterKontakt" class="button small secondary right changeuppgifter">Spara uppgifter</button>
                         </div>
+                        <div class="large-4 columns">
+                        </div>
+                    </div>                        
+                </div>
 
-
-                        <!-- Visa utövare block START -->
-                        <div class="kk_aj_form_visa_utovarinfo" rel="0">
-                        <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovareNamn1">Namn på utövare/aktör/grupp:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovareNamn2"></span></div>
-                        </div>
-                          <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovareHemsida1">Utövare/aktör/grupp hemsida:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovareHemsida2"></span></div>
-                        </div>
-                          <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovareAdress1">Adress:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovareAdress2"></span></div>
-                        </div>
-                          <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovarePostnr1">Postnummer:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovarePostnr2"></span></div>
-                        </div>
-                            <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovareOrt1">Ort:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovareOrt2"></span></div>
-                        </div>
-                            <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovareKommun1">Kommun:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovareKommun2"></span></div>
-                        </div>
-
-                            <legend>Kontaktperson utövare/aktör/grupp</legend>
-                            <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovareFornamn1">Förnamn:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovareForamn2"></span></div>
-                        </div>
-                            <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovareEfternamn1">Efternamn:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovareEfternamn2"></span></div>
-                        </div>
-                            <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovareTelenr1">Telefonnummer:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovareTelenr2"></span></div>
-                        </div>
-                            <div class="row" >
-                            <div class="small-4 columns">
-                                <span class="visa_utovareEpost1">E-postadress:</span>
-                            </div>
-                            <div class="small-8 columns">
-                                <span class="visa_utovareEpost2"></span></div>
-                        </div>
-
-                            <div class="large-10 columns">
-                                <button id="ChangeUppgifterKontakt" class="button small secondary right changeuppgifter">Ändra uppgifter</button>
-                            </div>
-                        </div>
-
-                                       
-
-
-                    <!-- Kontaktuppgifter arrangemang block START -->
-
-                        
+                    <!-- Kontaktuppgifter arrangemang block START -->                      
                     <div class="kk_aj_form_kontaktuppgifterarr">   
                          <div class="row" >
                             <div class="large-8 columns">   
                                 <fieldset class="kontaktuppgifterarrblock">
-                                    <a href class="right alert kk_aj_sammakontaktpers" >Kontaktperson samma som ovan</a>
+                                    <a href="#" class="right info kk_aj_sammakontaktpers label" title="Kopiera ovanstående kontaktuppgifter"><i class="fa fa-clone" aria-hidden="true"></i> Kontaktperson samma som ovan</a>
 
                                     <legend>Kontaktperson för arrangemanget</legend>
                                     <label>Förnamn</label>
-                                        <input id="Text3" type="text" class="kk_aj_requireValidation_step1" />                                   
-                                        <small class="error utovare_fornamn_error">Vänligen fyll i kontaktpersonens förnamn</small> 
-                                    
+                                        <input id="arr_kontakt_fornamn" type="text" class="kk_aj_requireValidation_step1" />                                   
+                                        <small class="error arr_kontakt_fornamn_error">Vänligen fyll i kontaktpersonens förnamn</small>                                     
+
                                     <label>Efternamn </label>
-                                        <input id="Text4" type="text" class="kk_aj_requireValidation_step1" />
-                                        <small class="error utovare_efternamn_error">Vänligen fyll i kontaktpersonens efternamn</small>                            
+                                        <input id="arr_kontakt_efternamn" type="text" class="kk_aj_requireValidation_step1" />
+                                        <small class="error arr_kontakt_efternamn_error">Vänligen fyll i kontaktpersonens efternamn</small>                            
                                     
-                                    <label>Telefonnummer<a href="#" class="info" rel="arr_telefonnr_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_telefonnr_infotext infotext">Ange kontaktpersonens telnr - INGA streck mellan siffror & telefonnummer</div> 
-                                        <input id="Text5" type="text" class="kk_aj_requireValidation_step1" />
-                                        <small class="error utovare_telefonnr_error">Vänligen fyll i kontaktpersonens telefonnummer</small>
+                                    <label>Telefonnummer<a href="#" class="info" rel="arr_kontakt_telefonnr_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                        <div class="arr_kontakt_telefonnr_infotext infotext">Ange kontaktpersonens telnr - INGA streck mellan siffror & telefonnummer</div> 
+                                        <input id="arr_kontakt_telefonnr" type="text" class="kk_aj_requireValidation_step1" />
+                                        <small class="error arr_kontakt_telefonnr_error">Vänligen fyll i kontaktpersonens telefonnummer</small>
                                     
                                     <label>E-postadress</label>
-                                        <input id="Text6" type="text" class="kk_aj_requireValidation_step1"/>
-                                        <small class="error utovare_epost_error">Vänligen fyll i kontaktpersonens e-postadress</small>
-                                        <small class="error  utovare_epost_errorutovareexeists">Adressen finns redan registrerad! <br />Välj en annan e-postadress eller välj tidigare aktör!<br /> Vid frågor kontakta oss på Kulturkatalogen Väst (<a href:"mailto:info@kulturkatalogen.se">info@kulturkatalogen.se</a>)</small>                                    
+                                        <input id="arr_kontakt_epost" type="text" class="kk_aj_requireValidation_step1"/>
+                                        <small class="error arr_kontakt_epost_error">Vänligen fyll i kontaktpersonens e-postadress</small>
                                 </fieldset>                                 
                             </div>                                                        
-                        </div>
-                       </div>               
-                    </div>                      
-                                           
-                </div>
-            </div>
+                        </div>            
+                    </div>    
 
-               <div class="row formfooter">
+
+                </div>
+
+              </div>
+            <div class="row formfooter">
                   <div class="small-12 medium-3 columns">
                       
                   </div>
@@ -326,23 +344,32 @@
                   </div>
                   <div class="small-12 medium-9 columns">
 
-                 <!-- Hämta ARRANGEMANG Radio block START -->
-                                  <label for="formGetArrangemangId">Hämta tidigare arrangemang<a href="#" class="info" rel="arr_kk_aj_search_formGetArrangemangId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                  <div class="arr_kk_aj_search_arr_formGetArrangemangId_infotext infotext">Här har du möjlighet att hämta uppgifter om tidigare arrangemang. Klicka i rutan för att välja alternativ.</div>
-                                   <select id="GetArrangemang" name="formGetArrangemang" rel="42">
-                                      <option value="GetArrangemang1">1</option>
-                                       <option value="GetArrangemang2">2</option>
-                                  </select>
+                      <!-- Hämta ARRANGEMANG Radio block START -->
+                      <div class="row kk_aj_visagetTidigareArrBlock" style="display:none;">
+                        <div class="large-8 columns">
+                            <fieldset>
+                                <legend>Hämta tidigare arrangemang</legend>      
+                                 
+                                <label for="arr_getTidigareArrangemang">Hämta tidigare arrangemang<a href="#" class="info" rel="arr_getTidigareArrangemang_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                <div class="arr_getTidigareArrangemang_infotext infotext">Här har du möjlighet att hämta uppgifter om tidigare arrangemang. Klicka i rutan för att välja alternativ.</div>                                                              
+				                    <select id="arr_getTidigareArrangemang" name="form_getTidigareArrangemang" class="selectField">
+				                        <option value=""></option>
+					                    <option value="1">rubrik1</option>
+                                        <option value="2">rubrik2</option>
+                                        <option value="3">rubrik3</option>
+                                        <option value="4">rubrik4</option>
+				                    </select>
+                                    <button id="arr_getTidigareArrangemang_Get" class="button tiny right">Hämta arrangemang</button>  
+                                                                     
+                             </fieldset>                                
+                        </div>
+                      </div>
                       
-                                  
-                      
-                       
+                      <!-- Välj ARRANGEMANG Radio block START -->
                       <div class="row">
                         <div class="large-8 columns">
                             <fieldset>
-
-                          <!-- Välj ARRANGEMANG Radio block START -->
-                                <legend>Välj typ av kategori</legend>                               
+                                <legend>Välj typ av arrangemang</legend>                               
                                 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 ArrangemangtypBlock">
                                   <li>
                                     <label>
@@ -377,15 +404,14 @@
                                   </li>
                                 </ul>
                             </fieldset>
-                             <small class="error arr_radioValArrtyp_error">Vänligen välj typ av kategori</small>   
+                             <small class="error arr_radioValArrtyp_error">Vänligen välj typ av arrangemang</small>   
                         </div>
                       </div>
                       <!-- Välj KONSTFORM Radio block START -->
                       <div class="row">
                         <div class="large-8 columns">
                             <fieldset>
-                                <legend>Välj konstform</legend>
-                                                                        
+                                <legend>Välj konstform</legend>                                                                        
                                 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 kontformBlock">
                                   <li>
                                     <label>
@@ -464,42 +490,42 @@
                              <small class="error arr_radioValkontstform_error">Vänligen välj konstform</small>   
                         </div>
                       </div>
-
-
+                      <!-- Extra konstform -->
                       <div class="row arrFlerKonstformId">
                           <div class="small-12  large-8 columns">
 
                               <fieldset>
+                                  <legend>Välj ytterligare konstform</legend>
   
-                                  <label for="formFler1KonstformId">Ytterligare konstform<a href="#" class="info" rel="arr_kk_aj_search_arr_Fler1Konstform_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                  <label for="formFler1KonstformId">Konstform<a href="#" class="info" rel="arr_kk_aj_search_arr_Fler1Konstform_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                   <div class="arr_formFler1KonstformId_infotext infotext">Här har du möjlighet att lägga till ytterligare en konstform som du blir bedömd inom. Klicka i rutan för att välja alternativ.</div>
-                                   <select id="formFler1KonstformId" name="formFler1KonstformId" rel="32" class="selectField kk_aj_fob kk_aj_ft kk_aj_kp kk_aj_ft kk_aj_rm kk_aj_sb">
-                                      <option value=""></option>
-                                      <option value="Arkitektur och design">Arkitektur och design</option>
-                                      <option value="Dans">Dans</option>
-                                      <option value="Film och media">Film och media</option>
-                                      <option value="Natur- och kulturarv">Natur- och kulturarv</option>
-                                      <option value="Nycirkus/cirkus">Nycirkus/cirkus</option>
-                                      <option value="Slöjd">Slöjd</option>
-                                      <option value="Teater">Teater</option>
-                                      <option value="Teknik och multimedia">Teknik och multimedia</option>
-                                      <option value="Annan scenkonst">Annan scenkonst</option>
+                                   <select id="formFler1KonstformId" name="formFler1KonstformId" rel="32" class="selectField ">
+                                      <option value="0"></option>
+                                      <option value="1">Arkitektur och design</option>
+                                      <option value="2">Dans</option>
+                                      <option value="3">Film och media</option>
+                                      <option value="7">Natur- och kulturarv</option>
+                                      <option value="8">Nycirkus/cirkus</option>
+                                      <option value="9">Slöjd</option>
+                                      <option value="10">Teater</option>
+                                      <option value="11">Teknik och multimedia</option>
+                                      <option value="12">Annan scenkonst</option>
                                   </select>
       
 
                                   <%--<label for="formFler1KonstformId">Ytterligare konstform 3<a href="#" class="info" rel="arr_kk_aj_search_arr_Fler2Konstform_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                   <div class="arr_kk_aj_search_arr_Fler2Konstform_infotext infotext">Här har du möjlighet att lägga till ytterligare en konstform som du blir bedömd inom. Klicka i rutan för att välja alternativ.</div>
                                   <select id="formFler2KonstformId" name="formFler2Konstform" rel="33" class="selectField kk_aj_fob kk_aj_ft kk_aj_kp kk_aj_ft kk_aj_rm kk_aj_sb">
-                                      <option value=""></option>
-                                      <option value="Arkitektur och design">Arkitektur och design</option>
-                                      <option value="Dans">Dans</option>
-                                      <option value="Film och media">Film och media</option>
-                                      <option value="Natur- och kulturarv">Natur- och kulturarv</option>
-                                      <option value="Nycirkus/cirkus">Nycirkus/cirkus</option>
-                                      <option value="Slöjd">Slöjd</option>
-                                      <option value="Teater">Teater</option>
-                                      <option value="Teknik och multimedia">Teknik och multimedia</option>
-                                      <option value="Annan scenkonst">Annan scenkonst</option>
+                                      <option value="0"></option>
+                                      <option value="1">Arkitektur och design</option>
+                                      <option value="2">Dans</option>
+                                      <option value="3">Film och media</option>
+                                      <option value="7">Natur- och kulturarv</option>
+                                      <option value="8">Nycirkus/cirkus</option>
+                                      <option value="9">Slöjd</option>
+                                      <option value="10">Teater</option>
+                                      <option value="11">Teknik och multimedia</option>
+                                      <option value="12">Annan scenkonst</option>
                                   </select>--%>
 
 
@@ -507,6 +533,7 @@
                           </div>
 
                       </div>
+
                       <!-- Befintligutövare sök kontaktuppgifter block START -->
                       <div class="kk_aj_form_Arrangemang">
                         <div class="row" >
@@ -519,13 +546,13 @@
                                         <input id="arr_rubrik" type="text" class="kk_aj_requireValidation_step2" />
                                         <small class="error arr_rubrik_error">Vänligen fyll i en rubrik på arrangemanget</small>                                   
          
-                                    <label>Underrubrik (ej obligatorisk)<a href="#" class="info" rel="arr_underrubrik_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label>Underrubrik<a href="#" class="info" rel="arr_underrubrik_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_underrubrik_infotext infotext">Fyll i en underrubrik för arrangemanget</div>
                                         <input id="arr_underrubrik" type="text" />
                                         <small class="error arr_underrubrik_error">Vänligen fyll i en underrubrik</small>  
 
                                     <label>Presentation<a href="#" class="info" rel="arr_presentation_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_presentation_infotext infotext">Fyll i en beskrivande text om arrangemanget. Max 700 tecken.</div>
+                                        <div class="arr_presentation_infotext infotext">Fyll i en beskrivande text om arrangemanget. Försök att inte använda mer än 700 tecken.</div>
                                         <textarea id="arr_presentation" class="kk_aj_requireValidation_step2" ></textarea>
                                         <small class="error arr_presentation_error">Vänligen fyll i en beskrivning av ditt arrangemang</small>  
 
@@ -538,7 +565,7 @@
                                 
                                  <fieldset class="arrpressentationbild">
                                     <legend>Presentationsbild<a href="#" class="info" rel="arr_arrpressentationbild_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></legend>
-                                     <div class="arr_arrpressentationbild_infotext infotext">Välj en bild som kommer att visas i din/er presentation. Fyll i alternativtext, filstorlek och fotograf och tryck sedan på knappen ladda upp. Behöver du tips på hur man skriver alternativtext - länk finns här: </div>
+                                     <div class="arr_arrpressentationbild_infotext infotext">Välj en bild som kommer att visas i din/er presentation. Fyll i alternativtext, filstorlek och fotograf och tryck sedan på knappen ladda upp.</div>
                                       <div class="row">  
                                         <div class="small-4 columns">
                                             <img id="kk_aj_tmpimg" src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingimage.jpg" alt="Bild saknas" title="Bild saknas" />
@@ -552,7 +579,7 @@
                                      <div class="row" >
                                         <div class="large-12 columns">
                                             <label>Alternativtext<a href="#" class="info" rel="arr_altfoto_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                <div class="arr_altfoto_infotext infotext">Fyll i en kort beskrivning av bilden ovan. Innehållet i bilder måste kunna läsas upp av verktyg för talsyntes.</div> 
+                                                <div class="arr_altfoto_infotext infotext">Fyll i en alternativtext, dvs. en kort beskrivning av bilden ovan. Innehållet i bilder måste kunna tolkas av verktyg för talsyntes.</div> 
                                                 <input id="arr_altfoto" class="arr_altfoto kk_aj_requireValidation_step2" type="text"  />                                            
                                                 <small class="error arr_altfoto_error">Vänligen fyll i alternativtext</small>
                                         </div>                                    
@@ -560,7 +587,7 @@
                                      <div class="row" >
                                         <div class="large-12 columns">
                                             <label>Fotograf<a href="#" class="info" rel="arr_fotograf_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                <div class="arr_fotograf_infotext infotext">Fyll i namnet på den som har tagit fotografiet eller gjort illustrationen.</div>
+                                                <div class="arr_fotograf_infotext infotext">Fyll i namnet på fotografen som tagit bilden ovan.</div>
                                                 <input id="arr_fotograf" class="arr_fotograf kk_aj_requireValidation_step2" type="text" />
                                                 <small class="error arr_fotograf_error">Vänligen fyll i fotograf</small>                                            
                                         </div>
@@ -580,7 +607,7 @@
                                  <fieldset class="medverkandeblock">
                                     <legend>Fakta</legend> 
                                     <label class="lbl_antalmedverkande kk_aj_fob kk_aj_ft kk_aj_kp">Antal medverkande<a href="#" class="info" rel="arr_antalmedverkande_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_antalmedverkande_infotext infotext">Ange antal medverkande på arrangemanget. Använd siffror!</div>
+                                        <div class="arr_antalmedverkande_infotext infotext">Fyll i antal medverkande på arrangemanget i siffror.</div>
                                         <input id="arr_antalmedverkande" rel="2" type="text" class="kk_aj_fob kk_aj_ft kk_aj_kp" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"/>
                                         <small class="error arr_antalmedverkande_error">Vänligen fyll i antal medverkande i siffror</small>
                                     
@@ -589,18 +616,18 @@
                                         <input id="arr_medverkande" rel="3" type="text" class="kk_aj_Fakta kk_aj_fob kk_aj_ft kk_aj_kp "/>
                                         <small class="error arr_medverkande_error">Vänligen fyll i namn på medverkande</small>
 
-                                    <label class="lbl_Premiardatum kk_aj_ft">Uruppförande/Premiärdatum<a href="#" class="info" rel="arr_Premiardatum_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label class="lbl_Premiardatum kk_aj_ft">Premiärdatum<a href="#" class="info" rel="arr_Premiardatum_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_Premiardatum_infotext infotext">Ange när föreställningen hade premiär.</div>
                                         <input id="arr_Premiardatum" rel="35" type="text" class="kk_aj_Premiardatum kk_aj_ft"/>
                                         <small class="error arr_Premiardatum_error">Vänligen fyll i när föreställningen hade premiär.</small>
                                    
-                                      <label class="lbl_Bokningsbar kk_aj_fob kk_aj_ft kk_aj_kp">Bokningsbar till och med<a href="#" class="info" rel="arr_Bokningsbar_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                      <label class="lbl_Bokningsbar kk_aj_fob kk_aj_ft kk_aj_kp">Bokningsbar t.om.<a href="#" class="info" rel="arr_Bokningsbar_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_Bokningsbar_infotext infotext">Ange sista bokningsdatum.</div>
                                         <input id="arr_Bokningsbar" rel="5" type="text" class="kk_aj_Fakta kk_aj_fob kk_aj_ft kk_aj_kp"/>
                                         <small class="error arr_Bokningsbar_error">Vänligen fyll i sista bokningsdatum.</small>
 
                                     <div class="kk_aj_ft kk_aj_sb">
-                                        <label>Lärarhandledning (ej obligatorisk)<a href="#" class="info" rel="arr_laromedel_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                        <label>Lärarhandledning<a href="#" class="info" rel="arr_laromedel_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="row collapse">
                                             <div class="small-3 large-2 columns">
                                                 <span class="prefix">http://</span>
@@ -624,7 +651,7 @@
                                     <!-- Föreställning på tune fält START -->
                                     <div class="kk_aj_ft">                                       
                                         <label for="formBuildTimeId">Byggtid (min)<a href="#" class="info" rel="arr_formBuildTimeId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>	
-                                            <div class="arr_formBuildTimeId_infotext infotext">Ange uppskattad byggtid i minuter.</div>				                    
+                                            <div class="arr_formBuildTimeId_infotext infotext">Ange uppskattad byggtid i minuter, dvs föreställningens förberedelsetid.</div>				                    
                                             <input type="text" id="formBuildTimeId" name="formBuildTime" rel="10" class="kk_aj_Fakta kk_aj_ft" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                             <small class="error formBuildTimeId_error">Vänligen fyll i byggtid i minuter. Använd enbart siffror!</small>
                             
@@ -662,12 +689,11 @@
 
                                         <label>Mörkläggning krävs</label>
                                           <input type="radio" name="arr_morklaggning" rel="27" value="Nej" id="arr_morklaggningnej"><label for="arr_morklaggningnej">Nej</label>
-                                          <input type="radio" name="arr_morklaggning" rel="27" value="Ja, helst" id="arr_morklaggningja"><label for="arr_morklaggningja">Ja, helst</label>
-                                          <input type="radio" name="arr_morklaggning" rel="27" value="Ja, nödvändigt" id="arr_morklaggningnodvandigt"><label for="arr_morklaggningnej">Ja, nödvändigt</label>
+                                          <input type="radio" name="arr_morklaggning" rel="27" value="Ja helst" id="arr_morklaggningja"><label for="arr_morklaggningja">Ja helst</label>
+                                          <input type="radio" name="arr_morklaggning" rel="27" value="Ja nödvändigt" id="arr_morklaggningnodvandigt"><label for="arr_morklaggningnej">Ja nödvändigt</label>
                                           <small class="error kk_aj_search_arr_morklaggning_error">Vänligen fyll i information om mörkläggning</small>
 
-                                         <label for="formCarriersId">Bärhjälp behövs<a href="#" class="info" rel="arr_kk_aj_search_arr_carriers_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>	
-                                        <div class="arr_kk_aj_search_arr_carriers_infotext infotext">Klicka i rutan för att välja alternativ.</div>				                    
+                                        <label for="formCarriersId">Bärhjälp behövs</label>
 				                        <select id="formCarriersId" name="formCarriers" rel="16" class="selectField kk_aj_ft">
 				                            <option value=""></option>
 					                        <option value="Nej">Nej</option>
@@ -677,8 +703,7 @@
 				                        </select>
                                         <small class="error kk_aj_search_arr_carriers_error">Vänligen gör val av Bärhjälp</small>
            
-                                        <label for="formElectricityId">El<a href="#" class="info" rel="arr_kk_aj_search_arr_electricity_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>	
-                                        <div class="arr_kk_aj_search_arr_electricity_infotext infotext">Klicka i rutan för att välja alternativ.</div>					                    
+                                        <label for="formElectricityId">El</label>
 				                        <select id="formElectricityId" name="formElectricity" rel="17" class="selectField kk_aj_ft">
 				                            <option value=""></option>
 					                        <option value="10 A">10 A</option>
@@ -689,7 +714,7 @@
                                         <small class="error kk_aj_search_arr_electricity_error">Vänligen gör val av El</small>                                    
                                     </div>
                                     <!-- Föreställning på tune fält STOPP -->
-                                    <label for="formVenueRequiermentsId" class="kk_aj_fob kk_aj_ft kk_aj_sb">Övrigt om lokal (ej obligatorisk)<a href="#" class="info" rel="arr_formVenueRequiermentsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label for="formVenueRequiermentsId" class="kk_aj_fob kk_aj_ft kk_aj_sb">Övrigt om lokal<a href="#" class="info" rel="arr_formVenueRequiermentsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_formVenueRequiermentsId_infotext infotext">Här kan du skriva övrigt om om lokal som inte framkommer ovan ex rumstemperatur, golvmaterial, scen m.m. Skriv kortfattat.</div>
 				                        <textarea id="formVenueRequiermentsId" rel="18" name="formVenueRequierments" class="kk_aj_fob kk_aj_ft kk_aj_sb novalidate"></textarea>                                       
                                 </fieldset>
@@ -702,7 +727,7 @@
                                 <fieldset class="arrpublik">
                                     <legend>Deltagare/Publik</legend>                                                                            
                                     
-                                    <label id="labelMaxAudienceId" for="formMaxAudienceId" class="kk_aj_ft ">Maxantal publik<a href="#" class="info" rel="arr_labelMaxAudienceId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label id="labelMaxAudienceId" for="formMaxAudienceId" class="kk_aj_ft ">Max publik<a href="#" class="info" rel="arr_labelMaxAudienceId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_labelMaxAudienceId_infotext infotext">Ange max antal personer i publiken. Skriv enbart siffror! </div>
 				                        <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" class="kk_aj_Fakta kk_aj_ft " onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                         <small class="error formMaxAudienceId_error">Vänligen ange max antal personer i publiken. Skriv enbart siffror!</small>
@@ -718,12 +743,12 @@
                                         <div id="kk_aj_yearspan" rel="7" rev="8" class="kk_aj_ft kk_aj_rm kk_aj_sb"></div>
                                         <small class="error kk_aj_yearspan_error">Vänligen gör val av ålder som arrangemanget riktar sig mot</small>
 
-                                    <label for="formMaxShowsId" id="labelMaxShowsId" class="kk_aj_ft">Föreställningar per dag (ej obligatorisk)<a href="#" class="info" rel="arr_formMaxShowsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label for="formMaxShowsId" id="labelMaxShowsId" class="kk_aj_ft">Föreställningar per dag<a href="#" class="info" rel="arr_formMaxShowsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
 				                        <div class="arr_formMaxShowsId_infotext infotext">Ange hur många föreställningar som kan ges per dag. Skriv enbart siffror!</div>	
 				                        <input type="text" id="formMaxShowsId" name="formMaxShows" rel="9" class="kk_aj_Fakta kk_aj_ft " onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                         <small class="error formMaxShowsId_error">Ange hur många föreställningar som kan ges per dag. Skriv enbart siffror!</small>
 
-                                    <label for="kk_aj_speltid" class="kk_aj_ft kk_aj_sb">Speltid (min)<a href="#" class="info" rel="arr_kk_aj_speltid_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label for="kk_aj_speltid" class="kk_aj_ft kk_aj_sb">Speltid (min):<a href="#" class="info" rel="arr_kk_aj_speltid_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_kk_aj_speltid_infotext infotext">Ange hur många minuter en föreställning av arrangemanget pågår</div>	
                                         <div id="kk_aj_speltid_range" class="kk_aj_ft kk_aj_sb" ></div> 
                                         <div id="kk_aj_speltid" rel="26" class="kk_aj_ft kk_aj_sb"></div>
@@ -756,227 +781,211 @@
                                         <input type="radio" name="arr_Traktamente" rel="24" value="Tillkommer" id="arr_Traktamentenej"><label for="arr_Traktamentenej">Tillkommer</label>
                                         <small class="error kk_aj_search_arr_traktamente_error">Vänligen fyll i om traktamente ingår eller tillkommer</small>
                                     </div>
-                                    <label>Övrigt om kostnader (ej obligatorisk)<a href="#" class="info" rel="arr_resorovrigt_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_resorovrigt_infotext infotext">Ange om det tillkommer fler kostnader, ex om det är entréavgift/gratis och liknande.</div>	
+                                    <label>Övrigt om kostnader<a href="#" class="info" rel="arr_resorovrigt_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                        <div class="arr_resorovrigt_infotext infotext">Ange övrigt om kostnader kring arrangemanget. Resor - ex. Milersättning, anges i kr/mil, Logi - ex. 2 enkelrum eller 1 dubbelrum eller ex. allergiker eller rökare,  Traktamente - ex. - kr/dygn/person.
+                                            För Resmålsbesök: Hänvisa gärna till er hemsida för aktuella priser och ev. entréavgifter.</div>	
                                         <textarea id="arr_resorovrigt" name="arr_resorovrigt" rel="30" ></textarea>                                 
                                     </fieldset>
 
                                 <fieldset class="arrovrigt">
                                   <legend>Övrigt</legend> 
-                                    <label>Övriga noteringar (ej obligatorisk)<a href="#" class="info" rel="arr_overiganoter_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_overiganoter_infotext infotext">Fyll i om det är något mer arrangören behöver veta om arrangemanget.</div>	
+                                    <label>Övriga noteringar<a href="#" class="info" rel="arr_overiganoter_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                        <div class="arr_overiganoter_infotext infotext">Ange övriga noteringar som inte har tagits upp tidigare.</div>	
                                         <textarea id="arr_overiganoter" name="arr_overiganoter" rel="33"></textarea>                                    
                                 </fieldset>
                             </div>                            
                         </div>      
                         
-                        <!-- Exempel block START -->
-                          <div class="row arrexempel_block">
-                              <div class="small-12 large-8 columns">
-                                  <fieldset>
-                                      <legend class="kk_aj_ft">Lägg till ett smakprov från ditt arrangemang</legend>
-                                      <legend class="kk_aj_kp kk_aj_fob kk_aj_rm">Lägg till exempel</legend>
-                                      <legend class="kk_aj_sb">Lägg till trailer från filmen</legend>
-                                     
-                                      <label class="kk_aj_kp">Här kan du beskriva tidigare genomförda projekt och eventuellt fler färdiga projektidéer kortfattat i ord (max 1000 tecken inkl blanksteg), länkar, bild (annan än presentationsbilden), ljud- eller filmklipp.</label>
-                                      <label class="kk_aj_ft">Här kan du ladda upp bild (annan än presentationsbilden), film- eller ljudklipp från föreställningen. </label>
-                                      <label class="kk_aj_sb">Här kan du lägga till en trailer från filmen</label>
-                                      <label class="kk_aj_fob">Här kan du beskriva andra kompetensutvecklingsinsatser du har gjort inom området, eller som du har färdiga planer på att genomföra. Det kan du göra kortfattat i ord (max 1000 tecken inkl blanksteg), länkar, ljud- eller filmklipp.</label>
-                                      <label class="kk_aj_rm">Här kan du lägga till länkar, ljud- och filmklipp från ex utställningar.</label>
-                                      <ul class="arrExempellist">
-                                      </ul>
-                                  </fieldset>
-                              </div>
-                          </div>
-                          <div class="row arrExempel">
-                              <div class="small-12  large-8 columns">
-                                  <fieldset>
+                           <!-- Exempel block START -->                        
+                         <div class="row arrexempel_block">
+                            <div class="small-12 large-8 columns">
+                                <fieldset >
+                                    <legend>Exempel</legend>
+                                    <label class="kk_aj_kp">Kulturpedagogiska projekt: Här kan du lägga till exempel på färdiga projektidéer men också exempel på genomförda projekt. </label>
+                                    <label class="kk_aj_ft">Föreställning på turné: Här kan du ladda upp bild, film eller ljudklipp från föreställningen. </label>
+                                    <label class="kk_aj_fob kk_aj_rm kk_aj_sb"> Här vissas alla som inte är kp och ft: Här kan du ladda upp bild, film eller ljudklipp från föreställningen. </label>
+                                    <ul class="arrExempellist">                                    
+                                    </ul>
+                                </fieldset>
+                            </div>                            
+                         </div>             
+                        <!-- ExempelForm block START --> 
+                          <div class="row exempleblock ">
+                              <div class="small-12  large-8 columns exempleblockbg">
+                                 
+                                      <label>Lägg till exempel</label>
+                                      <div class="row addexempelblock arrExempel">
+                                          <ul class="tabs kk_aj_tabs arr_cvmedverkande" rel="37" data-tab role="tablist">
+                                            <li class="tab-title active tiny " role="presentation">
+                                                <a href="#exempelFilmarr" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" class="tiny">Film/Ljud (från Youtube)</a>
+                                            </li>
+                                            <li class="tab-title tiny" role="presentation">
+                                                <a href="#exempelBildarr" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2" class="">Bild</a>
+                                            </li>
+                                        </ul>
+                                            <div class="tabs-content">
+                                              <section role="tabpanel" aria-hidden="false" class="content active" id="exempelFilmarr">
+                                                  <div class="medium-4 columns kk_aj_exempelfilmblock">
+                                                      <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingmovie.jpg" />
 
-                                      <div class="row addexempelblock">
-                                          <div class="small-12 columns">
-                                              <ul class="tabs kk_aj_tabs arr_arrExempel" rel="43" data-tab role="tablist">
-                                                  <li class="tab-title active tiny " role="visaexempel">
-                                                      <a href="#Bild" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" class="tiny">Bild</a>
-                                                  </li>
-                                                  <li class="tab-title tiny" role="visaexempel">
-                                                      <a href="#Film" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2" class="">Film/Ljud (från Youtube)</a>
-                                                  </li>
-                                              </ul>
-                                              <small class="error arr_ExempelTyp_error">Vänligen fyll i om exempel media är bild eller film</small>
-                                         
-                                          <div class="tabs-content">
-                                              <section role="tabpanel" aria-hidden="false" class="content active" id="Bild">
-                                                  <div class="medium-4 columns kk_aj_exempelblock">
-                                                      <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingimage.jpg" />
-
-                                                      <label>Länk till bild<a href="#" class="info" rel="arr_Exempelbild_info"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                      <div class="arr_Exempelbild_infotext infotext">1. Högerklicka på din bild på nätet. 2. Kopiera bildadressen (url). 3. Klistra in den här.</div>
-                                                      <input id="Text1" type="text" />
+                                                      <label>Länk till youtube<a href="#" class="info" rel="arr_Exempelfilm_info"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                                      <div class="arr_Exempelfilm_infotext infotext">1. Öppna din video på youtube.com. 2. Klicka på Dela under videon. 3. Kopiera den länk du har där och klistra in den i detta fält.</div>
+                                                      <input id="arr_Exempelfilm" type="text" />
 
                                                   </div>
+                                                  <div class="medium-8 columns kk_aj_exempelfilmblock">
+                                                      <label>Rubrik </label>
+                                                      <input id="arr_ExempelfilmRubrik" type="text" />
+
+                                                      <label>Beskrivning</label>
+                                                      <textarea id="arr_Exempelfilmbeskrivning"></textarea>
+
+                                                      <label class="lbl_ExempelfilmUrl">Länk till youtube<a href="#" class="info" rel="lbl_ExempelfilmUrl_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                                      <div class="lbl_ExempelfilmUrl_infotext infotext">Här kan du ange en länken till youtube</div>
+                                                      <div class="row collapse">
+                                                          <div class="small-3 large-2 columns">
+                                                              <span class="prefix">http://</span>
+                                                          </div>
+                                                          <div class="small-9 large-10 columns">
+                                                              <input id="arr_ExempelfilmUrl" type="text" />
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row addexempelbtn">
+                                                      <div class="small-12 columns">
+                                                          <button id="kk_aj_addfilmExempel" class="button small secondary right kk_aj_exempelblock">Lägg till</button>
+                                                      </div>
+                                                  </div>                                            
                                               </section>
-                                              <section role="tabpanel" aria-hidden="true" class="content" id="Film">
+                                              <section role="tabpanel" aria-hidden="true" class="content" id="exempelBildarr">
                                                   <div class="medium-4 columns kk_aj_exempelblock">
                                                       <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingimage.jpg" />
 
-                                                      <label>Länk till Youtube<a href="#" class="info" rel="arr_Exempelbild_info"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                      <div class="arr_Exempelbild_infotext infotext">1. Öppna din video på youtube.com. 2. Klicka på Dela under videon. 3. Kopiera den länk du har där och klistra in den i detta fält.</div>
+                                                      <label>Bildurl <a href="#" class="info" rel="arr_Exempelbild_info"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                                      <div class="arr_Exempelbild_infotext infotext">Länk/Url till bildfilen.</div>
                                                       <input id="arr_Exempelbild" type="text" />
 
                                                   </div>
-                                              </section>
+                                                  <div class="medium-8 columns kk_aj_exempelblock">
+                                                      <label>Rubrik </label>
+                                                      <input id="arr_ExempelRubrik" type="text" />
 
-                                              <section role="tabpanel" aria-hidden="false" class="content active" id="Section1">
-                                                  <div class="medium-8 columns kk_aj_exempelblock">
-                                                      <label>Rubrik </label>
-                                                      <input id="arr_ExempelRubrik" type="text"/>
-                                                  </div>
-                                              </section>
-                                              <section role="tabpanel" aria-hidden="true" class="content" id="Section2">
-                                                  <div class="medium-8 columns kk_aj_exempelblock">
-                                                      <label>Rubrik </label>
-                                                      <input id="Text2" type="text" />
-                                                  </div>
-                                              </section>
-                                              <section role="tabpanel" aria-hidden="false" class="content active" id="Section3">
-                                                  <div class="medium-8 columns kk_aj_exempelblock">
                                                       <label>Beskrivning</label>
                                                       <textarea id="arr_Exempelbeskrivning"></textarea>
-                                                  </div>
-                                              </section>
-                                              <section role="tabpanel" aria-hidden="true" class="content" id="Section4">
-                                                  <div class="medium-8 columns kk_aj_exempelblock">
-                                                      <label>Beskrivning</label>
-                                                      <textarea id="Textarea1"></textarea>
-                                                  </div>
-                                              </section>
 
-                                              <section role="tabpanel" aria-hidden="false" class="content active" id="Section5">
-                                                  <label class="lbl_ExempelUrl">Länk till exempelsida<a href="#" class="info" rel="lbl_ExempelUrl_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                  <div class="lbl_ExempelUrl_infotext infotext">Här kan du ange en länk till en sida där mer information finns.</div>
-                                                  <div class="row collapse">
-                                                      <div class="small-3 large-2 columns">
-                                                          <span class="prefix">http://</span>
-                                                      </div>
-                                                      <div class="small-9 large-10 columns">
-                                                          <input id="arr_ExempelUrl" type="text" />
+                                                      <label class="lbl_ExempelUrl">Länk till exempelsida<a href="#" class="info" rel="lbl_ExempelUrl_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                                      <div class="lbl_ExempelUrl_infotext infotext">Här anger du </div>
+                                                      <div class="row collapse">
+                                                          <div class="small-3 large-2 columns">
+                                                              <span class="prefix">http://</span>
+                                                          </div>
+                                                          <div class="small-9 large-10 columns">
+                                                              <input id="arr_ExempelUrl" type="text" />
+                                                          </div>
                                                       </div>
                                                   </div>
-                                              </section>
-
-                                              <section role="tabpanel" aria-hidden="true" class="content" id="Section6">
-                                                  <label class="lbl_ExempelUrl">Länk till exempelsida<a href="#" class="info" rel="lbl_ExempelUrl_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                  <div class="lbl_ExempelUrl_infotext infotext">Här kan du ange en länk till en sida där mer information finns.</div>
-                                                  <div class="row collapse">
-                                                      <div class="small-3 large-2 columns">
-                                                          <span class="prefix">http://</span>
+                                                  <div class="row addexempelbtn">
+                                                      <div class="small-12 columns">
+                                                          <button id="kk_aj_addExempel" class="button small secondary right kk_aj_exempelblock">Lägg till</button>
                                                       </div>
-                                                      <div class="small-9 large-10 columns">
-                                                          <input id="Text7" type="text" />
-                                                      </div>
-                                                  </div>
-                                              </section>
-
-                                          </div>
-
-
-
+                                                  </div>         
+                                              </section> 
+                                            </div>                                         
                                       </div>
-
-
-                                      <div class="row addexempelbtn">
-                                          <div class="small-12 columns">
-                                              <button id="kk_aj_addExempel" class="button small secondary right kk_aj_exempelblock">Lägg till</button>
-                                          </div>
-                                      </div>
-                                  </fieldset>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="small-12 large-8 columns">
-                                  <ul class="button-group">
-                                      <li>
-                                          <button class="kk_aj_btnnyttexemple button tiny">Lägg till exempel</button></li>
-                                  </ul>
+                                 
                               </div>
                           </div>
 
 
-                          <!-- Information inför bedömning block START -->
-                          <div class="row ovriginfo_block kk_aj_fob kk_aj_ft kk_aj_kp">
-                              <div class="large-8 columns">
-                                  <fieldset class="arrovriginf">
-                                      <legend>Information inför bedömning (publiceras ej i Kulturkatalogen)</legend>
-                                      <label>CV/konstnärlig bakgrund och utbildning<a href="#" class="info" rel="arr_cvmedverkande_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                      <div class="arr_cvmedverkande_infotext infotext">Välj om CV på medverkande finns att ladda upp eller länka till extern webbsida. Informationen publiceras inte någonstans. Är ni en grupp samla allt i ett dokument. Tillsammans med information om arrangemanget utgör detta underlag inför bedömning.</div>
-                                      <label class="kk_aj_kp">Beskriv din/er konstnärliga bakgrund och utbildning. Uppge i korthet ev medverkan i tidigare genomförda projekt och tidigare erfarenhet med barn och unga.</label>
-                                      <label class="kk_aj_ft">Beskriv din/er konstnärliga bakgrund och utbildning. Uppge i korthet ev medverkan i tidigare produktioner och tidigare erfarenhet med barn och unga.</label>
-                                      <label class="kk_aj_fob">Beskriv din/er konstnärliga bakgrund och utbildning. Uppge i korthet ev medverkan i tidigare genomförda projekt och tidigare erfarenhet med barn och unga. </label>
-                                      <ul class="tabs kk_aj_tabs arr_cvmedverkande" rel="37" data-tab role="tablist">
-                                          <li class="tab-title active tiny " role="presentation">
-                                              <a href="#cv-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" class="tiny">Länka till CV</a>
-                                          </li>
-                                          <li class="tab-title tiny" role="presentation">
-                                              <a href="#cv-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2" class="">Ladda upp CV</a>
-                                          </li>
-                                      </ul>
-                                      <div class="tabs-content">
-                                          <section role="tabpanel" aria-hidden="false" class="content active" id="cv-1">
-                                              <div class="row collapse">
-                                                  <div class="small-3 large-2 columns">
-                                                      <span class="prefix">http://</span>
-                                                  </div>
-                                                  <div class="small-9 large-10 columns">
-                                                      <input id="arr_cvmedverkande_url" type="text" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate">
-                                                  </div>
+                          <!-- NYA EXEMPEL -->
+                                                                       
+                         <div class="row">
+                            <div class="small-12 large-8 columns">                                                                   
+                                    <ul class="button-group">
+                                      <li><button class="kk_aj_btnnyttexemple button tiny">Lägg till exempel</button></li>
+                                    </ul>                                
+                            </div>
+                          </div> 
+                          
+                        <!-- Övrig info om produktion/projekt block START -->
+                        <div class="row ovriginfo_block kk_aj_fob kk_aj_ft kk_aj_kp">
+                            <div class="large-8 columns">
+                                <fieldset class="arrovriginf">
+                                    <legend>Information inför bedömning (publiceras ej i Kulturkatalogen)</legend>                                  
+                                      
+                                    <label>CV/konstnärlig bakgrund och utbildning<a href="#" class="info" rel="arr_cvmedverkande_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                        <div class="arr_cvmedverkande_infotext infotext">
+                                            <span class="kk_aj_kp">Beskriv din/er konstnärliga bakgrund och utbildning. Uppge i korthet ev medverkan i tidigare genomförda projekt och tidigare erfarenhet med barn och unga.</span>
+                                            <span class="kk_aj_ft">Beskriv din/er konstnärliga bakgrund och utbildning. Uppge i korthet ev medverkan i tidigare produktioner och tidigare erfarenhet med barn och unga.</span>
+                                            <span class="kk_aj_fob">Beskriv din/er konstnärliga bakgrund och utbildning. Uppge i korthet ev medverkan i tidigare genomförda projekt och tidigare erfarenhet med barn och unga. </span>
+                                            <p>Välj om CV på medverkande finns att ladda upp eller länka till extern webbsida. Informationen publiceras inte någonstans. Är ni en grupp samla allt i ett dokument. Tillsammans med information om arrangemanget utgör detta underlag inför bedömning.</p>
+                                        </div>                                          
+                                        <ul class="tabs kk_aj_tabs arr_cvmedverkande" rel="37" data-tab role="tablist">
+                                            <li class="tab-title active tiny " role="presentation">
+                                                <a href="#cv-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" class="tiny">Länka till CV</a>
+                                            </li>
+                                            <li class="tab-title tiny" role="presentation">
+                                                <a href="#cv-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2" class="">Ladda upp CV</a>
+                                            </li>
+                                        </ul>
+                                            <div class="tabs-content">
+                                              <section role="tabpanel" aria-hidden="false" class="content active" id="cv-1">
+                                                <div class="row collapse">
+                                                <div class="small-3 large-2 columns">
+                                                  <span class="prefix">http://</span>
+                                                </div>
+                                                <div class="small-9 large-10 columns">
+                                                    <input id="arr_cvmedverkande_url" type="text" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate">
+                                                </div>
                                               </div>
-                                          </section>
-                                          <section role="tabpanel" aria-hidden="true" class="content" id="cv-2">
-                                              <div class="row">
-                                                  <div class="large-12 columns">
-                                                      <input id="arr_cvmedverkande_file" type="file" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate">
-                                                  </div>
-                                              </div>
-                                          </section>
-                                      </div>
-                                      <small class="error arr_cvmedverkande_error">Vänligen fyll i eller ladda upp CV</small>
+                                              </section>
+                                              <section role="tabpanel" aria-hidden="true" class="content" id="cv-2">
+                                                <div class="row">
+                                                    <div class="large-12 columns">
+                                                        <input id="arr_cvmedverkande_file" type="file" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate" >                                                  
+                                                    </div>
+                                                </div>
+                                              </section> 
+                                            </div>
+                                        <small class="error arr_cvmedverkande_error">Vänligen fyll i eller ladda upp CV</small>
+                                        
+                                     <label>Innehar statligt/regionalt/kommunalt/annat stöd</label>
+                                        <input type="radio" name="arr_statligtstodjanej" rel="38" value="Ja" id="arr_statligtstodja" ><label for="arr_statligtstodja">Ja</label>
+                                        <input type="radio" name="arr_statligtstodjanej" rel="38" value="Nej" id="arr_statligtstodnej"><label for="arr_statligtstodnej">Nej</label>
+                                        <small class="error kk_aj_search_arr_statligtstodjanej_error">Vänligen om arrangemanget innehar statligt/regionalt/kommunalt/andra bidrag eller stöd.</small>
 
-                                      <label>Innehar statligt/regionalt/kommunalt/annat stöd</label>
-                                      <input type="radio" name="arr_statligtstodjanej" rel="38" value="Ja" id="arr_statligtstodja"><label for="arr_statligtstodja">Ja</label>
-                                      <input type="radio" name="arr_statligtstodjanej" rel="38" value="Nej" id="arr_statligtstodnej"><label for="arr_statligtstodnej">Nej</label>
-                                      <small class="error kk_aj_search_arr_statligtstodjanej_error">Vänligen välj om arrangemanget innehar statligt/regionalt/kommunalt/andra bidrag eller stöd.</small>
+                                    <label class="lbl_statligtstodtxt kk_aj_ft kk_aj_kp">Om ja ange vilka<a href="#" class="info" rel="arr_statligtstodtxt_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                        <div class="arr_statligtstodtxt_infotext infotext">Innehar statligt/regionalt/kommunalt/andra bidrag eller stöd för arrangemanget.</div>
+                                        <input id="arr_statligtstodtxt" type="text" rel="39" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate"/>                                        
+                                        <small class="error arr_statligtstodtxt_error">Vänligen om arrangemanget innehar statligt/regionalt/kommunalt/andra bidrag eller stöd.</small>
 
-                                      <label class="lbl_statligtstodtxt kk_aj_ft kk_aj_kp">Om ja ange vilka<a href="#" class="info" rel="arr_statligtstodtxt_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                      <div class="arr_statligtstodtxt_infotext infotext">Innehar statligt/regionalt/kommunalt/andra bidrag eller stöd för arrangemanget.</div>
-                                      <input id="arr_statligtstodtxt" type="text" rel="39" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate" />
-                                      <small class="error arr_statligtstodtxt_error">Vänligen välj om arrangemanget innehar statligt/regionalt/kommunalt/andra bidrag eller stöd.</small>
+                                    <label>Innehar F-skattsedel</label>
+                                        <input type="radio" name="arr_fskattsedeljanej" rel="40" value="Ja" id="arr_fskattsedelja"><label for="arr_fskattsedelja">Ja</label>
+                                        <input type="radio" name="arr_fskattsedeljanej" rel="40" value="Nej" id="arr_fskattsedelnej"><label for="arr_fskattsedelnej">Nej</label>                                         
+                                        <small class="error kk_aj_search_arr_fskattsedeljanej_error">Vänligen fyll i om ni innehar F-skattsedel</small>      
+                                    
+                                    <label>Medlem i centrumbildning</label>
+                                        <input type="radio" name="arr_centrumbildningjanej" rel="41" value="Ja" id="arr_centrumbildningja"><label for="arr_centrumbildningja">Ja</label>
+                                        <input type="radio" name="arr_centrumbildningjanej" rel="41" value="Nej" id="arr_centrumbildningnej"><label for="arr_centrumbildningnej">Nej</label>                                         
+                                        <small class="error kk_aj_search_arr_centrumbildningjanej_error">Vänligen fyll i om ni är medlem i centrumbildning</small>  
+                                </fieldset>
+                             </div>
+                         </div>                   
+                    </div>                                    
+                </div>
+            </div>
 
-                                      <label>Innehar F-skattsedel</label>
-                                      <input type="radio" name="arr_fskattsedeljanej" rel="40" value="Ja" id="arr_fskattsedelja"><label for="arr_fskattsedelja">Ja</label>
-                                      <input type="radio" name="arr_fskattsedeljanej" rel="40" value="Nej" id="arr_fskattsedelnej"><label for="arr_fskattsedelnej">Nej</label>
-                                      <small class="error kk_aj_search_arr_fskattsedeljanej_error">Vänligen fyll i om ni innehar F-skattsedel</small>
-
-                                      <label>Medlem i centrumbildning</label>
-                                      <input type="radio" name="arr_centrumbildningjanej" rel="41" value="Ja" id="arr_centrumbildningja"><label for="arr_centrumbildningja">Ja</label>
-                                      <input type="radio" name="arr_centrumbildningjanej" rel="41" value="Nej" id="arr_centrumbildningnej"><label for="arr_centrumbildningnej">Nej</label>
-                                      <small class="error kk_aj_search_arr_centrumbildningjanej_error">Vänligen fyll i om ni är medlem i centrumbildning</small>
-                                  </fieldset>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="row formfooter">
+               <div class="row formfooter">
                   <div class="small-12 medium-3 columns">
+                      
                   </div>
-                  <div class="small-12 medium-9 columns">
-                      <ul class="tabs bottomtabs" role="tablist">
+                  <div class="small-12 medium-9 columns"> 
+                      <ul class="tabs bottomtabs"  role="tablist">   
                           <li class="tab-title  kk_aj_verifystep1">
-                              <a href="#addarrtab-1" role="tab" tabindex="0" aria-selected="true" aria-controls="addarrtab-1" rel="1" class="button success kk_aj_btn_to_step1">Föregående steg - Generell info</a>
-                          </li>
+                              <a href="#addarrtab-1" role="tab" tabindex="0" aria-selected="true" aria-controls="addarrtab-1" rel="1" class="button success kk_aj_btn_to_step1">Föregående steg - Generell info</a>                         
+                          </li>                 
                           <li class="tab-title disabled kk_aj_verifystep2">
-                              <a href="#addarrtab-3" role="tab" tabindex="0" aria-selected="false" aria-controls="addarrtab-3" rel="3" class="button right kk_aj_btn_next_step" rel="3">Nästa steg - Granska</a>
+                              <a href="#addarrtab-3" role="tab" tabindex="0" aria-selected="false" aria-controls="addarrtab-3" rel="3" class="button right kk_aj_btn_next_step" rel="3" >Nästa steg - Granska</a>                          
                           </li>
                       </ul>
                   </div>
@@ -1081,7 +1090,7 @@
                                 <h3>Kontakt</h3>                                             
                                 <div class="row granska_Utovare_Organisation_block">
                                     <div class="small-12 medium-5 columns faktalabel">     
-                                        Organisation
+                                        Utövare/Aktör/Grupp
                                     </div>
                                     <div class="small-12 medium-7 columns">     
                                         <span class="granska_Utovare_Organisation">Finns inget att visa</span>
@@ -1143,77 +1152,18 @@
                             <div class="artsidecontainer granska_Dela">
                                 <h3>Dela</h3>                                
                                     <div id="share-buttons">
-    
-                                        <!-- Buffer 
-                                        <a href="https://bufferapp.com/add?url=https://simplesharebuttons.com&amp;text=Simple Share Buttons" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
-                                        </a>
-                                        -->
-                                        <!-- Digg
-                                        <a href="http://www.digg.com/submit?url=https://simplesharebuttons.com" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" />
-                                        </a>
-                                        -->
                                         <!-- Email -->
                                         <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
                                             <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
-                                        </a>
- 
+                                        </a> 
                                         <!-- Facebook -->
                                         <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
                                             <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-                                        </a>
-    
-                                        <!-- Google+ 
-                                        <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
-                                        </a>
-                                        -->
-                                        <!-- LinkedIn 
-                                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
-                                        </a>
-                                        -->
-                                        <!-- Pinterest 
-                                        <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-                                            <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
-                                        </a>
-                                        -->
+                                        </a>                                          
                                         <!-- Print -->
                                         <a href="javascript:;" onclick="window.print()">
                                             <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
-                                        </a>
-    
-                                        <!-- Reddit 
-                                        <a href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
-                                        </a>
-                                        -->
-                                        <!-- StumbleUpon
-                                        <a href="http://www.stumbleupon.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" />
-                                        </a>
-                                        -->
-                                        <!-- Tumblr
-                                        <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
-                                        </a>
-                                        -->
-                                        <!-- Twitter 
-                                        <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-                                        </a>
-                                        -->
-                                        <!-- VK 
-                                        <a href="http://vkontakte.ru/share.php?url=https://simplesharebuttons.com" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/vk.png" alt="VK" />
-                                        </a>
-                                        -->
-                                        <!-- Yummly 
-                                        <a href="http://www.yummly.com/urb/verify?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
-                                            <img src="https://simplesharebuttons.com/images/somacro/yummly.png" alt="Yummly" />
-                                        </a>
-                                        -->
+                                        </a>                                           
                                     </div>
                             </div>
                         </div>
@@ -1239,14 +1189,18 @@
           </section>
             <!-- Tab4 section STARTAR -->
           <section role="tabpanel" aria-hidden="true" class="content" id="addarrtab-4">
-            <h2>Användarvillkor på Kulurkatalogen Väst</h2>
-              <p>När du trycker på knappen ”Skicka in” har du gjort en ansökan till Kulturkatalogen Väst. Bekräftelsemail kommer.<br /></p>
-               <p> Nya ansökningar behandlas tre perioder per år, och följande beslutsdatum gäller:<br />
-                1 mars (ansökan ska ha inkommit senast 15 januari)<br />
-                1 juni (ansökan ska ha inkommit senast 15 april)<br />
-                1 november (ansökan ska ha inkommit senast 15 september)<br /></p>
-                Om produktionen/projektet godkänns kommer den/det att publiceras på Kulturkatalogen Västs webbplats i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan. Eventuellt kommer du att kontaktas om vi undrar något.<br />
-               <p> Har du själv frågor, kontakta oss på Kulturkatalogen Väst tel:<a href="tel:0331122334">033-1122334</a> eller <a href="mailto:info@kulturkatalogenvast.se">info@kulturkatalogenvast.se</a>!</p>
+            <h2>Användarvillkor på Kulurkatalogen väst</h2>
+              <p>När du trycker på knappen "Skicka in arrangemang" nedan har du gjort en ansökan till Kulturkatalogen Väst. <br />
+                 Din ansökan kommer att behandlas (inom en viss tid) och du kommer att kontaktas. Arrangemanget kommer sedan att publiceras på Kulturkatalogen Västs webbplats: http://www.kulturivast.se/kulturkatalogen-vast 
+              </p>
+              <p>Har du frågor kontakta oss på kulturkatalogen väst:<br />
+                   tel: <a href="tel:0331122334">033-1122334</a>  eller <a href="mailto:info@kulturkatalogenvast.se">info@kulturkatalogenvast.se</a>
+              </p>
+              <textarea disabled="disabled" rows="10" id="ApproveText" co>Datalagringsavtal
+                  Genom att skicka in din ansökan godkänner du att Kulturkatalogen behandlar och lagrar användardata. och... Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.
+              </textarea>
+              
+              <input id="chkApproved"  class="left" type="checkbox"> <label for="checkbox1">Jag godkännner avtalet </label> 
 
               <div class="row formfooter">
               <div class="small-12 medium-3 columns">                      
@@ -1254,9 +1208,9 @@
               <div class="small-12 medium-9 columns"> 
                   <ul class="tabs bottomtabs"  role="tablist">   
                     <li class="tab-title kk_aj_verifystep4">
-                        <a href="#addarrtab-3" role="tab" tabindex="0" aria-selected="true" aria-controls="addarrtab-3" rel="4" class="button success kk_aj_btn_SendArr">Skicka in arrangemang</a>                         
+                        <a href="#addarrtab-3" role="tab" tabindex="0" aria-selected="true" aria-controls="addarrtab-3" rel="4" class="button success kk_aj_btn_SendArr">Skicka in</a>                         
                     </li>                 
-                    <li class="tab-title kk_aj_AvbrytSteps">x
+                    <li class="tab-title kk_aj_AvbrytSteps">
                         <a href="#addarrtab-1" role="tab" tabindex="0" aria-selected="false" aria-controls="addarrtab-1" rel="1" class="button success right kk_aj_btn_before_step1">Avbryt</a>                          
                     </li>
                   </ul>
