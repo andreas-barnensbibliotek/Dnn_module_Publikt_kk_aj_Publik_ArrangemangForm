@@ -1214,18 +1214,18 @@
           </section>
             <!-- Tab4 section STARTAR -->
           <section role="tabpanel" aria-hidden="true" class="content" id="addarrtab-4">
-            <h2>Användarvillkor på Kulurkatalogen väst</h2>
+            <h3>Användarvillkor på Kulurkatalogen väst</h3>
               <p>När du trycker på knappen "Skicka in arrangemang" nedan har du gjort en ansökan till Kulturkatalogen Väst. <br />
                  Din ansökan kommer att behandlas (inom en viss tid) och du kommer att kontaktas. Arrangemanget kommer sedan att publiceras på Kulturkatalogen Västs webbplats: http://www.kulturivast.se/kulturkatalogen-vast 
               </p>
               <p>Har du frågor kontakta oss på kulturkatalogen väst:<br />
                    tel: <a href="tel:0331122334">033-1122334</a>  eller <a href="mailto:info@kulturkatalogenvast.se">info@kulturkatalogenvast.se</a>
               </p>
-              <textarea disabled="disabled" rows="10" id="ApproveText" >Datalagringsavtal
-                  Genom att skicka in din ansökan godkänner du att Kulturkatalogen behandlar och lagrar användardata. och... Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.
-              </textarea>
+              <div id="ApproveText" ><h2>Datalagringsavtal</h2>
+                  <p>Genom att skicka in din ansökan godkänner du att Kulturkatalogen behandlar och lagrar användardata. och... Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
+              </div>
               
-              <input id="chkApproved"  class="left" type="checkbox"> <label for="checkbox1">Jag godkännner avtalet </label> 
+              <input id="chkApproved" class="left" type="checkbox"> <label for="checkbox1">Jag godkännner avtalet </label> 
 
               <div class="row formfooter">
               <div class="small-12 medium-3 columns">                      
