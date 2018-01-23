@@ -963,13 +963,13 @@
                                             </div>
                                         <small class="error arr_cvmedverkande_error">Vänligen fyll i eller ladda upp CV</small>
                                         
-                                     <label>Innehar statligt/regionalt/kommunalt/annat stöd</label>
+                                     <label>Innehar statligt/regionalt/kommunalt/annat stöd<a href="#" class="info" rel="arr_statligtstodjanej_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                        <div class="arr_statligtstodjanej_infotext infotext">Innehar statligt/regionalt/kommunalt/andra bidrag eller stöd för arrangemanget.</div>                                        
                                         <input type="radio" name="arr_statligtstodjanej" rel="38" value="Ja" id="arr_statligtstodja" ><label for="arr_statligtstodja">Ja</label>
                                         <input type="radio" name="arr_statligtstodjanej" rel="38" value="Nej" id="arr_statligtstodnej"><label for="arr_statligtstodnej">Nej</label>
                                         <small class="error kk_aj_search_arr_statligtstodjanej_error">Vänligen om arrangemanget innehar statligt/regionalt/kommunalt/andra bidrag eller stöd.</small>
 
-                                    <label class="lbl_statligtstodtxt kk_aj_ft kk_aj_kp">Om ja ange vilka<a href="#" class="info" rel="arr_statligtstodtxt_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_statligtstodtxt_infotext infotext">Innehar statligt/regionalt/kommunalt/andra bidrag eller stöd för arrangemanget.</div>
+                                    <label class="lbl_statligtstodtxt kk_aj_ft kk_aj_kp">Om ja ange vilka</label>
                                         <input id="arr_statligtstodtxt" type="text" rel="39" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate"/>                                        
                                         <small class="error arr_statligtstodtxt_error">Vänligen om arrangemanget innehar statligt/regionalt/kommunalt/andra bidrag eller stöd.</small>
 
@@ -1039,10 +1039,7 @@
                     <div class="row">
 
                         <div class="medium-8 columns artmaincontent">
-
-                            
-                            
-                            
+                                                        
                             <div class="field field-name-field-artikelbild field-type-image field-label-hidden field-wrapper">
                                 <img class="granska_pressentationsbild" src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingimage.jpg" />                           
                                 <div class="row">
@@ -1162,7 +1159,7 @@
                                     </div>
                                     <div class="small-12 medium-12 columns">     
                                         <span class="granska_Utovare_epost right">
-                                            <a href="mailto:"></a>
+                                            <a href="mailto:" class="not-active"></a>
                                         </span>
                                     </div>
                                 </div>         
@@ -1172,7 +1169,7 @@
                                     </div>
                                     <div class="small-12 medium-12 columns">     
                                         <span class="granska_Utovare_hemsida right">
-                                            <a href=""></a>
+                                            <a href="" class="not-active"></a>
                                         </span>
                                     </div>
                                 </div>                                                              
@@ -1181,15 +1178,15 @@
                                 <h3>Dela</h3>                                
                                     <div id="share-buttons">
                                         <!-- Email -->
-                                        <a href="#" >
+                                        <a href="#" class="not-active" >
                                             <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
                                         </a> 
                                         <!-- Facebook -->
-                                        <a href="#">
+                                        <a href="#" class="not-active">
                                             <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
                                         </a>                                          
                                         <!-- Print -->
-                                        <a href="#">
+                                        <a href="#" class="not-active">
                                             <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
                                         </a>                                           
                                     </div>
@@ -1217,18 +1214,18 @@
           </section>
             <!-- Tab4 section STARTAR -->
           <section role="tabpanel" aria-hidden="true" class="content" id="addarrtab-4">
-            <h2>Användarvillkor på Kulurkatalogen väst</h2>
+            <h3>Användarvillkor på Kulurkatalogen väst</h3>
               <p>När du trycker på knappen "Skicka in arrangemang" nedan har du gjort en ansökan till Kulturkatalogen Väst. <br />
                  Din ansökan kommer att behandlas (inom en viss tid) och du kommer att kontaktas. Arrangemanget kommer sedan att publiceras på Kulturkatalogen Västs webbplats: http://www.kulturivast.se/kulturkatalogen-vast 
               </p>
               <p>Har du frågor kontakta oss på kulturkatalogen väst:<br />
                    tel: <a href="tel:0331122334">033-1122334</a>  eller <a href="mailto:info@kulturkatalogenvast.se">info@kulturkatalogenvast.se</a>
               </p>
-              <textarea disabled="disabled" rows="10" id="ApproveText" >Datalagringsavtal
-                  Genom att skicka in din ansökan godkänner du att Kulturkatalogen behandlar och lagrar användardata. och... Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.
-              </textarea>
+              <div id="ApproveText" ><h2>Datalagringsavtal</h2>
+                  <p>Genom att skicka in din ansökan godkänner du att Kulturkatalogen behandlar och lagrar användardata. och... Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
+              </div>
               
-              <input id="chkApproved"  class="left" type="checkbox"> <label for="checkbox1">Jag godkännner avtalet </label> 
+              <input id="chkApproved" class="left" type="checkbox"> <label for="checkbox1">Jag godkännner avtalet </label> 
 
               <div class="row formfooter">
               <div class="small-12 medium-3 columns">                      
