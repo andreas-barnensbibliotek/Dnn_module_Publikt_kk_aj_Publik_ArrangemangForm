@@ -520,23 +520,6 @@
                                       <option value="12">Annan scenkonst</option>
                                   </select>
       
-
-                                  <%--<label for="formFler1KonstformId">Ytterligare konstform 3<a href="#" class="info" rel="arr_kk_aj_search_arr_Fler2Konstform_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                  <div class="arr_kk_aj_search_arr_Fler2Konstform_infotext infotext">Här har du möjlighet att lägga till ytterligare en konstform som du blir bedömd inom. Klicka i rutan för att välja alternativ.</div>
-                                  <select id="formFler2KonstformId" name="formFler2Konstform" rel="33" class="selectField kk_aj_fob kk_aj_ft kk_aj_kp kk_aj_ft kk_aj_rm kk_aj_sb">
-                                      <option value="0"></option>
-                                      <option value="1">Arkitektur och design</option>
-                                      <option value="2">Dans</option>
-                                      <option value="3">Film och media</option>
-                                      <option value="7">Natur- och kulturarv</option>
-                                      <option value="8">Nycirkus/cirkus</option>
-                                      <option value="9">Slöjd</option>
-                                      <option value="10">Teater</option>
-                                      <option value="11">Teknik och multimedia</option>
-                                      <option value="12">Annan scenkonst</option>
-                                  </select>--%>
-
-
                               </fieldset>
                           </div>
 
@@ -624,20 +607,11 @@
                                         <input id="arr_medverkande" rel="3" type="text" class="kk_aj_Fakta kk_aj_fob kk_aj_ft kk_aj_kp "/>
                                         <small class="error arr_medverkande_error">Vänligen fyll i namn på medverkande</small>
                                     
-                                     <label for="arr_pedagogiskverksamhet" class="lbl_pedagogiskverksamhet kk_aj_ut">Pedagogiskverksamhet<a href="#" class="info" rel="arr_pedagogiskverksamhet_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_pedagogiskverksamhet_infotext infotext">Fyll i namn på pedagogiskverksamhet enligt exempel Sara Persson, Kalle Nilsson, etc</div>
-                                        <input id="arr_pedagogiskverksamhet" rel="44" type="text" class="kk_aj_Fakta kk_aj_ut "/>
-                                        <small class="error arr_pedagogiskverksamhete_error">Vänligen fyll i namn på pedagogiskverksamhet</small>
-
-                                     <label for="arr_marknadsforing" class="lbl_marknadsforing kk_aj_ut">Marknadsföring<a href="#" class="info" rel="arr_marknadsforing_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_marknadsforing_infotext infotext">Fyll i namn på marknadsföring</div>
-                                        <input id="arr_marknadsforing" rel="45" type="text" class="kk_aj_Fakta kk_aj_ut"/>
-                                        <small class="error arr_marknadsforing_error">Vänligen fyll i namn på marknadsföring</small>
-
+                                    
                                      <label for="arr_utstallningsperiod" class="lbl_utstallningsperiod kk_aj_ut">Utställningsperiod<a href="#" class="info" rel="arr_utstallningsperiod_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_utstallningsperiod_infotext infotext">Fyll i utställningsperiod</div>
+                                        <div class="arr_utstallningsperiod_infotext infotext">Ange antal veckor som utställningen pågår </div>
                                         <input id="arr_utstallningsperiod" rel="43" type="text" class="kk_aj_Fakta kk_aj_ut"/>
-                                        <small class="error arr_marknadsforing_error">Vänligen fyll i utställningsperiod</small>
+                                        <small class="error arr_utstallningsperiod_error">Vänligen fyll antal veckor som utställningen pågår</small>
 
                                     <label for="arr_Premiardatum" class="lbl_Premiardatum kk_aj_ft kk_aj_ut">Uruppförande/Premiär<a href="#" class="info" rel="arr_Premiardatum_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_Premiardatum_infotext infotext">Ange när föreställningen hade premiär.</div>
@@ -697,7 +671,7 @@
                                             <div class="arr_formVenueHeightId_infotext infotext">Ange vilken scenhöjd föreställningen kräver, i meter. Använd enbart siffror. </div>					                    
                                             <input type="text" id="formVenueHeightId" name="formVenueHeight" rel="14" class="kk_aj_Fakta kk_aj_ft">
                                             <small class="error formVenueHeightId_error">Vänligen ange djup på scen i meter. Använd enbart siffror.</small>
-
+                                         
                                         <label for="arr_ljud">Ljud</label>
                                           <input type="radio" name="arr_ljud" rel="28" value="Befintligt" id="arr_ljudbefintligt"><label for="arr_ljudbefintligt">Befintligt</label>
                                           <input type="radio" name="arr_ljud" rel="28" value="Tar med eget/Ingår" id="arr_ljudingår"><label for="arr_ljudingår">Tar med eget/Ingår</label>                                      
@@ -736,9 +710,15 @@
 				                        </select>
                                         <small class="error kk_aj_search_arr_electricity_error">Vänligen gör val av El</small>                                    
                                     </div>
+                                    
+                                    <label for="arr_yta">Yta<a href="#" class="info" rel="arr_yta_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                            <div class="arr_yta_infotext infotext">Ange önskad lokalyta i kvadratmeter.</div>
+				                            <input type="text" id="arr_yta" name="arr_yta" rel="46" class="kk_aj_Fakta kk_aj_ut" > 
+                                            <small class="error arr_yta_error">Vänligen fyll i önskad lokalyta i kvadratmeter.</small>  
+
                                     <!-- Föreställning på tune fält STOPP -->
                                     <label for="formVenueRequiermentsId" class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_sb">Lokalkrav (ej obligatorisk)<a href="#" class="info" rel="arr_formVenueRequiermentsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_formVenueRequiermentsId_infotext infotext">Här kan du ange lokalkrav ex rumstemperatur, lokalens storlek, om du behöver tom golvyta, tillgång till vatten, bord att arbeta vid etc.</div>
+                                        <div class="arr_formVenueRequiermentsId_infotext infotext">Här kan du ange lokalkrav ex rumstemperatur, lokalens storlek, om du behöver tom golvyta, behov av bygghjälp,  tillgång till vatten, bord att arbeta vid etc.</div>
 				                        <textarea id="formVenueRequiermentsId" rel="18" name="formVenueRequierments" class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_sb novalidate"></textarea>                                       
                                 </fieldset>
                             </div>
@@ -1239,56 +1219,79 @@ Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du änd
                 <div class="small-12 medium-9 columns">
                     <h2>Skicka in</h2>
                 </div>
-            </div>
-              <h2>Användarvillkor på Kulurkatalogen väst</h2>
-              <p>Nu är din ansökan till Kulturkatalogen Väst klar att skickas in. <br /> 
-              </p>
+            </div> 
+              <div class="kk_ajuseravtalblock">            
+              <h3>Nu är din ansökan till Kulturkatalogen Väst klar att skickas in.</h3>
               
 <!-- kategori föreställning på turné Start -->
-                <p class="kk_aj_ft kk_aj_ut">Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:<br>
-					1 mars (ansökan ska ha inkommit senast 15 januari) <br>
-					1 juni (ansökan ska ha inkommit senast 15 april)<br>
-					1 november (ansökan ska ha inkommit senast 15 september)<br>
-					Om produktionen godkänns kommer den att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan. Eventuellt kommer du att kontaktas om vi undrar något.<br>
+                <div class="kk_aj_ft kk_aj_ut">                    
+                    <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
+                    <ul>
+                        <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
+                        <li>1 juni (ansökan ska ha inkommit senast 15 april)</li>
+                        <li>1 november (ansökan ska ha inkommit senast 15 september)</li>
+					</ul>
+					<p>
+					Om produktionen godkänns kommer den att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan. Eventuellt kommer du att kontaktas om vi undrar något.
 					Vad gäller föreställningar på turné vill konsulenten se föreställningen med publik bestående av målgruppen. Vi kommer att höra av oss för att få ev speldatum/platser under handläggningstiden. Om det inte är möjligt att se föreställningen live kan en enkelt avfilmad föreställning med publik bestående av målgruppen vara ett alternativ.
-				</p>
+					</p>                   
+				</div>
 <!-- kategori föreställning på turné Slut -->
 
 <!-- kategori projekt Start -->
-				<p class="kk_aj_fob"> Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:
-					1 mars (ansökan ska ha inkommit senast 15 januari)<br>
-					1 juni (ansökan ska ha inkommit senast 15 april)<br>
-					1 november (ansökan ska ha inkommit senast 15 september)<br>
-					Om produktionen godkänns kommer den att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.<br>
+				<div class="kk_aj_fob"> 
+                    <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
+					<ul>
+                        <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
+                        <li>1 juni (ansökan ska ha inkommit senast 15 april)</li>
+                        <li>1 november (ansökan ska ha inkommit senast 15 september)</li>
+					</ul>
+					<p>Om produktionen godkänns kommer den att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.
 					Vad gäller workshops/projekt så kommer en konsulent att höra av sig till dig under handläggningstiden, på telefon eller mail.
-				</p>
+                    </p>
+				</div>
 <!-- kategori projekt Slut -->
 
 <!-- kategori besöksmål Start -->
-				<p class="kk_aj_rm">Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:
-					1 mars (ansökan ska ha inkommit senast 15 januari)<br>
-					1 juni (ansökan ska ha inkommit senast 15 april)<br>
-					1 november (ansökan ska ha inkommit senast 15 september)<br>
-					Om arrangemanget godkänns kommer det att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.<br>
-				</p>
+				<div class="kk_aj_rm">
+                    <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
+					<ul>
+                        <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
+                        <li>1 juni (ansökan ska ha inkommit senast 15 april)</li>
+                        <li>1 november (ansökan ska ha inkommit senast 15 september)</li>
+					</ul>
+					<p>Om arrangemanget godkänns kommer det att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.
+					</p>
+                </div>
 <!-- kategori besöksmål Slut -->
 
 <!-- kategori skolbio Start -->
-				<p class="kk_aj_sb">Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:
-					1 mars (ansökan ska ha inkommit senast 15 januari)<br>
-					1 juni (ansökan ska ha inkommit senast 15 april)<br>
-					1 november (ansökan ska ha inkommit senast 15 september)<br>
-					Om arrangemanget godkänns kommer det att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.<br>
-				</p>
+				<div class="kk_aj_sb">
+                    <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
+					<ul>
+                        <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
+                        <li>1 juni (ansökan ska ha inkommit senast 15 april)</li>
+                        <li>1 november (ansökan ska ha inkommit senast 15 september)</li>
+					</ul>
+					<p>Om arrangemanget godkänns kommer det att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.
+					</p>
+                </div>
 <!-- kategori skolbio slut-->
 
-
+        </div> 
 
 <!-- kategori utställning på turné Start -->
 <!-- kategori utställning på turné Slut -->
-
-              <div id="ApproveText" ><h2>Datalagringsavtal</h2>
-                  <p>Jag godkänner att Kultur i Väst behandlar och lagrar användardata. Slutför din ansökan genom att klicka på knappen Skicka in. och... Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
+              <h3>Användarvillkor på Kulurkatalogen Väst</h3>
+              <p>För att kunna vara med i Kulturkatalogen Väst är det viktigt att du läser igenom och godkänner nedanstående avtal.</p>
+              <div id="ApproveText" ><h3>Datalagringsavtal</h3>
+                  <ul>
+                       <li>Jag godkänner att Kultur i Väst behandlar och lagrar användardata som har fyllts i i arrangörsformuläret.</li>
+                       <li>Kulturkatalogen Väst använder uppgifterna för att visa arrangemang i sin digitala utbudskatalog.</li>
+                       <li>Alla uppgifter i formuläret är publika förutom de uppgifter som har fyllts i under rubriken ”Information inför bedömning”. För förställning på turné och utställning på turné gäller att alla uppgifter är publika då de saknar bedömningsdelen.</li>
+                       <li>Användardata kommer att lagras för arkivering då det innefattas av offentlighetsprincipen eller tills det att du som användare aktivt väljer att ta bort datat. Att användaruppgifterna lagras förenklar även fortsatt förnyelse av ett arrangemang.</li>
+                  </ul>
+                  
               </div>
               
               <input id="chkApproved" class="left" type="checkbox"> <label for="chkApproved">Jag godkännner avtalet </label> 

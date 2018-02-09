@@ -520,23 +520,6 @@
                                       <option value="12">Annan scenkonst</option>
                                   </select>
       
-
-                                  <%--<label for="formFler1KonstformId">Ytterligare konstform 3<a href="#" class="info" rel="arr_kk_aj_search_arr_Fler2Konstform_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                  <div class="arr_kk_aj_search_arr_Fler2Konstform_infotext infotext">Här har du möjlighet att lägga till ytterligare en konstform som du blir bedömd inom. Klicka i rutan för att välja alternativ.</div>
-                                  <select id="formFler2KonstformId" name="formFler2Konstform" rel="33" class="selectField kk_aj_fob kk_aj_ft kk_aj_kp kk_aj_ft kk_aj_rm kk_aj_sb">
-                                      <option value="0"></option>
-                                      <option value="1">Arkitektur och design</option>
-                                      <option value="2">Dans</option>
-                                      <option value="3">Film och media</option>
-                                      <option value="7">Natur- och kulturarv</option>
-                                      <option value="8">Nycirkus/cirkus</option>
-                                      <option value="9">Slöjd</option>
-                                      <option value="10">Teater</option>
-                                      <option value="11">Teknik och multimedia</option>
-                                      <option value="12">Annan scenkonst</option>
-                                  </select>--%>
-
-
                               </fieldset>
                           </div>
 
@@ -614,15 +597,21 @@
                             <div class="large-8 columns">                                
                                  <fieldset class="medverkandeblock">
                                     <legend>Fakta</legend> 
-                                    <label for="arr_antalmedverkande" class="lbl_antalmedverkande kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_kp">Antal medverkande<a href="#" class="info" rel="arr_antalmedverkande_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label for="arr_antalmedverkande" class="lbl_antalmedverkande kk_aj_fob kk_aj_ft kk_aj_kp">Antal medverkande<a href="#" class="info" rel="arr_antalmedverkande_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_antalmedverkande_infotext infotext">Fyll i antal medverkande på arrangemanget.</div>
-                                        <input id="arr_antalmedverkande" rel="2" type="text" class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_kp" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"/>
+                                        <input id="arr_antalmedverkande" rel="2" type="text" class="kk_aj_fob kk_aj_ft kk_aj_kp" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"/>
                                         <small class="error arr_antalmedverkande_error">Vänligen fyll i antal medverkande i siffror</small>
                                     
-                                    <label for="arr_medverkande" class="lbl_medverkande kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_kp">Medverkande<a href="#" class="info" rel="arr_medverkande_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label for="arr_medverkande" class="lbl_medverkande kk_aj_fob kk_aj_ft kk_aj_kp">Medverkande<a href="#" class="info" rel="arr_medverkande_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_medverkande_infotext infotext">Fyll i namn på medverkande enligt exempel Sara Persson, Kalle Nilsson, etc</div>
-                                        <input id="arr_medverkande" rel="3" type="text" class="kk_aj_Fakta kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_kp "/>
+                                        <input id="arr_medverkande" rel="3" type="text" class="kk_aj_Fakta kk_aj_fob kk_aj_ft kk_aj_kp "/>
                                         <small class="error arr_medverkande_error">Vänligen fyll i namn på medverkande</small>
+                                    
+                                    
+                                     <label for="arr_utstallningsperiod" class="lbl_utstallningsperiod kk_aj_ut">Utställningsperiod<a href="#" class="info" rel="arr_utstallningsperiod_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                        <div class="arr_utstallningsperiod_infotext infotext">Ange antal veckor som utställningen pågår </div>
+                                        <input id="arr_utstallningsperiod" rel="43" type="text" class="kk_aj_Fakta kk_aj_ut"/>
+                                        <small class="error arr_utstallningsperiod_error">Vänligen fyll antal veckor som utställningen pågår</small>
 
                                     <label for="arr_Premiardatum" class="lbl_Premiardatum kk_aj_ft kk_aj_ut">Uruppförande/Premiär<a href="#" class="info" rel="arr_Premiardatum_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_Premiardatum_infotext infotext">Ange när föreställningen hade premiär.</div>
@@ -682,7 +671,7 @@
                                             <div class="arr_formVenueHeightId_infotext infotext">Ange vilken scenhöjd föreställningen kräver, i meter. Använd enbart siffror. </div>					                    
                                             <input type="text" id="formVenueHeightId" name="formVenueHeight" rel="14" class="kk_aj_Fakta kk_aj_ft">
                                             <small class="error formVenueHeightId_error">Vänligen ange djup på scen i meter. Använd enbart siffror.</small>
-
+                                         
                                         <label for="arr_ljud">Ljud</label>
                                           <input type="radio" name="arr_ljud" rel="28" value="Befintligt" id="arr_ljudbefintligt"><label for="arr_ljudbefintligt">Befintligt</label>
                                           <input type="radio" name="arr_ljud" rel="28" value="Tar med eget/Ingår" id="arr_ljudingår"><label for="arr_ljudingår">Tar med eget/Ingår</label>                                      
@@ -721,9 +710,15 @@
 				                        </select>
                                         <small class="error kk_aj_search_arr_electricity_error">Vänligen gör val av El</small>                                    
                                     </div>
+                                    
+                                    <label for="arr_yta">Yta<a href="#" class="info" rel="arr_yta_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                            <div class="arr_yta_infotext infotext">Ange önskad lokalyta i kvadratmeter.</div>
+				                            <input type="text" id="arr_yta" name="arr_yta" rel="46" class="kk_aj_Fakta kk_aj_ut" > 
+                                            <small class="error arr_yta_error">Vänligen fyll i önskad lokalyta i kvadratmeter.</small>  
+
                                     <!-- Föreställning på tune fält STOPP -->
                                     <label for="formVenueRequiermentsId" class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_sb">Lokalkrav (ej obligatorisk)<a href="#" class="info" rel="arr_formVenueRequiermentsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_formVenueRequiermentsId_infotext infotext">Här kan du ange lokalkrav ex rumstemperatur, lokalens storlek, om du behöver tom golvyta, tillgång till vatten, bord att arbeta vid etc.</div>
+                                        <div class="arr_formVenueRequiermentsId_infotext infotext">Här kan du ange lokalkrav ex rumstemperatur, lokalens storlek, om du behöver tom golvyta, behov av bygghjälp,  tillgång till vatten, bord att arbeta vid etc.</div>
 				                        <textarea id="formVenueRequiermentsId" rel="18" name="formVenueRequierments" class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_sb novalidate"></textarea>                                       
                                 </fieldset>
                             </div>
@@ -735,9 +730,9 @@
                                 <fieldset class="arrpublik">
                                     <legend>Deltagare/Publik</legend>                                                                            
                                     
-                                    <label for="formMaxAudienceId" id="labelMaxAudienceId" class="kk_aj_ft kk_aj_ut ">Maxantal publik<a href="#" class="info" rel="arr_labelMaxAudienceId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label for="formMaxAudienceId" id="labelMaxAudienceId" class="kk_aj_ft">Maxantal publik<a href="#" class="info" rel="arr_labelMaxAudienceId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_labelMaxAudienceId_infotext infotext">Ange max antal personer i publiken. Skriv enbart siffror. </div>
-				                        <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" class="kk_aj_Fakta kk_aj_ft kk_aj_ut " onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+				                        <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" class="kk_aj_Fakta kk_aj_ft" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                         <small class="error formMaxAudienceId_error">Vänligen ange max antal personer i publiken. Skriv enbart siffror.</small>
 
                                     <label for="formMaxParticipantsId" id="labelMaxParticipantsId" class="kk_aj_kp">Maxantal deltagare<a href="#" class="info" rel="arr_labelMaxParticipantsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
@@ -751,15 +746,15 @@
                                         <div id="kk_aj_yearspan" rel="7" rev="8" class=""></div>
                                         <small class="error kk_aj_yearspan_error">Vänligen gör val av ålder som arrangemanget riktar sig mot.</small>
 
-                                    <label for="formMaxShowsId" id="labelMaxShowsId" class="kk_aj_ft kk_aj_ut ">Föreställningar per dag (ej obligatorisk)<a href="#" class="info" rel="arr_formMaxShowsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label for="formMaxShowsId" id="labelMaxShowsId" class="kk_aj_ft">Föreställningar per dag (ej obligatorisk)<a href="#" class="info" rel="arr_formMaxShowsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
 				                        <div class="arr_formMaxShowsId_infotext infotext">Ange hur många föreställningar som kan spelas per dag. Skriv enbart siffror.</div>	
-				                        <input type="text" id="formMaxShowsId" name="formMaxShows" rel="9" class="kk_aj_Fakta kk_aj_ft kk_aj_ut " onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+				                        <input type="text" id="formMaxShowsId" name="formMaxShows" rel="9" class="kk_aj_Fakta kk_aj_ft" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                         <small class="error formMaxShowsId_error">Ange hur många föreställningar som kan ges per dag. Skriv enbart siffror.</small>
 
-                                    <label for="kk_aj_speltid" class="kk_aj_ft kk_aj_ut kk_aj_sb">Speltid (min)<a href="#" class="info" rel="arr_kk_aj_speltid_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label for="kk_aj_speltid" class="kk_aj_ft kk_aj_sb">Speltid (min)<a href="#" class="info" rel="arr_kk_aj_speltid_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_kk_aj_speltid_infotext infotext">Ange föreställningens längd i minuter.</div>	
-                                        <div id="kk_aj_speltid_range" class="kk_aj_ft kk_aj_ut kk_aj_sb" ></div> 
-                                        <div id="kk_aj_speltid" rel="26" class="kk_aj_ft kk_aj_ut kk_aj_sb"></div>
+                                        <div id="kk_aj_speltid_range" class="kk_aj_ft kk_aj_sb" ></div> 
+                                        <div id="kk_aj_speltid" rel="26" class="kk_aj_ft kk_aj_sb"></div>
                                         <small class="error kk_aj_speltid_error">Vänligen ange föreställningens längd i minuter.</small>
 
                                 </fieldset>
@@ -935,7 +930,7 @@
                                             <span class="kk_aj_kp">Beskriv din/er konstnärliga bakgrund och utbildning. Uppge i korthet ev medverkan i tidigare genomförda projekt och tidigare erfarenhet med barn och unga.</span>
                                             <span class="kk_aj_ft">Ange din/er konstnärliga bakgrund och utbildning. Beskriv kortfattat din/er ev medverkan i tidigare produktioner, samt erfarenhet av konstnärligt arbete med barn och unga.</span>
                                             <span class="kk_aj_fob">Beskriv din/er konstnärliga bakgrund och utbildning. Uppge i korthet ev medverkan i tidigare genomförda projekt och tidigare erfarenhet med barn och unga. </span>
-					    <span class="kk_aj_rm">Beskriv ert pedagogiska upplägg och hur ni arbetar med barn och unga.</span>
+					                        <span class="kk_aj_rm">Beskriv ert pedagogiska upplägg och hur ni arbetar med barn och unga.</span>
                                             <p>Ladda upp CV eller länka till extern webbsida. Är ni en grupp, samla allt i ett dokument. Informationen kommer inte att visas på webben.</p>
                                         </div>                                          
                                         <ul class="tabs kk_aj_tabs arr_cvmedverkande" rel="37" data-tab role="tablist">
