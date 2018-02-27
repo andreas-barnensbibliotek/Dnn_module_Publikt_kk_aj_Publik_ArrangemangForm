@@ -1219,56 +1219,79 @@ Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du änd
                 <div class="small-12 medium-9 columns">
                     <h2>Skicka in</h2>
                 </div>
-            </div>
-              <h2>Användarvillkor på Kulurkatalogen väst</h2>
-              <p>Nu är din ansökan till Kulturkatalogen Väst klar att skickas in. <br /> 
-              </p>
+            </div> 
+              <div class="kk_ajuseravtalblock">            
+              <h3>Nu är din ansökan till Kulturkatalogen Väst klar att skickas in.</h3>
               
 <!-- kategori föreställning på turné Start -->
-                <p class="kk_aj_ft kk_aj_ut">Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:<br>
-					1 mars (ansökan ska ha inkommit senast 15 januari) <br>
-					1 juni (ansökan ska ha inkommit senast 15 april)<br>
-					1 november (ansökan ska ha inkommit senast 15 september)<br>
-					Om produktionen godkänns kommer den att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan. Eventuellt kommer du att kontaktas om vi undrar något.<br>
+                <div class="kk_aj_ft kk_aj_ut">                    
+                    <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
+                    <ul>
+                        <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
+                        <li>1 juni (ansökan ska ha inkommit senast 15 april)</li>
+                        <li>1 november (ansökan ska ha inkommit senast 15 september)</li>
+					</ul>
+					<p>
+					Om produktionen godkänns kommer den att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan. Eventuellt kommer du att kontaktas om vi undrar något.
 					Vad gäller föreställningar på turné vill konsulenten se föreställningen med publik bestående av målgruppen. Vi kommer att höra av oss för att få ev speldatum/platser under handläggningstiden. Om det inte är möjligt att se föreställningen live kan en enkelt avfilmad föreställning med publik bestående av målgruppen vara ett alternativ.
-				</p>
+					</p>                   
+				</div>
 <!-- kategori föreställning på turné Slut -->
 
 <!-- kategori projekt Start -->
-				<p class="kk_aj_fob"> Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:
-					1 mars (ansökan ska ha inkommit senast 15 januari)<br>
-					1 juni (ansökan ska ha inkommit senast 15 april)<br>
-					1 november (ansökan ska ha inkommit senast 15 september)<br>
-					Om produktionen godkänns kommer den att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.<br>
+				<div class="kk_aj_fob"> 
+                    <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
+					<ul>
+                        <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
+                        <li>1 juni (ansökan ska ha inkommit senast 15 april)</li>
+                        <li>1 november (ansökan ska ha inkommit senast 15 september)</li>
+					</ul>
+					<p>Om produktionen godkänns kommer den att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.
 					Vad gäller workshops/projekt så kommer en konsulent att höra av sig till dig under handläggningstiden, på telefon eller mail.
-				</p>
+                    </p>
+				</div>
 <!-- kategori projekt Slut -->
 
 <!-- kategori besöksmål Start -->
-				<p class="kk_aj_rm">Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:
-					1 mars (ansökan ska ha inkommit senast 15 januari)<br>
-					1 juni (ansökan ska ha inkommit senast 15 april)<br>
-					1 november (ansökan ska ha inkommit senast 15 september)<br>
-					Om arrangemanget godkänns kommer det att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.<br>
-				</p>
+				<div class="kk_aj_rm">
+                    <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
+					<ul>
+                        <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
+                        <li>1 juni (ansökan ska ha inkommit senast 15 april)</li>
+                        <li>1 november (ansökan ska ha inkommit senast 15 september)</li>
+					</ul>
+					<p>Om arrangemanget godkänns kommer det att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.
+					</p>
+                </div>
 <!-- kategori besöksmål Slut -->
 
 <!-- kategori skolbio Start -->
-				<p class="kk_aj_sb">Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:
-					1 mars (ansökan ska ha inkommit senast 15 januari)<br>
-					1 juni (ansökan ska ha inkommit senast 15 april)<br>
-					1 november (ansökan ska ha inkommit senast 15 september)<br>
-					Om arrangemanget godkänns kommer det att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.<br>
-				</p>
+				<div class="kk_aj_sb">
+                    <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
+					<ul>
+                        <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
+                        <li>1 juni (ansökan ska ha inkommit senast 15 april)</li>
+                        <li>1 november (ansökan ska ha inkommit senast 15 september)</li>
+					</ul>
+					<p>Om arrangemanget godkänns kommer det att publiceras i Kulturkatalogen Väst i anslutning till att besked ges. Du kommer att få beslut med motivering på mail från den konsulent som handlägger din ansökan.
+					</p>
+                </div>
 <!-- kategori skolbio slut-->
 
-
+        </div> 
 
 <!-- kategori utställning på turné Start -->
 <!-- kategori utställning på turné Slut -->
-
-              <div id="ApproveText" ><h2>Datalagringsavtal</h2>
-                  <p>Jag godkänner att Kultur i Väst behandlar och lagrar användardata. Slutför din ansökan genom att klicka på knappen Skicka in. och... Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
+              <h3>Användarvillkor på Kulurkatalogen Väst</h3>
+              <p>För att kunna vara med i Kulturkatalogen Väst är det viktigt att du läser igenom och godkänner nedanstående avtal.</p>
+              <div id="ApproveText" ><h3>Datalagringsavtal</h3>
+                  <ul>
+                       <li>Jag godkänner att Kultur i Väst behandlar och lagrar användardata som har fyllts i i arrangörsformuläret.</li>
+                       <li>Kulturkatalogen Väst använder uppgifterna för att visa arrangemang i sin digitala utbudskatalog.</li>
+                       <li>Alla uppgifter i formuläret är publika förutom de uppgifter som har fyllts i under rubriken ”Information inför bedömning”. För förställning på turné och utställning på turné gäller att alla uppgifter är publika då de saknar bedömningsdelen.</li>
+                       <li>Användardata kommer att lagras för arkivering då det innefattas av offentlighetsprincipen eller tills det att du som användare aktivt väljer att ta bort datat. Att användaruppgifterna lagras förenklar även fortsatt förnyelse av ett arrangemang.</li>
+                  </ul>
+                  
               </div>
               
               <input id="chkApproved" class="left" type="checkbox"> <label for="chkApproved">Jag godkännner avtalet </label> 
