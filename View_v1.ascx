@@ -1007,16 +1007,20 @@
                      <p>
                         Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du ändra på något, gå tillbaks till föregående steg.
                      </p>
-             
+              <div class="row">
+            <div class="medium-12 columns arrRubrikblock">
+               <div class="granska_rubrik_border">
+                <h1 class="granska_rubrik"><div class="kk_aj_loader"></div></h1> 
+                <h2 class="granska_Utovare_Organisation"></h2>
+               </div>
+            </div>
+        </div>
               <!-- Artikel START -->
                 <div class="artikelwrapper level1">
                     <div class="row">
 
                         <div class="medium-8 columns artmaincontent">
-                                                   <div class="granska_rubrik_border">
-                <h1 class="granska_rubrik"><div class="kk_aj_loader"></div></h1> 
-                <h2 class="granska_Utovare_Organisation"></h2>
-               </div>     
+                                                        
                             <div class="field field-name-field-artikelbild field-type-image field-label-hidden field-wrapper">
                                 <img class="granska_pressentationsbild" src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingimage.jpg" alt="Bild saknas"/>                           
                                 <div class="row">

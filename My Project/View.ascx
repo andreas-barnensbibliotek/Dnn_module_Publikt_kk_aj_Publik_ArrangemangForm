@@ -50,10 +50,9 @@
                         <div class="large-8 columns">
                              <fieldset>
                                 <legend>Välkommen att söka till Kulturkatalogen Väst!</legend>
-                                <p>Kulturkatalogen Väst är en digital utbudskatalog med professionell konst och kultur, natur- och kulturarv för barn och unga i Västra Götaland. 
-                                    <a href="#" target="_blank"> Här kan du läsa mer om vilka typer av arrangemang som kommer med i katalogen (länken öppnas i nytt fönster).</a>                                   
+                                <p>Kulturkatalogen Väst är en digital utbudskatalog med professionell konst och kultur, natur- och kulturarv för barn och unga i Västra Götaland.                                                                       
                                     Innan du börjar fylla i ansökan, se till att du har alla uppgifter och allt material tillgängligt så att ansökan blir komplett. Det går inte att spara och fortsätta vid ett senare tillfälle, så ha det här redo när du sätter igång:<br>
-				    - Namn och adress<br>
+				                    - Namn och adress<br>
                                     - Fakta om lokal, kostnad etc<br>
                                     - Bild/er, ev ljud och filmklipp<br>   
                                     - För utövare: Lista över din/er konstnärliga bakgrund och utbildning <br>
@@ -378,9 +377,9 @@
                                 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 ArrangemangtypBlock">
                                   <li>
                                     <label for="val_resmalsbesok">
-                                        <input id="val_resmalsbesok" type="radio" name="arr_radioValArrtyp" value="7"/>
+                                        <input id="val_resmalsbesok" type="radio" name="arr_radioValArrtyp" value="7" />
                                         <img src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/besoksmalmedresestod.png" class="img_resmalsbesok" alt="Resmålsbesök" title="Resmålsbesök"/>
-                                    </label>
+                                    </label>    
                                   </li>
                                   <li>
                                     <label for="val_forestallningtune">
@@ -533,13 +532,13 @@
                                     <legend>Beskrivning</legend>
 
                                     <label for="arr_rubrik">Rubrik<a href="#" class="info" rel="arr_rubrik_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_rubrik_infotext infotext">Fyll i rubrik eller namn på arrangemanget</div>
-                                        <input id="arr_rubrik" type="text" class="kk_aj_requireValidation_step2" />
+                                        <div class="arr_rubrik_infotext infotext">Fyll i rubrik eller namn på arrangemanget (Max 220 tecken)</div>
+                                        <input id="arr_rubrik" type="text" class="kk_aj_requireValidation_step2" maxlength="220" />
                                         <small class="error arr_rubrik_error">Vänligen fyll i en rubrik eller namn på arrangemanget</small>                                   
          
                                     <label for="arr_underrubrik">Underrubrik (ej obligatorisk)<a href="#" class="info" rel="arr_underrubrik_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <div class="arr_underrubrik_infotext infotext">Fyll i en underrubrik för arrangemanget</div>
-                                        <input id="arr_underrubrik" type="text" />
+                                        <div class="arr_underrubrik_infotext infotext">Fyll i en underrubrik för arrangemanget (Max 220 tecken)</div>
+                                        <input id="arr_underrubrik" type="text" maxlength="220" />
                                         <small class="error arr_underrubrik_error">Vänligen fyll i en underrubrik</small>  
 
                                     <label for="arr_presentation">Presentation<a href="#" class="info" rel="arr_presentation_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
@@ -563,7 +562,7 @@
                                         </div>
                                         <div class="small-8 columns">
                                             <label for="arr_presentationsbild">Presentationsbild</label> 
-                                                <input id="arr_presentationsbild" class="arr_presentationsbild kk_aj_requireValidation_step2" type="file" />                                            
+                                                <input id="arr_presentationsbild" class="arr_presentationsbild kk_aj_requireValidation_step2" type="file" accept="image/*" />                                            
                                                 <small class="error arr_presentationsbild_error">Vänligen välj en presentationsbild</small>                                                                                  
                                         </div>
                                      </div>
@@ -571,7 +570,7 @@
                                         <div class="large-12 columns">
                                             <label for="arr_altfoto">Alternativtext<a href="#" class="info" rel="arr_altfoto_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                                 <div class="arr_altfoto_infotext infotext">Fyll i en alternativtext, dvs en kort beskrivning av bilden ovan. Innehållet i bilder måste kunna läsas upp av verktyg för talsyntes. <a href="#">Se exempel här.</a></div> 
-                                                <input id="arr_altfoto" class="arr_altfoto kk_aj_requireValidation_step2" type="text"  />                                            
+                                                <input id="arr_altfoto" class="arr_altfoto kk_aj_requireValidation_step2" maxlength="350" type="text"  />                                            
                                                 <small class="error arr_altfoto_error">Vänligen fyll i alternativtext</small>
                                         </div>                                    
                                     </div>
@@ -579,7 +578,7 @@
                                         <div class="large-12 columns">
                                             <label for="arr_fotograf">Fotograf/Illustratör<a href="#" class="info" rel="arr_fotograf_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                                 <div class="arr_fotograf_infotext infotext">Fyll i namnet på den som tagit bilden eller gjort illustrationen.</div>
-                                                <input id="arr_fotograf" class="arr_fotograf kk_aj_requireValidation_step2" type="text" />
+                                                <input id="arr_fotograf" class="arr_fotograf kk_aj_requireValidation_step2" maxlength="145" type="text" />
                                                 <small class="error arr_fotograf_error">Vänligen fyll i fotograf eller illustratör</small>                                            
                                         </div>
                                     </div>
@@ -604,7 +603,7 @@
                                     
                                     <label for="arr_medverkande" class="lbl_medverkande kk_aj_fob kk_aj_ft kk_aj_kp">Medverkande<a href="#" class="info" rel="arr_medverkande_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_medverkande_infotext infotext">Fyll i namn på medverkande enligt exempel Sara Persson, Kalle Nilsson, etc</div>
-                                        <input id="arr_medverkande" rel="3" type="text" class="kk_aj_Fakta kk_aj_fob kk_aj_ft kk_aj_kp "/>
+                                        <input id="arr_medverkande" rel="3" type="text"  maxlength="350" class="kk_aj_Fakta kk_aj_fob kk_aj_ft kk_aj_kp "/>
                                         <small class="error arr_medverkande_error">Vänligen fyll i namn på medverkande</small>
                                     
                                     
@@ -649,27 +648,27 @@
                                     <div class="kk_aj_ft">                                       
                                         <label for="formBuildTimeId">Byggtid (min)<a href="#" class="info" rel="arr_formBuildTimeId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>	
                                             <div class="arr_formBuildTimeId_infotext infotext">Ange uppskattad byggtid i minuter. Använd enbart siffror.</div>				                    
-                                            <input type="text" id="formBuildTimeId" name="formBuildTime" rel="10" class="kk_aj_Fakta kk_aj_ft" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+                                            <input type="text" id="formBuildTimeId" name="formBuildTime" rel="10" class="kk_aj_Fakta kk_aj_ft" maxlength="50" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                             <small class="error formBuildTimeId_error">Vänligen fyll i byggtid i minuter. Använd enbart siffror.</small>
                             
                                         <label for="formDemolishTimeId">Rivtid (min)<a href="#" class="info" rel="arr_formDemolishTimeId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                             <div class="arr_formDemolishTimeId_infotext infotext">Ange uppskattad rivtid i minuter. Använd enbart siffror.</div>
-				                            <input type="text" id="formDemolishTimeId" name="formDemolishTime" rel="11" class="kk_aj_Fakta kk_aj_ft" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"> 
+				                            <input type="text" id="formDemolishTimeId" name="formDemolishTime" rel="11" class="kk_aj_Fakta kk_aj_ft" maxlength="50" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"> 
                                             <small class="error formDemolishTimeId_error">Vänligen fyll i rivtid i minuter. Använd enbart siffror.</small>              
  
                                         <label for="formVenueWidthId">Bredd på scen (meter)<a href="#" class="info" rel="arr_formVenueWidthId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                             <div class="arr_formVenueWidthId_infotext infotext">Ange vilken scenbredd föreställningen kräver, i meter. Använd enbart siffror.</div>	
-				                            <input type="text" id="formVenueWidthId" name="formVenueWidth" rel="12" value="" class="kk_aj_Fakta kk_aj_ft" >
+				                            <input type="text" id="formVenueWidthId" name="formVenueWidth" rel="12" value="" maxlength="50"  class="kk_aj_Fakta kk_aj_ft" >
 				                            <small class="error formVenueWidthId_error">Vänligen ange bredd på scen i meter. Använd enbart siffror.</small>
 
                                         <label for="formVenueDepthId">Djup på scen (meter)<a href="#" class="info" rel="arr_formVenueDepthId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                             <div class="arr_formVenueDepthId_infotext infotext">Ange vilket scendjup föreställningen kräver, i meter. Använd enbart siffror.</div>
-				                            <input type="text" id="formVenueDepthId" name="formVenueDepth" rel="13" class="kk_aj_Fakta kk_aj_ft">
+				                            <input type="text" id="formVenueDepthId" name="formVenueDepth" rel="13" maxlength="50" class="kk_aj_Fakta kk_aj_ft">
                                             <small class="error formVenueDepthId_error">Vänligen ange djup på scen i meter. Använd enbart siffror.</small>
 
 				                        <label for="formVenueHeightId">Takhöjd över scen (meter)<a href="#" class="info" rel="arr_formVenueHeightId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>	
                                             <div class="arr_formVenueHeightId_infotext infotext">Ange vilken scenhöjd föreställningen kräver, i meter. Använd enbart siffror. </div>					                    
-                                            <input type="text" id="formVenueHeightId" name="formVenueHeight" rel="14" class="kk_aj_Fakta kk_aj_ft">
+                                            <input type="text" id="formVenueHeightId" name="formVenueHeight" rel="14" maxlength="50" class="kk_aj_Fakta kk_aj_ft">
                                             <small class="error formVenueHeightId_error">Vänligen ange djup på scen i meter. Använd enbart siffror.</small>
                                          
                                         <label for="arr_ljud">Ljud</label>
@@ -711,15 +710,15 @@
                                         <small class="error kk_aj_search_arr_electricity_error">Vänligen gör val av El</small>                                    
                                     </div>
                                     
-                                    <label for="arr_yta">Yta<a href="#" class="info" rel="arr_yta_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <label for="arr_yta" class="kk_aj_ut">Yta<a href="#" class="info kk_aj_ut" rel="arr_yta_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                             <div class="arr_yta_infotext infotext">Ange önskad lokalyta i kvadratmeter.</div>
-				                            <input type="text" id="arr_yta" name="arr_yta" rel="46" class="kk_aj_Fakta kk_aj_ut" > 
+				                            <input type="text" id="arr_yta" name="arr_yta" rel="46" maxlength="100" class="kk_aj_Fakta kk_aj_ut" > 
                                             <small class="error arr_yta_error">Vänligen fyll i önskad lokalyta i kvadratmeter.</small>  
 
                                     <!-- Föreställning på tune fält STOPP -->
                                     <label for="formVenueRequiermentsId" class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_sb">Lokalkrav (ej obligatorisk)<a href="#" class="info" rel="arr_formVenueRequiermentsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_formVenueRequiermentsId_infotext infotext">Här kan du ange lokalkrav ex rumstemperatur, lokalens storlek, om du behöver tom golvyta, behov av bygghjälp,  tillgång till vatten, bord att arbeta vid etc.</div>
-				                        <textarea id="formVenueRequiermentsId" rel="18" name="formVenueRequierments" class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_sb novalidate"></textarea>                                       
+				                        <textarea id="formVenueRequiermentsId" rel="18" name="formVenueRequierments" maxlength="400" class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_sb novalidate"></textarea>                                       
                                 </fieldset>
                             </div>
                         </div>   
@@ -732,7 +731,7 @@
                                     
                                     <label for="formMaxAudienceId" id="labelMaxAudienceId" class="kk_aj_ft">Maxantal publik<a href="#" class="info" rel="arr_labelMaxAudienceId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_labelMaxAudienceId_infotext infotext">Ange max antal personer i publiken. Skriv enbart siffror. </div>
-				                        <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" class="kk_aj_Fakta kk_aj_ft" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+				                        <input type="text" id="formMaxAudienceId" name="formMaxAudience" rel="6" maxlength="100" class="kk_aj_Fakta kk_aj_ft" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                         <small class="error formMaxAudienceId_error">Vänligen ange max antal personer i publiken. Skriv enbart siffror.</small>
 
                                     <label for="formMaxParticipantsId" id="labelMaxParticipantsId" class="kk_aj_kp">Maxantal deltagare<a href="#" class="info" rel="arr_labelMaxParticipantsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
@@ -748,7 +747,7 @@
 
                                     <label for="formMaxShowsId" id="labelMaxShowsId" class="kk_aj_ft">Föreställningar per dag (ej obligatorisk)<a href="#" class="info" rel="arr_formMaxShowsId_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
 				                        <div class="arr_formMaxShowsId_infotext infotext">Ange hur många föreställningar som kan spelas per dag. Skriv enbart siffror.</div>	
-				                        <input type="text" id="formMaxShowsId" name="formMaxShows" rel="9" class="kk_aj_Fakta kk_aj_ft" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+				                        <input type="text" id="formMaxShowsId" name="formMaxShows" rel="9" class="kk_aj_Fakta kk_aj_ft" maxlength="50" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                         <small class="error formMaxShowsId_error">Ange hur många föreställningar som kan ges per dag. Skriv enbart siffror.</small>
 
                                     <label for="kk_aj_speltid" class="kk_aj_ft kk_aj_sb">Speltid (min)<a href="#" class="info" rel="arr_kk_aj_speltid_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
@@ -768,7 +767,7 @@
                                     <legend>Kostnader</legend>                                                                            
                                      <label for="arr_ekonomikostnad" class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_kp kk_aj_sb">Kostnad/Pris<a href="#" class="info" rel="arr_ekonomikostnad_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label> 
                                         <div class="arr_ekonomikostnad_infotext infotext">Ange kostnad/pris för arrangemanget i SEK. Endast siffror. För paketpris använd fältet ”Övrigt om kostnader”. Här kan du också ange ev entréavgifter, kostnad för guidning, museilektioner etc (ingår inte i arrangörsstödet).</div> 
-                                        <input id="arr_ekonomikostnad" type="text" class="kk_aj_Fakta kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_kp kk_aj_sb" rel="19" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"/>
+                                        <input id="arr_ekonomikostnad" type="text" class="kk_aj_Fakta kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_kp kk_aj_sb" rel="19" maxlength="100" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"/>
                                         <small class="error arr_ekonomikostnad_error">Vänligen fyll i kostnad/pris för arrangemanget i SEK. Endast siffror.</small>
                                     <div class="kk_aj_fob kk_aj_ft kk_aj_ut kk_aj_kp">                                   
                                     <label for="arr_resor">Resor</label>
@@ -786,14 +785,14 @@
                                     </div>
                                     <label for="arr_resorovrigt">Övrigt om kostnader (ej obligatorisk)<a href="#" class="info" rel="arr_resorovrigt_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_resorovrigt_infotext infotext">Här kan du ange om det finns rabatter, paketpris eller om det tillkommer fler kostnader, t.ex. entréavgifter eller liknande.</div>	
-                                        <textarea id="arr_resorovrigt" name="arr_resorovrigt" rel="30" ></textarea>                                 
+                                        <textarea id="arr_resorovrigt" name="arr_resorovrigt" rel="30" maxlength="400" ></textarea>                                 
                                     </fieldset>
 
                                 <fieldset class="arrovrigt">
                                   <legend>Övrigt</legend> 
                                     <label for="arr_overiganoter">Övriga noteringar (ej obligatorisk)<a href="#" class="info" rel="arr_overiganoter_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                         <div class="arr_overiganoter_infotext infotext">Fyll i om det är något mer som arrangören behöver veta om/inför arrangemanget.</div>	
-                                        <textarea id="arr_overiganoter" name="arr_overiganoter" rel="33"></textarea>                                    
+                                        <textarea id="arr_overiganoter" name="arr_overiganoter" rel="33" maxlength="400"></textarea>                                    
                                 </fieldset>
                             </div>                            
                         </div>      
@@ -843,28 +842,15 @@
                                                  </div>
                                                   <div class="medium-8 columns kk_aj_exempelfilmblock">
                                                       <label for="arr_ExempelfilmRubrik">Rubrik </label>
-                                                      <input id="arr_ExempelfilmRubrik" type="text" />
-
+                                                      <input id="arr_ExempelfilmRubrik" type="text" maxlength="150"/>
                                                       <label for="arr_Exempelfilmbeskrivning">Beskrivning</label>
-                                                      <textarea id="arr_Exempelfilmbeskrivning"></textarea>
-
-                                                     <%--  <label class="lbl_ExempelfilmUrl">Länk till exempelsida på youtube<a href="#" class="info" rel="lbl_ExempelfilmUrl_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                                      <div class="lbl_ExempelfilmUrl_infotext infotext">Här kan du ange en länk till en sida där mer information finns.</div>
-                                                     
-                                                      <div class="row collapse">
-                                                          <div class="small-3 large-2 columns">
-                                                              <span class="prefix">http://</span>
-                                                          </div>
-                                                          <div class="small-9 large-10 columns">
-                                                              <input id="arr_ExempelfilmUrl" type="text" />
-                                                          </div>
-                                                      </div>--%>
+                                                      <textarea id="arr_Exempelfilmbeskrivning" maxlength="450"></textarea>
                                                   </div>
                                                   <div class="row addexempelbtn">
                                                     <div class="small-12 columns">
                                                         <label for="arr_Exempelfilm">Länk till youtube <a href="#" class="info" rel="arr_Exempelfilm_info"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                                         <div class="arr_Exempelfilm_infotext infotext">1. Öppna din video på youtube.com. 2. Klicka på Dela under videon. 3. Kopiera den länk du har där och klistra in den i detta fält. Länken ska se ut enligt följande exempel: https://youtu.be/AATlj6UwMzA</div>
-                                                        <input id="arr_Exempelfilm" type="text" />
+                                                        <input id="arr_Exempelfilm" type="text" maxlength="245"/>
                                                         <button id="kk_aj_addfilmExempel" class="button small secondary right kk_aj_exempelblock">Lägg till</button>
                                                       </div>
                                                   </div>                                            
@@ -875,15 +861,15 @@
 
                                                       <label for="arr_Exempelbild">Länk/url till bild <a href="#" class="info" rel="arr_Exempelbild_info"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                                       <div class="arr_Exempelbild_infotext infotext">1. Högerklicka på din bild på nätet. 2. Kopiera bildadressen (url). 3. Klistra in den här.</div>
-                                                      <input id="arr_Exempelbild" type="text" />
+                                                      <input id="arr_Exempelbild" type="text" maxlength="150"/>
 
                                                   </div>
                                                   <div class="medium-8 columns kk_aj_exempelblock">
                                                       <label for="arr_ExempelRubrik">Rubrik </label>
-                                                      <input id="arr_ExempelRubrik" type="text" />
+                                                      <input id="arr_ExempelRubrik" type="text" maxlength="150"/>
 
                                                       <label for="arr_Exempelbeskrivning">Beskrivning</label>
-                                                      <textarea id="arr_Exempelbeskrivning"></textarea>
+                                                      <textarea id="arr_Exempelbeskrivning" maxlength="450"></textarea>
 
                                                       <label for="arr_ExempelUrl" class="lbl_ExempelUrl">Länk till exempelsida<a href="#" class="info" rel="lbl_ExempelUrl_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                                                       <div class="lbl_ExempelUrl_infotext infotext">Här kan du ange en länk till en sida där mer information finns.</div>
@@ -892,7 +878,7 @@
                                                               <span class="prefix">http://</span>
                                                           </div>
                                                           <div class="small-9 large-10 columns">
-                                                              <input id="arr_ExempelUrl" type="text" />
+                                                              <input id="arr_ExempelUrl" type="text" maxlength="150" />
                                                           </div>
                                                       </div>
                                                   </div>
@@ -904,7 +890,6 @@
                                               </section> 
                                             </div>                                         
                                       </div>
-                                 
                               </div>
                           </div>
 
@@ -935,10 +920,10 @@
                                         </div>                                          
                                         <ul class="tabs kk_aj_tabs arr_cvmedverkande" rel="37" data-tab role="tablist">
                                             <li class="tab-title active tiny " role="presentation">
-                                                <a href="#cv-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" class="tiny">Länka till CV</a>
+                                                <a href="#cv-1" id="tab-cv-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" class="tiny">Länka till CV</a>
                                             </li>
                                             <li class="tab-title tiny" role="presentation">
-                                                <a href="#cv-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2" class="">Ladda upp CV</a>
+                                                <a href="#cv-2" id="tab-cv-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2" class="">Ladda upp CV</a>
                                             </li>
                                         </ul>
                                             <div class="tabs-content">
@@ -948,14 +933,14 @@
                                                   <span class="prefix">http://</span>
                                                 </div>
                                                 <div class="small-9 large-10 columns">
-                                                    <input id="arr_cvmedverkande_url" type="text" class="kk_aj_fob kk_aj_ft  kk_aj_kp novalidate">
+                                                    <input id="arr_cvmedverkande_url" type="text" maxlength="250" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate">
                                                 </div>
                                               </div>
                                               </section>
                                               <section role="tabpanel" aria-hidden="true" class="content" id="cv-2">
                                                 <div class="row">
                                                     <div class="large-12 columns">
-                                                        <input id="arr_cvmedverkande_file" type="file" class="kk_aj_fob kk_aj_ft  kk_aj_kp novalidate" >                                                  
+                                                        <input id="arr_cvmedverkande_file" type="file" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate" >                                                  
                                                     </div>
                                                 </div>
                                               </section> 
@@ -969,7 +954,7 @@
                                         <small class="error kk_aj_search_arr_statligtstodjanej_error">Vänligen ange om arrangemanget innehar statligt/regionalt/kommunalt/andra bidrag eller stöd.</small>
 
                                     <label for="arr_statligtstodtxt" class="lbl_statligtstodtxt kk_aj_ft kk_aj_kp">Om ja ange vilka</label>
-                                        <input id="arr_statligtstodtxt" type="text" rel="39" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate"/>                                        
+                                        <input id="arr_statligtstodtxt" type="text" rel="39" class="kk_aj_fob kk_aj_ft kk_aj_kp novalidate" maxlength="350"/>                                        
                                         <small class="error arr_statligtstodtxt_error">Vänligen om arrangemanget innehar statligt/regionalt/kommunalt/andra bidrag eller stöd.</small>
 
                                     <label for="arr_fskattsedeljanej">Innehar F-skattsedel</label>
@@ -983,7 +968,7 @@
                                         <small class="error kk_aj_search_arr_centrumbildningjanej_error">Vänligen fyll i om ni är medlem i centrumbildning</small>  
                                     
                                     <label for="arr_overiginformation">Övrig information<a href="#" class="info" rel="arr_overiginformation_info"> <i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
-                                        <textarea id="arr_overiginformation" name="arr_overiginformation" rel="42"></textarea>    
+                                        <textarea id="arr_overiginformation" name="arr_overiginformation" rel="42" maxlength="449"></textarea>    
                                      </fieldset>
 
                              </div>
@@ -1020,23 +1005,18 @@
                     </div>
                 </div>
                      <p>
-Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du ändra på något, gå tillbaks till föregående steg.
+                        Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du ändra på något, gå tillbaks till föregående steg.
                      </p>
-
-              <div class="row">
-            <div class="medium-12 columns arrRubrikblock">
-               <div class="granska_rubrik_border">
-                <h1 class="granska_rubrik"><div class="kk_aj_loader"></div></h1> 
-                <h2 class="granska_Utovare_Organisation"></h2>
-               </div>
-            </div>
-        </div>
+              
               <!-- Artikel START -->
                 <div class="artikelwrapper level1">
                     <div class="row">
 
                         <div class="medium-8 columns artmaincontent">
-                                                        
+                            <div class="granska_rubrik_border">
+								<h1 class="granska_rubrik"><div class="kk_aj_loader"></div></h1> 
+								<h2 class="granska_Utovare_Organisation"></h2>
+						   </div>                                 
                             <div class="field field-name-field-artikelbild field-type-image field-label-hidden field-wrapper">
                                 <img class="granska_pressentationsbild" src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingimage.jpg" alt="Bild saknas"/>                           
                                 <div class="row">
@@ -1224,7 +1204,10 @@ Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du änd
               <h3>Nu är din ansökan till Kulturkatalogen Väst klar att skickas in.</h3>
               
 <!-- kategori föreställning på turné Start -->
-                <div class="kk_aj_ft kk_aj_ut">                    
+                <div class="kk_aj_ft kk_aj_ut">
+                            <h2>Tack för din ansökan till Kulturkatalogen Väst!</h2>
+<p><b>I april lanseras den nya Kulturkatalogen Väst och därför måste alla som varit med i Kulturkatalogen förut fylla i en ny ansökan. Det är speciellt för i år. Dessutom tar vi emot nya ansökningar. Sista ansökningsdag är den här gången 9 mars. Beslut gällande nya ansökningar kommer 29 mars och katalogen lanseras den 11 april i samband med Scenkonstdagar Barn och unga.</b></p>
+<p>Efter att nya Kulturkatalogen Väst är igång gäller följande:</p>                    
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
                     <ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
@@ -1240,6 +1223,9 @@ Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du änd
 
 <!-- kategori projekt Start -->
 				<div class="kk_aj_fob"> 
+                            <h2>Tack för din ansökan till Kulturkatalogen Väst!</h2>
+<p><b>I april lanseras den nya Kulturkatalogen Väst och därför måste alla som varit med i Kulturkatalogen förut fylla i en ny ansökan. Det är speciellt för i år. Dessutom tar vi emot nya ansökningar. Sista ansökningsdag är den här gången 9 mars. Beslut gällande nya ansökningar kommer 29 mars och katalogen lanseras den 11 april i samband med Scenkonstdagar Barn och unga.</b></p>
+<p>Efter att nya Kulturkatalogen Väst är igång gäller följande:</p>
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
 					<ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
@@ -1254,6 +1240,9 @@ Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du änd
 
 <!-- kategori besöksmål Start -->
 				<div class="kk_aj_rm">
+                            <h2>Tack för din ansökan till Kulturkatalogen Väst!</h2>
+<p><b>I april lanseras den nya Kulturkatalogen Väst och därför måste alla som varit med i Kulturkatalogen förut fylla i en ny ansökan. Det är speciellt för i år. Dessutom tar vi emot nya ansökningar. Sista ansökningsdag är den här gången 9 mars. Beslut gällande nya ansökningar kommer 29 mars och katalogen lanseras den 11 april i samband med Scenkonstdagar Barn och unga.</b></p>
+<p>Efter att nya Kulturkatalogen Väst är igång gäller följande:</p>
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
 					<ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
@@ -1267,6 +1256,9 @@ Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du änd
 
 <!-- kategori skolbio Start -->
 				<div class="kk_aj_sb">
+                            <h2>Tack för din ansökan till Kulturkatalogen Väst!</h2>
+<p><b>I april lanseras den nya Kulturkatalogen Väst och därför måste alla som varit med i Kulturkatalogen förut fylla i en ny ansökan. Det är speciellt för i år. Dessutom tar vi emot nya ansökningar. Sista ansökningsdag är den här gången 9 mars. Beslut gällande nya ansökningar kommer 29 mars och katalogen lanseras den 11 april i samband med Scenkonstdagar Barn och unga.</b></p>
+<p>Efter att nya Kulturkatalogen Väst är igång gäller följande:</p>
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
 					<ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
