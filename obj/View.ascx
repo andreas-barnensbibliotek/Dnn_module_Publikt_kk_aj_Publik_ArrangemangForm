@@ -1204,7 +1204,10 @@
               <h2>Nu är din ansökan till Kulturkatalogen Väst klar att skickas in.</h2>
               
 <!-- kategori föreställning på turné Start -->
-                <div class="kk_aj_ft kk_aj_ut">                                     
+                <div class="kk_aj_ft kk_aj_ut">
+                            <!--<h2>Tack för din ansökan till Kulturkatalogen Väst!</h2>-->
+<p><b>I april lanseras den nya Kulturkatalogen Väst och därför måste alla som varit med i Kulturkatalogen förut fylla i en ny ansökan. Det är speciellt för i år. Dessutom tar vi emot nya ansökningar. Sista ansökningsdag är den här gången 9 mars. Beslut gällande nya ansökningar kommer 29 mars och katalogen lanseras den 11 april i samband med Scenkonstdagar Barn och unga.</b></p>
+<p>Efter att nya Kulturkatalogen Väst är igång gäller följande:</p>                    
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
                     <ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
@@ -1219,7 +1222,10 @@
 <!-- kategori föreställning på turné Slut -->
 
 <!-- kategori projekt Start -->
-				<div class="kk_aj_fob">                            
+				<div class="kk_aj_fob"> 
+                            <!--<h2>Tack för din ansökan till Kulturkatalogen Väst!</h2>-->
+<p><b>I april lanseras den nya Kulturkatalogen Väst och därför måste alla som varit med i Kulturkatalogen förut fylla i en ny ansökan. Det är speciellt för i år. Dessutom tar vi emot nya ansökningar. Sista ansökningsdag är den här gången 9 mars. Beslut gällande nya ansökningar kommer 29 mars och katalogen lanseras den 11 april i samband med Scenkonstdagar Barn och unga.</b></p>
+<p>Efter att nya Kulturkatalogen Väst är igång gäller följande:</p>
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
 					<ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
@@ -1233,7 +1239,10 @@
 <!-- kategori projekt Slut -->
 
 <!-- kategori besöksmål Start -->
-				<div class="kk_aj_rm">                            
+				<div class="kk_aj_rm">
+                            <!--<h2>Tack för din ansökan till Kulturkatalogen Väst!</h2>-->
+<p><b>I april lanseras den nya Kulturkatalogen Väst och därför måste alla som varit med i Kulturkatalogen förut fylla i en ny ansökan. Det är speciellt för i år. Dessutom tar vi emot nya ansökningar. Sista ansökningsdag är den här gången 9 mars. Beslut gällande nya ansökningar kommer 29 mars och katalogen lanseras den 11 april i samband med Scenkonstdagar Barn och unga.</b></p>
+<p>Efter att nya Kulturkatalogen Väst är igång gäller följande:</p>
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
 					<ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
@@ -1246,7 +1255,10 @@
 <!-- kategori besöksmål Slut -->
 
 <!-- kategori skolbio Start -->
-				<div class="kk_aj_sb">                            
+				<div class="kk_aj_sb">
+                            <!--<h2>Tack för din ansökan till Kulturkatalogen Väst!</h2>-->
+<p><b>I april lanseras den nya Kulturkatalogen Väst och därför måste alla som varit med i Kulturkatalogen förut fylla i en ny ansökan. Det är speciellt för i år. Dessutom tar vi emot nya ansökningar. Sista ansökningsdag är den här gången 9 mars. Beslut gällande nya ansökningar kommer 29 mars och katalogen lanseras den 11 april i samband med Scenkonstdagar Barn och unga.</b></p>
+<p>Efter att nya Kulturkatalogen Väst är igång gäller följande:</p>
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
 					<ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>

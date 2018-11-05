@@ -1007,18 +1007,18 @@
                      <p>
                         Så här kommer ditt arrangemang att se ut i Kulturkatalogen Väst. Vill du ändra på något, gå tillbaks till föregående steg.
                      </p>
-              
+             
               <!-- Artikel START -->
                 <div class="artikelwrapper level1">
                     <div class="row">
 
                         <div class="medium-8 columns artmaincontent">
-                            <div class="granska_rubrik_border">
-								<h1 class="granska_rubrik"><div class="kk_aj_loader"></div></h1> 
-								<h2 class="granska_Utovare_Organisation"></h2>
-						   </div>                                 
+                                                   <div class="granska_rubrik_border">
+                <h1 class="granska_rubrik"><div class="kk_aj_loader"></div></h1> 
+                <h2 class="granska_Utovare_Organisation"></h2>
+               </div>     
                             <div class="field field-name-field-artikelbild field-type-image field-label-hidden field-wrapper">
-                                <img class="granska_pressentationsbild" src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingimage.jpg" alt="Bild saknas"/>                           
+                                <img class="granska_pressentationsbild tmp_bild" src="/DesktopModules/kk_aj_Publik_ArrangemangForm/images/missingimage.jpg" alt="Bild saknas"/>                           
                                 <div class="row">
                                     <div class="medium-12 columns granska_arrmainfoto"></div>                                    
                                 </div>
@@ -1053,6 +1053,19 @@
                                         </div>
                                     </div>     
                                 </div>
+
+                                <div class="artsidecontainer granska_Publik_mainblock">
+                                    <h3>Publik</h3>
+                                    <div class="row">
+                                        <div class="small-12 medium-6 columns faktalabel">     
+                                            Finns inget att visa
+                                        </div>
+                                        <div class="small-12 medium-7 columns">     
+                                            Finns inget att visa
+                                        </div>
+                                    </div> 
+                                </div>
+
                                 <div class="artsidecontainer granska_lokal_mainblock">
                                     <h3>Lokal</h3>
                                     <div class="row">
@@ -1064,18 +1077,7 @@
                                         </div>
                                     </div>    
                                 </div>
-                                <div class="artsidecontainer granska_Publik_mainblock">
-                                    <h3>Publik</h3>
-                                    <div class="row">
-                                        <div class="small-12 medium-6 columns faktalabel">     
-                                            Finns inget att visa
-                                        </div>
-                                        <div class="small-12 medium-7 columns">     
-                                            Finns inget att visa
-                                        </div>
-                                    </div>        
-                                    
-                                </div>
+                                
                                 <div class="artsidecontainer granska_Ekonomi_mainblock">
                                     <h3>Ekonomi</h3>
                                     <div class="row">
@@ -1085,8 +1087,7 @@
                                         <div class="small-12 medium-7 columns">     
                                            Finns inget att visa
                                         </div>
-                                    </div>       
-                                    
+                                    </div>
                                 </div>
                             </div>
                             <div class="artsidecontainer granska_Kontakt_mainblock">
@@ -1201,10 +1202,10 @@
                 </div>
             </div> 
               <div class="kk_ajuseravtalblock">            
-              <h2>Nu är din ansökan till Kulturkatalogen Väst klar att skickas in.</h2>
+              <h3>Nu är din ansökan till Kulturkatalogen Väst klar att skickas in.</h3>
               
 <!-- kategori föreställning på turné Start -->
-                <div class="kk_aj_ft kk_aj_ut">                                     
+                <div class="kk_aj_ft kk_aj_ut">                    
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
                     <ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
@@ -1219,7 +1220,7 @@
 <!-- kategori föreställning på turné Slut -->
 
 <!-- kategori projekt Start -->
-				<div class="kk_aj_fob">                            
+				<div class="kk_aj_fob"> 
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
 					<ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
@@ -1233,7 +1234,7 @@
 <!-- kategori projekt Slut -->
 
 <!-- kategori besöksmål Start -->
-				<div class="kk_aj_rm">                            
+				<div class="kk_aj_rm">
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
 					<ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
@@ -1246,7 +1247,7 @@
 <!-- kategori besöksmål Slut -->
 
 <!-- kategori skolbio Start -->
-				<div class="kk_aj_sb">                            
+				<div class="kk_aj_sb">
                     <p>Nya ansökningar behandlas tre gånger per år, och följande beslutsdatum gäller:</p>
 					<ul>
                         <li>1 mars (ansökan ska ha inkommit senast 15 januari)</li>
